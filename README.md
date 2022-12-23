@@ -1,7 +1,7 @@
 # Interfaces Package
 
 
-A package containing various interfaces to be used in unity projects
+A package containing various interfaces to be used in unity projects.
 
 Package can be accessed at https://www.npmjs.com/package/com.eyerunnman.interfaces
 
