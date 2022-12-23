@@ -1,0 +1,34 @@
+{
+  "name": "com.org-name.package-name",
+  "version": "1.5.3",
+  "displayName": "Package Name",
+  "description": "This is an Template repo for Unity Packages (UPM)",
+  "unity": "2019.1",
+  "unityRelease": "6f1",
+  "documentationUrl": "https://github.com/EyeRunnMan-GameDev-Portfolio/unity-package-template#readme",
+  "changelogUrl": "https://github.com/EyeRunnMan-GameDev-Portfolio/unity-package-template/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/EyeRunnMan-GameDev-Portfolio/unity-package-template/blob/main/LICENSE.md",
+  "samples": [
+    {
+      "displayName": "TestSample1",
+      "description": "This is a Sample Package",
+      "path": "Samples~/TestSample1/"
+    }
+  ],
+  "hideInEditor": false,
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EyeRunnMan-GameDev-Portfolio/unity-package-template.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EyeRunnMan-GameDev-Portfolio/unity-package-template/issues"
+  },
+  "homepage": "https://github.com/EyeRunnMan-GameDev-Portfolio/unity-package-template",
+  "author": {
+    "name": "org-name"
+  }
+}
