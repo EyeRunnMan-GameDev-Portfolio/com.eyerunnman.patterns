@@ -1,34 +1,30 @@
 {
-  "name": "com.org-name.package-name",
-  "version": "1.5.3",
-  "displayName": "Package Name",
-  "description": "This is an Template repo for Unity Packages (UPM)",
+  "name": "com.eyerunnman.interfaces",
+  "version": "0.0.0",
+  "displayName": "Interfaces Package",
+  "description": "A package containing various interfaces to be used in unity projects",
   "unity": "2019.1",
   "unityRelease": "6f1",
-  "documentationUrl": "https://github.com/EyeRunnMan-GameDev-Portfolio/unity-package-template#readme",
-  "changelogUrl": "https://github.com/EyeRunnMan-GameDev-Portfolio/unity-package-template/blob/main/CHANGELOG.md",
-  "licensesUrl": "https://github.com/EyeRunnMan-GameDev-Portfolio/unity-package-template/blob/main/LICENSE.md",
-  "samples": [
-    {
-      "displayName": "TestSample1",
-      "description": "This is a Sample Package",
-      "path": "Samples~/TestSample1/"
-    }
-  ],
+  "documentationUrl": "https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.interfaces#readme",
+  "changelogUrl": "https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.interfaces/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.interfaces/blob/main/LICENSE.md",
   "hideInEditor": false,
   "scripts": {
     "test": "exit 0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EyeRunnMan-GameDev-Portfolio/unity-package-template.git"
+    "url": "git+https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.interfaces.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/EyeRunnMan-GameDev-Portfolio/unity-package-template/issues"
+    "url": "https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.interfaces/issues"
   },
-  "homepage": "https://github.com/EyeRunnMan-GameDev-Portfolio/unity-package-template",
-  "author": {
-    "name": "org-name"
-  }
+  "homepage": "https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.interfaces",
+  "author": "eyerunnman",
+  "keywords": [
+    "unity",
+    "interfaces",
+    "game development"
+  ]
 }
