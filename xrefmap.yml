@@ -1,0 +1,386 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: com.eyerunnman.interfaces
+  name: com.eyerunnman.interfaces
+  href: api-runtime/com.eyerunnman.interfaces.html
+  commentId: N:com.eyerunnman.interfaces
+  fullName: com.eyerunnman.interfaces
+  nameWithType: com.eyerunnman.interfaces
+- uid: com.eyerunnman.interfaces.GameService
+  name: GameService
+  href: api-runtime/com.eyerunnman.interfaces.GameService.html
+  commentId: T:com.eyerunnman.interfaces.GameService
+  fullName: com.eyerunnman.interfaces.GameService
+  nameWithType: GameService
+- uid: com.eyerunnman.interfaces.GameService.Initialize(System.Boolean)
+  name: Initialize(Boolean)
+  href: api-runtime/com.eyerunnman.interfaces.GameService.html#com_eyerunnman_interfaces_GameService_Initialize_System_Boolean_
+  commentId: M:com.eyerunnman.interfaces.GameService.Initialize(System.Boolean)
+  fullName: com.eyerunnman.interfaces.GameService.Initialize(System.Boolean)
+  nameWithType: GameService.Initialize(Boolean)
+- uid: com.eyerunnman.interfaces.GameService.Initialize*
+  name: Initialize
+  href: api-runtime/com.eyerunnman.interfaces.GameService.html#com_eyerunnman_interfaces_GameService_Initialize_
+  commentId: Overload:com.eyerunnman.interfaces.GameService.Initialize
+  isSpec: "True"
+  fullName: com.eyerunnman.interfaces.GameService.Initialize
+  nameWithType: GameService.Initialize
+- uid: com.eyerunnman.interfaces.GameService.OnRegister
+  name: OnRegister()
+  href: api-runtime/com.eyerunnman.interfaces.GameService.html#com_eyerunnman_interfaces_GameService_OnRegister
+  commentId: M:com.eyerunnman.interfaces.GameService.OnRegister
+  fullName: com.eyerunnman.interfaces.GameService.OnRegister()
+  nameWithType: GameService.OnRegister()
+- uid: com.eyerunnman.interfaces.GameService.OnRegister*
+  name: OnRegister
+  href: api-runtime/com.eyerunnman.interfaces.GameService.html#com_eyerunnman_interfaces_GameService_OnRegister_
+  commentId: Overload:com.eyerunnman.interfaces.GameService.OnRegister
+  isSpec: "True"
+  fullName: com.eyerunnman.interfaces.GameService.OnRegister
+  nameWithType: GameService.OnRegister
+- uid: com.eyerunnman.interfaces.GameService.OnRegisterError(System.String)
+  name: OnRegisterError(String)
+  href: api-runtime/com.eyerunnman.interfaces.GameService.html#com_eyerunnman_interfaces_GameService_OnRegisterError_System_String_
+  commentId: M:com.eyerunnman.interfaces.GameService.OnRegisterError(System.String)
+  fullName: com.eyerunnman.interfaces.GameService.OnRegisterError(System.String)
+  nameWithType: GameService.OnRegisterError(String)
+- uid: com.eyerunnman.interfaces.GameService.OnRegisterError*
+  name: OnRegisterError
+  href: api-runtime/com.eyerunnman.interfaces.GameService.html#com_eyerunnman_interfaces_GameService_OnRegisterError_
+  commentId: Overload:com.eyerunnman.interfaces.GameService.OnRegisterError
+  isSpec: "True"
+  fullName: com.eyerunnman.interfaces.GameService.OnRegisterError
+  nameWithType: GameService.OnRegisterError
+- uid: com.eyerunnman.interfaces.GameService.OnUnRegister
+  name: OnUnRegister()
+  href: api-runtime/com.eyerunnman.interfaces.GameService.html#com_eyerunnman_interfaces_GameService_OnUnRegister
+  commentId: M:com.eyerunnman.interfaces.GameService.OnUnRegister
+  fullName: com.eyerunnman.interfaces.GameService.OnUnRegister()
+  nameWithType: GameService.OnUnRegister()
+- uid: com.eyerunnman.interfaces.GameService.OnUnRegister*
+  name: OnUnRegister
+  href: api-runtime/com.eyerunnman.interfaces.GameService.html#com_eyerunnman_interfaces_GameService_OnUnRegister_
+  commentId: Overload:com.eyerunnman.interfaces.GameService.OnUnRegister
+  isSpec: "True"
+  fullName: com.eyerunnman.interfaces.GameService.OnUnRegister
+  nameWithType: GameService.OnUnRegister
+- uid: com.eyerunnman.interfaces.GameService.ServiceState
+  name: ServiceState
+  href: api-runtime/com.eyerunnman.interfaces.GameService.html#com_eyerunnman_interfaces_GameService_ServiceState
+  commentId: P:com.eyerunnman.interfaces.GameService.ServiceState
+  fullName: com.eyerunnman.interfaces.GameService.ServiceState
+  nameWithType: GameService.ServiceState
+- uid: com.eyerunnman.interfaces.GameService.ServiceState*
+  name: ServiceState
+  href: api-runtime/com.eyerunnman.interfaces.GameService.html#com_eyerunnman_interfaces_GameService_ServiceState_
+  commentId: Overload:com.eyerunnman.interfaces.GameService.ServiceState
+  isSpec: "True"
+  fullName: com.eyerunnman.interfaces.GameService.ServiceState
+  nameWithType: GameService.ServiceState
+- uid: com.eyerunnman.interfaces.ICommand`1
+  name: ICommand<T>
+  href: api-runtime/com.eyerunnman.interfaces.ICommand-1.html
+  commentId: T:com.eyerunnman.interfaces.ICommand`1
+  name.vb: ICommand(Of T)
+  fullName: com.eyerunnman.interfaces.ICommand<T>
+  fullName.vb: com.eyerunnman.interfaces.ICommand(Of T)
+  nameWithType: ICommand<T>
+  nameWithType.vb: ICommand(Of T)
+- uid: com.eyerunnman.interfaces.ICommand`1.Execute(`0)
+  name: Execute(T)
+  href: api-runtime/com.eyerunnman.interfaces.ICommand-1.html#com_eyerunnman_interfaces_ICommand_1_Execute__0_
+  commentId: M:com.eyerunnman.interfaces.ICommand`1.Execute(`0)
+  fullName: com.eyerunnman.interfaces.ICommand<T>.Execute(T)
+  fullName.vb: com.eyerunnman.interfaces.ICommand(Of T).Execute(T)
+  nameWithType: ICommand<T>.Execute(T)
+  nameWithType.vb: ICommand(Of T).Execute(T)
+- uid: com.eyerunnman.interfaces.ICommand`1.Execute*
+  name: Execute
+  href: api-runtime/com.eyerunnman.interfaces.ICommand-1.html#com_eyerunnman_interfaces_ICommand_1_Execute_
+  commentId: Overload:com.eyerunnman.interfaces.ICommand`1.Execute
+  isSpec: "True"
+  fullName: com.eyerunnman.interfaces.ICommand<T>.Execute
+  fullName.vb: com.eyerunnman.interfaces.ICommand(Of T).Execute
+  nameWithType: ICommand<T>.Execute
+  nameWithType.vb: ICommand(Of T).Execute
+- uid: com.eyerunnman.interfaces.IGameService
+  name: IGameService
+  href: api-runtime/com.eyerunnman.interfaces.IGameService.html
+  commentId: T:com.eyerunnman.interfaces.IGameService
+  fullName: com.eyerunnman.interfaces.IGameService
+  nameWithType: IGameService
+- uid: com.eyerunnman.interfaces.IGameService.Initialize(System.Boolean)
+  name: Initialize(Boolean)
+  href: api-runtime/com.eyerunnman.interfaces.IGameService.html#com_eyerunnman_interfaces_IGameService_Initialize_System_Boolean_
+  commentId: M:com.eyerunnman.interfaces.IGameService.Initialize(System.Boolean)
+  fullName: com.eyerunnman.interfaces.IGameService.Initialize(System.Boolean)
+  nameWithType: IGameService.Initialize(Boolean)
+- uid: com.eyerunnman.interfaces.IGameService.Initialize*
+  name: Initialize
+  href: api-runtime/com.eyerunnman.interfaces.IGameService.html#com_eyerunnman_interfaces_IGameService_Initialize_
+  commentId: Overload:com.eyerunnman.interfaces.IGameService.Initialize
+  isSpec: "True"
+  fullName: com.eyerunnman.interfaces.IGameService.Initialize
+  nameWithType: IGameService.Initialize
+- uid: com.eyerunnman.interfaces.IGameService.OnRegister
+  name: OnRegister()
+  href: api-runtime/com.eyerunnman.interfaces.IGameService.html#com_eyerunnman_interfaces_IGameService_OnRegister
+  commentId: M:com.eyerunnman.interfaces.IGameService.OnRegister
+  fullName: com.eyerunnman.interfaces.IGameService.OnRegister()
+  nameWithType: IGameService.OnRegister()
+- uid: com.eyerunnman.interfaces.IGameService.OnRegister*
+  name: OnRegister
+  href: api-runtime/com.eyerunnman.interfaces.IGameService.html#com_eyerunnman_interfaces_IGameService_OnRegister_
+  commentId: Overload:com.eyerunnman.interfaces.IGameService.OnRegister
+  isSpec: "True"
+  fullName: com.eyerunnman.interfaces.IGameService.OnRegister
+  nameWithType: IGameService.OnRegister
+- uid: com.eyerunnman.interfaces.IGameService.OnRegisterError(System.String)
+  name: OnRegisterError(String)
+  href: api-runtime/com.eyerunnman.interfaces.IGameService.html#com_eyerunnman_interfaces_IGameService_OnRegisterError_System_String_
+  commentId: M:com.eyerunnman.interfaces.IGameService.OnRegisterError(System.String)
+  fullName: com.eyerunnman.interfaces.IGameService.OnRegisterError(System.String)
+  nameWithType: IGameService.OnRegisterError(String)
+- uid: com.eyerunnman.interfaces.IGameService.OnRegisterError*
+  name: OnRegisterError
+  href: api-runtime/com.eyerunnman.interfaces.IGameService.html#com_eyerunnman_interfaces_IGameService_OnRegisterError_
+  commentId: Overload:com.eyerunnman.interfaces.IGameService.OnRegisterError
+  isSpec: "True"
+  fullName: com.eyerunnman.interfaces.IGameService.OnRegisterError
+  nameWithType: IGameService.OnRegisterError
+- uid: com.eyerunnman.interfaces.IGameService.OnUnRegister
+  name: OnUnRegister()
+  href: api-runtime/com.eyerunnman.interfaces.IGameService.html#com_eyerunnman_interfaces_IGameService_OnUnRegister
+  commentId: M:com.eyerunnman.interfaces.IGameService.OnUnRegister
+  fullName: com.eyerunnman.interfaces.IGameService.OnUnRegister()
+  nameWithType: IGameService.OnUnRegister()
+- uid: com.eyerunnman.interfaces.IGameService.OnUnRegister*
+  name: OnUnRegister
+  href: api-runtime/com.eyerunnman.interfaces.IGameService.html#com_eyerunnman_interfaces_IGameService_OnUnRegister_
+  commentId: Overload:com.eyerunnman.interfaces.IGameService.OnUnRegister
+  isSpec: "True"
+  fullName: com.eyerunnman.interfaces.IGameService.OnUnRegister
+  nameWithType: IGameService.OnUnRegister
+- uid: com.eyerunnman.interfaces.IGameService.ServiceState
+  name: ServiceState
+  href: api-runtime/com.eyerunnman.interfaces.IGameService.html#com_eyerunnman_interfaces_IGameService_ServiceState
+  commentId: P:com.eyerunnman.interfaces.IGameService.ServiceState
+  fullName: com.eyerunnman.interfaces.IGameService.ServiceState
+  nameWithType: IGameService.ServiceState
+- uid: com.eyerunnman.interfaces.IGameService.ServiceState*
+  name: ServiceState
+  href: api-runtime/com.eyerunnman.interfaces.IGameService.html#com_eyerunnman_interfaces_IGameService_ServiceState_
+  commentId: Overload:com.eyerunnman.interfaces.IGameService.ServiceState
+  isSpec: "True"
+  fullName: com.eyerunnman.interfaces.IGameService.ServiceState
+  nameWithType: IGameService.ServiceState
+- uid: com.eyerunnman.interfaces.IState`1
+  name: IState<T>
+  href: api-runtime/com.eyerunnman.interfaces.IState-1.html
+  commentId: T:com.eyerunnman.interfaces.IState`1
+  name.vb: IState(Of T)
+  fullName: com.eyerunnman.interfaces.IState<T>
+  fullName.vb: com.eyerunnman.interfaces.IState(Of T)
+  nameWithType: IState<T>
+  nameWithType.vb: IState(Of T)
+- uid: com.eyerunnman.interfaces.IState`1.OnEnterState(`0)
+  name: OnEnterState(T)
+  href: api-runtime/com.eyerunnman.interfaces.IState-1.html#com_eyerunnman_interfaces_IState_1_OnEnterState__0_
+  commentId: M:com.eyerunnman.interfaces.IState`1.OnEnterState(`0)
+  fullName: com.eyerunnman.interfaces.IState<T>.OnEnterState(T)
+  fullName.vb: com.eyerunnman.interfaces.IState(Of T).OnEnterState(T)
+  nameWithType: IState<T>.OnEnterState(T)
+  nameWithType.vb: IState(Of T).OnEnterState(T)
+- uid: com.eyerunnman.interfaces.IState`1.OnEnterState*
+  name: OnEnterState
+  href: api-runtime/com.eyerunnman.interfaces.IState-1.html#com_eyerunnman_interfaces_IState_1_OnEnterState_
+  commentId: Overload:com.eyerunnman.interfaces.IState`1.OnEnterState
+  isSpec: "True"
+  fullName: com.eyerunnman.interfaces.IState<T>.OnEnterState
+  fullName.vb: com.eyerunnman.interfaces.IState(Of T).OnEnterState
+  nameWithType: IState<T>.OnEnterState
+  nameWithType.vb: IState(Of T).OnEnterState
+- uid: com.eyerunnman.interfaces.IState`1.OnExitState(`0)
+  name: OnExitState(T)
+  href: api-runtime/com.eyerunnman.interfaces.IState-1.html#com_eyerunnman_interfaces_IState_1_OnExitState__0_
+  commentId: M:com.eyerunnman.interfaces.IState`1.OnExitState(`0)
+  fullName: com.eyerunnman.interfaces.IState<T>.OnExitState(T)
+  fullName.vb: com.eyerunnman.interfaces.IState(Of T).OnExitState(T)
+  nameWithType: IState<T>.OnExitState(T)
+  nameWithType.vb: IState(Of T).OnExitState(T)
+- uid: com.eyerunnman.interfaces.IState`1.OnExitState*
+  name: OnExitState
+  href: api-runtime/com.eyerunnman.interfaces.IState-1.html#com_eyerunnman_interfaces_IState_1_OnExitState_
+  commentId: Overload:com.eyerunnman.interfaces.IState`1.OnExitState
+  isSpec: "True"
+  fullName: com.eyerunnman.interfaces.IState<T>.OnExitState
+  fullName.vb: com.eyerunnman.interfaces.IState(Of T).OnExitState
+  nameWithType: IState<T>.OnExitState
+  nameWithType.vb: IState(Of T).OnExitState
+- uid: com.eyerunnman.interfaces.IState`1.OnUpdateState(`0)
+  name: OnUpdateState(T)
+  href: api-runtime/com.eyerunnman.interfaces.IState-1.html#com_eyerunnman_interfaces_IState_1_OnUpdateState__0_
+  commentId: M:com.eyerunnman.interfaces.IState`1.OnUpdateState(`0)
+  fullName: com.eyerunnman.interfaces.IState<T>.OnUpdateState(T)
+  fullName.vb: com.eyerunnman.interfaces.IState(Of T).OnUpdateState(T)
+  nameWithType: IState<T>.OnUpdateState(T)
+  nameWithType.vb: IState(Of T).OnUpdateState(T)
+- uid: com.eyerunnman.interfaces.IState`1.OnUpdateState*
+  name: OnUpdateState
+  href: api-runtime/com.eyerunnman.interfaces.IState-1.html#com_eyerunnman_interfaces_IState_1_OnUpdateState_
+  commentId: Overload:com.eyerunnman.interfaces.IState`1.OnUpdateState
+  isSpec: "True"
+  fullName: com.eyerunnman.interfaces.IState<T>.OnUpdateState
+  fullName.vb: com.eyerunnman.interfaces.IState(Of T).OnUpdateState
+  nameWithType: IState<T>.OnUpdateState
+  nameWithType.vb: IState(Of T).OnUpdateState
+- uid: com.eyerunnman.interfaces.IState`1.SwitchState(`0,com.eyerunnman.interfaces.IState{`0})
+  name: SwitchState(T, IState<T>)
+  href: api-runtime/com.eyerunnman.interfaces.IState-1.html#com_eyerunnman_interfaces_IState_1_SwitchState__0_com_eyerunnman_interfaces_IState__0__
+  commentId: M:com.eyerunnman.interfaces.IState`1.SwitchState(`0,com.eyerunnman.interfaces.IState{`0})
+  name.vb: SwitchState(T, IState(Of T))
+  fullName: com.eyerunnman.interfaces.IState<T>.SwitchState(T, com.eyerunnman.interfaces.IState<T>)
+  fullName.vb: com.eyerunnman.interfaces.IState(Of T).SwitchState(T, com.eyerunnman.interfaces.IState(Of T))
+  nameWithType: IState<T>.SwitchState(T, IState<T>)
+  nameWithType.vb: IState(Of T).SwitchState(T, IState(Of T))
+- uid: com.eyerunnman.interfaces.IState`1.SwitchState*
+  name: SwitchState
+  href: api-runtime/com.eyerunnman.interfaces.IState-1.html#com_eyerunnman_interfaces_IState_1_SwitchState_
+  commentId: Overload:com.eyerunnman.interfaces.IState`1.SwitchState
+  isSpec: "True"
+  fullName: com.eyerunnman.interfaces.IState<T>.SwitchState
+  fullName.vb: com.eyerunnman.interfaces.IState(Of T).SwitchState
+  nameWithType: IState<T>.SwitchState
+  nameWithType.vb: IState(Of T).SwitchState
+- uid: com.eyerunnman.interfaces.ServiceState
+  name: ServiceState
+  href: api-runtime/com.eyerunnman.interfaces.ServiceState.html
+  commentId: T:com.eyerunnman.interfaces.ServiceState
+  fullName: com.eyerunnman.interfaces.ServiceState
+  nameWithType: ServiceState
+- uid: com.eyerunnman.interfaces.ServiceState.Registered
+  name: Registered
+  href: api-runtime/com.eyerunnman.interfaces.ServiceState.html#com_eyerunnman_interfaces_ServiceState_Registered
+  commentId: F:com.eyerunnman.interfaces.ServiceState.Registered
+  fullName: com.eyerunnman.interfaces.ServiceState.Registered
+  nameWithType: ServiceState.Registered
+- uid: com.eyerunnman.interfaces.ServiceState.RegisterError
+  name: RegisterError
+  href: api-runtime/com.eyerunnman.interfaces.ServiceState.html#com_eyerunnman_interfaces_ServiceState_RegisterError
+  commentId: F:com.eyerunnman.interfaces.ServiceState.RegisterError
+  fullName: com.eyerunnman.interfaces.ServiceState.RegisterError
+  nameWithType: ServiceState.RegisterError
+- uid: com.eyerunnman.interfaces.ServiceState.Registering
+  name: Registering
+  href: api-runtime/com.eyerunnman.interfaces.ServiceState.html#com_eyerunnman_interfaces_ServiceState_Registering
+  commentId: F:com.eyerunnman.interfaces.ServiceState.Registering
+  fullName: com.eyerunnman.interfaces.ServiceState.Registering
+  nameWithType: ServiceState.Registering
+- uid: com.eyerunnman.interfaces.ServiceState.Undefined
+  name: Undefined
+  href: api-runtime/com.eyerunnman.interfaces.ServiceState.html#com_eyerunnman_interfaces_ServiceState_Undefined
+  commentId: F:com.eyerunnman.interfaces.ServiceState.Undefined
+  fullName: com.eyerunnman.interfaces.ServiceState.Undefined
+  nameWithType: ServiceState.Undefined
+- uid: com.eyerunnman.interfaces.ServiceState.UnRegistered
+  name: UnRegistered
+  href: api-runtime/com.eyerunnman.interfaces.ServiceState.html#com_eyerunnman_interfaces_ServiceState_UnRegistered
+  commentId: F:com.eyerunnman.interfaces.ServiceState.UnRegistered
+  fullName: com.eyerunnman.interfaces.ServiceState.UnRegistered
+  nameWithType: ServiceState.UnRegistered
+- uid: com.eyerunnman.interfaces.ServiceState.Waiting
+  name: Waiting
+  href: api-runtime/com.eyerunnman.interfaces.ServiceState.html#com_eyerunnman_interfaces_ServiceState_Waiting
+  commentId: F:com.eyerunnman.interfaces.ServiceState.Waiting
+  fullName: com.eyerunnman.interfaces.ServiceState.Waiting
+  nameWithType: ServiceState.Waiting
+- uid: com.eyerunnman.patterns
+  name: com.eyerunnman.patterns
+  href: api-runtime/com.eyerunnman.patterns.html
+  commentId: N:com.eyerunnman.patterns
+  fullName: com.eyerunnman.patterns
+  nameWithType: com.eyerunnman.patterns
+- uid: com.eyerunnman.patterns.ServiceLocator
+  name: ServiceLocator
+  href: api-runtime/com.eyerunnman.patterns.ServiceLocator.html
+  commentId: T:com.eyerunnman.patterns.ServiceLocator
+  fullName: com.eyerunnman.patterns.ServiceLocator
+  nameWithType: ServiceLocator
+- uid: com.eyerunnman.patterns.ServiceLocator.Current
+  name: Current
+  href: api-runtime/com.eyerunnman.patterns.ServiceLocator.html#com_eyerunnman_patterns_ServiceLocator_Current
+  commentId: P:com.eyerunnman.patterns.ServiceLocator.Current
+  fullName: com.eyerunnman.patterns.ServiceLocator.Current
+  nameWithType: ServiceLocator.Current
+- uid: com.eyerunnman.patterns.ServiceLocator.Current*
+  name: Current
+  href: api-runtime/com.eyerunnman.patterns.ServiceLocator.html#com_eyerunnman_patterns_ServiceLocator_Current_
+  commentId: Overload:com.eyerunnman.patterns.ServiceLocator.Current
+  isSpec: "True"
+  fullName: com.eyerunnman.patterns.ServiceLocator.Current
+  nameWithType: ServiceLocator.Current
+- uid: com.eyerunnman.patterns.ServiceLocator.Get*
+  name: Get
+  href: api-runtime/com.eyerunnman.patterns.ServiceLocator.html#com_eyerunnman_patterns_ServiceLocator_Get_
+  commentId: Overload:com.eyerunnman.patterns.ServiceLocator.Get
+  isSpec: "True"
+  fullName: com.eyerunnman.patterns.ServiceLocator.Get
+  nameWithType: ServiceLocator.Get
+- uid: com.eyerunnman.patterns.ServiceLocator.Get``1
+  name: Get<T>()
+  href: api-runtime/com.eyerunnman.patterns.ServiceLocator.html#com_eyerunnman_patterns_ServiceLocator_Get__1
+  commentId: M:com.eyerunnman.patterns.ServiceLocator.Get``1
+  name.vb: Get(Of T)()
+  fullName: com.eyerunnman.patterns.ServiceLocator.Get<T>()
+  fullName.vb: com.eyerunnman.patterns.ServiceLocator.Get(Of T)()
+  nameWithType: ServiceLocator.Get<T>()
+  nameWithType.vb: ServiceLocator.Get(Of T)()
+- uid: com.eyerunnman.patterns.ServiceLocator.Register*
+  name: Register
+  href: api-runtime/com.eyerunnman.patterns.ServiceLocator.html#com_eyerunnman_patterns_ServiceLocator_Register_
+  commentId: Overload:com.eyerunnman.patterns.ServiceLocator.Register
+  isSpec: "True"
+  fullName: com.eyerunnman.patterns.ServiceLocator.Register
+  nameWithType: ServiceLocator.Register
+- uid: com.eyerunnman.patterns.ServiceLocator.Register``1(``0,System.Boolean)
+  name: Register<T>(T, Boolean)
+  href: api-runtime/com.eyerunnman.patterns.ServiceLocator.html#com_eyerunnman_patterns_ServiceLocator_Register__1___0_System_Boolean_
+  commentId: M:com.eyerunnman.patterns.ServiceLocator.Register``1(``0,System.Boolean)
+  name.vb: Register(Of T)(T, Boolean)
+  fullName: com.eyerunnman.patterns.ServiceLocator.Register<T>(T, System.Boolean)
+  fullName.vb: com.eyerunnman.patterns.ServiceLocator.Register(Of T)(T, System.Boolean)
+  nameWithType: ServiceLocator.Register<T>(T, Boolean)
+  nameWithType.vb: ServiceLocator.Register(Of T)(T, Boolean)
+- uid: com.eyerunnman.patterns.ServiceLocator.ServiceNotRegisteredException*
+  name: ServiceNotRegisteredException
+  href: api-runtime/com.eyerunnman.patterns.ServiceLocator.html#com_eyerunnman_patterns_ServiceLocator_ServiceNotRegisteredException_
+  commentId: Overload:com.eyerunnman.patterns.ServiceLocator.ServiceNotRegisteredException
+  isSpec: "True"
+  fullName: com.eyerunnman.patterns.ServiceLocator.ServiceNotRegisteredException
+  nameWithType: ServiceLocator.ServiceNotRegisteredException
+- uid: com.eyerunnman.patterns.ServiceLocator.ServiceNotRegisteredException``1
+  name: ServiceNotRegisteredException<T>()
+  href: api-runtime/com.eyerunnman.patterns.ServiceLocator.html#com_eyerunnman_patterns_ServiceLocator_ServiceNotRegisteredException__1
+  commentId: M:com.eyerunnman.patterns.ServiceLocator.ServiceNotRegisteredException``1
+  name.vb: ServiceNotRegisteredException(Of T)()
+  fullName: com.eyerunnman.patterns.ServiceLocator.ServiceNotRegisteredException<T>()
+  fullName.vb: com.eyerunnman.patterns.ServiceLocator.ServiceNotRegisteredException(Of T)()
+  nameWithType: ServiceLocator.ServiceNotRegisteredException<T>()
+  nameWithType.vb: ServiceLocator.ServiceNotRegisteredException(Of T)()
+- uid: com.eyerunnman.patterns.ServiceLocator.Unregister*
+  name: Unregister
+  href: api-runtime/com.eyerunnman.patterns.ServiceLocator.html#com_eyerunnman_patterns_ServiceLocator_Unregister_
+  commentId: Overload:com.eyerunnman.patterns.ServiceLocator.Unregister
+  isSpec: "True"
+  fullName: com.eyerunnman.patterns.ServiceLocator.Unregister
+  nameWithType: ServiceLocator.Unregister
+- uid: com.eyerunnman.patterns.ServiceLocator.Unregister``1
+  name: Unregister<T>()
+  href: api-runtime/com.eyerunnman.patterns.ServiceLocator.html#com_eyerunnman_patterns_ServiceLocator_Unregister__1
+  commentId: M:com.eyerunnman.patterns.ServiceLocator.Unregister``1
+  name.vb: Unregister(Of T)()
+  fullName: com.eyerunnman.patterns.ServiceLocator.Unregister<T>()
+  fullName.vb: com.eyerunnman.patterns.ServiceLocator.Unregister(Of T)()
+  nameWithType: ServiceLocator.Unregister<T>()
+  nameWithType.vb: ServiceLocator.Unregister(Of T)()
