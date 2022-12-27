@@ -1,0 +1,116 @@
+### YamlMime:ManagedReference
+items:
+- uid: com.eyerunnman.interfaces
+  commentId: N:com.eyerunnman.interfaces
+  id: com.eyerunnman.interfaces
+  children:
+  - com.eyerunnman.interfaces.GameService
+  - com.eyerunnman.interfaces.ICommand`1
+  - com.eyerunnman.interfaces.IGameService
+  - com.eyerunnman.interfaces.IState`1
+  - com.eyerunnman.interfaces.ServiceState
+  langs:
+  - csharp
+  - vb
+  name: com.eyerunnman.interfaces
+  nameWithType: com.eyerunnman.interfaces
+  fullName: com.eyerunnman.interfaces
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: com.eyerunnman.interfaces.ICommand`1
+  commentId: T:com.eyerunnman.interfaces.ICommand`1
+  name: ICommand<T>
+  nameWithType: ICommand<T>
+  fullName: com.eyerunnman.interfaces.ICommand<T>
+  nameWithType.vb: ICommand(Of T)
+  fullName.vb: com.eyerunnman.interfaces.ICommand(Of T)
+  name.vb: ICommand(Of T)
+  spec.csharp:
+  - uid: com.eyerunnman.interfaces.ICommand`1
+    name: ICommand
+    nameWithType: ICommand
+    fullName: com.eyerunnman.interfaces.ICommand
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: com.eyerunnman.interfaces.ICommand`1
+    name: ICommand
+    nameWithType: ICommand
+    fullName: com.eyerunnman.interfaces.ICommand
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: com.eyerunnman.interfaces.IGameService
+  commentId: T:com.eyerunnman.interfaces.IGameService
+  parent: com.eyerunnman.interfaces
+  name: IGameService
+  nameWithType: IGameService
+  fullName: com.eyerunnman.interfaces.IGameService
+- uid: com.eyerunnman.interfaces.ServiceState
+  commentId: T:com.eyerunnman.interfaces.ServiceState
+  parent: com.eyerunnman.interfaces
+  name: ServiceState
+  nameWithType: ServiceState
+  fullName: com.eyerunnman.interfaces.ServiceState
+- uid: com.eyerunnman.interfaces.GameService
+  commentId: T:com.eyerunnman.interfaces.GameService
+  name: GameService
+  nameWithType: GameService
+  fullName: com.eyerunnman.interfaces.GameService
+- uid: com.eyerunnman.interfaces.IState`1
+  commentId: T:com.eyerunnman.interfaces.IState`1
+  parent: com.eyerunnman.interfaces
+  name: IState<T>
+  nameWithType: IState<T>
+  fullName: com.eyerunnman.interfaces.IState<T>
+  nameWithType.vb: IState(Of T)
+  fullName.vb: com.eyerunnman.interfaces.IState(Of T)
+  name.vb: IState(Of T)
+  spec.csharp:
+  - uid: com.eyerunnman.interfaces.IState`1
+    name: IState
+    nameWithType: IState
+    fullName: com.eyerunnman.interfaces.IState
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: com.eyerunnman.interfaces.IState`1
+    name: IState
+    nameWithType: IState
+    fullName: com.eyerunnman.interfaces.IState
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: com.eyerunnman.interfaces
+  commentId: N:com.eyerunnman.interfaces
+  name: com.eyerunnman.interfaces
+  nameWithType: com.eyerunnman.interfaces
+  fullName: com.eyerunnman.interfaces

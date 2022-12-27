@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: com.eyerunnman.patterns
+  commentId: N:com.eyerunnman.patterns
+  id: com.eyerunnman.patterns
+  children:
+  - com.eyerunnman.patterns.ServiceLocator
+  langs:
+  - csharp
+  - vb
+  name: com.eyerunnman.patterns
+  nameWithType: com.eyerunnman.patterns
+  fullName: com.eyerunnman.patterns
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: com.eyerunnman.patterns.ServiceLocator
+  commentId: T:com.eyerunnman.patterns.ServiceLocator
+  parent: com.eyerunnman.patterns
+  name: ServiceLocator
+  nameWithType: ServiceLocator
+  fullName: com.eyerunnman.patterns.ServiceLocator
+- uid: com.eyerunnman.patterns
+  commentId: N:com.eyerunnman.patterns
+  name: com.eyerunnman.patterns
+  nameWithType: com.eyerunnman.patterns
+  fullName: com.eyerunnman.patterns

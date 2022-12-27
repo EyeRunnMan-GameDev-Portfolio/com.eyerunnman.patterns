@@ -1,0 +1,4 @@
+- name: API Documentation
+  href: fusion/
+- name: Change Log
+  href: CHANGELOG.md
