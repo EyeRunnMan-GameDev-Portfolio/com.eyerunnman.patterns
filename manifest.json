@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "CHANGELOG.html",
-          "hash": "9eF3xoXNSfso8XmXspy38Q=="
+          "hash": "yzJKB3EbvMUvOgLFIUx9VQ=="
         }
       },
       "is_incremental": false,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api-editor/index.html",
-          "hash": "Qbn/Xqf6F60FY0QzOvdgNg=="
+          "hash": "7XEbxHsHUE05jOdhsWbv0g=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api-runtime/com.eyerunnman.interfaces.GameService.html",
-          "hash": "p02eORtOX/rzlBsrvt/ujg=="
+          "hash": "r2oWczXP5cCGaWCGNL1v3g=="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api-runtime/com.eyerunnman.interfaces.ICommand-1.html",
-          "hash": "QSCCOF0+yaFzqN2g7LgJUQ=="
+          "hash": "NpoxgARYzaAIb1ykjCSDWQ=="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api-runtime/com.eyerunnman.interfaces.IGameService.html",
-          "hash": "sfENqxAiU9p72sZj4MYAzg=="
+          "hash": "//B6GNrZ49hzSnZKzhiL4Q=="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api-runtime/com.eyerunnman.interfaces.IState-1.html",
-          "hash": "ia6VgY8dGP4X/DRgA+Iirg=="
+          "hash": "P9FZwLHRZptUoqb+K8V/8g=="
         }
       },
       "is_incremental": false,
@@ -81,7 +81,22 @@
       "output": {
         ".html": {
           "relative_path": "api-runtime/com.eyerunnman.interfaces.ServiceState.html",
-          "hash": "vlGczN2HRuYWXd94zfL0rw=="
+          "hash": "M3mXCncSH4VNgeuh7ZvFSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "DuplicateUids"
+      ],
+      "type": "ManagedReference",
+      "source_relative_path": "api-runtime/com.eyerunnman.interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-runtime/com.eyerunnman.interfaces.html",
+          "hash": "ejl+37H9Lm2W1ju3RWsTLQ=="
         }
       },
       "is_incremental": false,
@@ -89,11 +104,143 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api-runtime/com.eyerunnman.interfaces.yml",
+      "source_relative_path": "api-runtime/com.eyerunnman.patterns.AbstractState-2.yml",
       "output": {
         ".html": {
-          "relative_path": "api-runtime/com.eyerunnman.interfaces.html",
-          "hash": "Cp6BHX6DRJVgSHxvQ0dUCw=="
+          "relative_path": "api-runtime/com.eyerunnman.patterns.AbstractState-2.html",
+          "hash": "Bbj1i8YgSHBQsPHm35Robg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-runtime/com.eyerunnman.patterns.AbstractStateMachine-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-runtime/com.eyerunnman.patterns.AbstractStateMachine-2.html",
+          "hash": "GSNuAA8wlhve4e+Wr61hGA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "DuplicateUids"
+      ],
+      "type": "ManagedReference",
+      "source_relative_path": "api-runtime/com.eyerunnman.patterns.GameService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-runtime/com.eyerunnman.patterns.GameService.html",
+          "hash": "FWAVgnJsg1HLfMWbDNGg8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "DuplicateUids"
+      ],
+      "type": "ManagedReference",
+      "source_relative_path": "api-runtime/com.eyerunnman.patterns.ICommand-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-runtime/com.eyerunnman.patterns.ICommand-1.html",
+          "hash": "Bw19YOFoFvrWvXA130KUoQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-runtime/com.eyerunnman.patterns.IFactory-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-runtime/com.eyerunnman.patterns.IFactory-1.html",
+          "hash": "LAvcIw6smh+UEHselMkNxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-runtime/com.eyerunnman.patterns.IFactory-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-runtime/com.eyerunnman.patterns.IFactory-2.html",
+          "hash": "gLO1KJ3vlIvXlkDXAx3b2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "DuplicateUids"
+      ],
+      "type": "ManagedReference",
+      "source_relative_path": "api-runtime/com.eyerunnman.patterns.IGameService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-runtime/com.eyerunnman.patterns.IGameService.html",
+          "hash": "IDPBiwJ0PowqnwPQPGwP/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-runtime/com.eyerunnman.patterns.IProxy-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-runtime/com.eyerunnman.patterns.IProxy-1.html",
+          "hash": "aBMSsLMR6lfhMXKQyi5NFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "DuplicateUids"
+      ],
+      "type": "ManagedReference",
+      "source_relative_path": "api-runtime/com.eyerunnman.patterns.IState-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-runtime/com.eyerunnman.patterns.IState-1.html",
+          "hash": "VBCLW0cT1/9YgO+NkA+Skw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-runtime/com.eyerunnman.patterns.ITriggerable-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-runtime/com.eyerunnman.patterns.ITriggerable-1.html",
+          "hash": "owbRHHAnRUrF89MI+wWbrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-runtime/com.eyerunnman.patterns.RootAbstractState-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-runtime/com.eyerunnman.patterns.RootAbstractState-2.html",
+          "hash": "a/ODZks2gcX7wgf4g6VWQw=="
         }
       },
       "is_incremental": false,
@@ -105,7 +252,22 @@
       "output": {
         ".html": {
           "relative_path": "api-runtime/com.eyerunnman.patterns.ServiceLocator.html",
-          "hash": "hMNAfy9QmM4Uq6QpFBybnA=="
+          "hash": "wyeaUiB4tND2J4Megc5shg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "DuplicateUids"
+      ],
+      "type": "ManagedReference",
+      "source_relative_path": "api-runtime/com.eyerunnman.patterns.ServiceState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-runtime/com.eyerunnman.patterns.ServiceState.html",
+          "hash": "5b49NaCk3tKpEqS9d/EXRA=="
         }
       },
       "is_incremental": false,
@@ -117,7 +279,7 @@
       "output": {
         ".html": {
           "relative_path": "api-runtime/com.eyerunnman.patterns.html",
-          "hash": "QUVqHCuTkg8ttWQriWNbPA=="
+          "hash": "OoEigfSeAYrGy4mXN4xWvg=="
         }
       },
       "is_incremental": false,
@@ -129,7 +291,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/GettingStarted.html",
-          "hash": "awLhuBz5RWt3n4MZMXB5mA=="
+          "hash": "EhQ7UAZZ4QDAlevUZCrkwg=="
         }
       },
       "is_incremental": false,
@@ -141,7 +303,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "o7J47hocH2xXqH8ggybKkQ=="
+          "hash": "GGhlCaDpFX5RTEglzg+wkQ=="
         }
       },
       "is_incremental": false,
@@ -153,7 +315,7 @@
       "output": {
         ".html": {
           "relative_path": "changelog.html",
-          "hash": "wKhelqNXNnsgGBzGZWz09Q=="
+          "hash": "iv5bgrEmXaSwMkjal2kr1g=="
         }
       },
       "is_incremental": false,
@@ -165,7 +327,7 @@
       "output": {
         ".html": {
           "relative_path": "fusion/toc.html",
-          "hash": "/8r6CJVUOLHtdFBblvz0pA=="
+          "hash": "YVSXFsbtM+CoY2h8M4Hj9A=="
         }
       },
       "is_incremental": false,
@@ -243,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "kDHhQCGGi1YfFOwkflp8aw=="
+          "hash": "N0yRGetaLQL+bxz59JzrGA=="
         }
       },
       "is_incremental": false,
@@ -282,7 +444,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 8,
+          "total_file_count": 20,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

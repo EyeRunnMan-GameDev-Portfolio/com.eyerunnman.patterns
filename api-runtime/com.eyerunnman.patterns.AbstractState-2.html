@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AbstractState&lt;T, U&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AbstractState&lt;T, U&gt;
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href=".././images/fav.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="../fusion/toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src=".././images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="com.eyerunnman.patterns.AbstractState`2">
+  
+  
+  <h1 id="com_eyerunnman_patterns_AbstractState_2" data-uid="com.eyerunnman.patterns.AbstractState`2" class="text-break">Class AbstractState&lt;T, U&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">AbstractState&lt;T, U&gt;</span></div>
+      <div class="level2"><a class="xref" href="com.eyerunnman.patterns.RootAbstractState-2.html">RootAbstractState&lt;T, U&gt;</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="com.eyerunnman.interfaces.IState-1.html">IState</a>&lt;T&gt;</div>
+    <div><a class="xref" href="com.eyerunnman.patterns.ITriggerable-1.html">ITriggerable</a>&lt;U&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="com.eyerunnman.interfaces.html">com.eyerunnman.patterns</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="com_eyerunnman_patterns_AbstractState_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class AbstractState&lt;T, U&gt; : IState&lt;T&gt;, ITriggerable&lt;U&gt; where U : Enum</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractState_2__ctor_" data-uid="com.eyerunnman.patterns.AbstractState`2.#ctor*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractState_2__ctor_com_eyerunnman_patterns_AbstractStateMachine__0__1__" data-uid="com.eyerunnman.patterns.AbstractState`2.#ctor(com.eyerunnman.patterns.AbstractStateMachine{`0,`1})">AbstractState(AbstractStateMachine&lt;T, U&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AbstractState(AbstractStateMachine&lt;T, U&gt; stateContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="com.eyerunnman.patterns.AbstractStateMachine-2.html">AbstractStateMachine</a>&lt;T, U&gt;</td>
+        <td><span class="parametername">stateContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractState_2_Context_" data-uid="com.eyerunnman.patterns.AbstractState`2.Context*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractState_2_Context" data-uid="com.eyerunnman.patterns.AbstractState`2.Context">Context</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected T Context { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractState_2_IsRootState_" data-uid="com.eyerunnman.patterns.AbstractState`2.IsRootState*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractState_2_IsRootState" data-uid="com.eyerunnman.patterns.AbstractState`2.IsRootState">IsRootState</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsRootState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractState_2_AddTransition_" data-uid="com.eyerunnman.patterns.AbstractState`2.AddTransition*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractState_2_AddTransition_com_eyerunnman_patterns_AbstractState__0__1___1_" data-uid="com.eyerunnman.patterns.AbstractState`2.AddTransition(com.eyerunnman.patterns.AbstractState{`0,`1},`1)">AddTransition(AbstractState&lt;T, U&gt;, U)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddTransition(AbstractState&lt;T, U&gt; transitionToState, U transitionTriggerEnum)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="com.eyerunnman.patterns.AbstractState-2.html">AbstractState</a>&lt;T, U&gt;</td>
+        <td><span class="parametername">transitionToState</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td><span class="parametername">transitionTriggerEnum</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractState_2_LoadChildState_" data-uid="com.eyerunnman.patterns.AbstractState`2.LoadChildState*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractState_2_LoadChildState_com_eyerunnman_patterns_AbstractState__0__1__" data-uid="com.eyerunnman.patterns.AbstractState`2.LoadChildState(com.eyerunnman.patterns.AbstractState{`0,`1})">LoadChildState(AbstractState&lt;T, U&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void LoadChildState(AbstractState&lt;T, U&gt; childState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="com.eyerunnman.patterns.AbstractState-2.html">AbstractState</a>&lt;T, U&gt;</td>
+        <td><span class="parametername">childState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractState_2_OnEnterState_" data-uid="com.eyerunnman.patterns.AbstractState`2.OnEnterState*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractState_2_OnEnterState" data-uid="com.eyerunnman.patterns.AbstractState`2.OnEnterState">OnEnterState()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnEnterState()</code></pre>
+  </div>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractState_2_OnTrigger_" data-uid="com.eyerunnman.patterns.AbstractState`2.OnTrigger*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractState_2_OnTrigger__1_" data-uid="com.eyerunnman.patterns.AbstractState`2.OnTrigger(`1)">OnTrigger(U)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnTrigger(U triggerEnum)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td><span class="parametername">triggerEnum</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractState_2_OnUpdateState_" data-uid="com.eyerunnman.patterns.AbstractState`2.OnUpdateState*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractState_2_OnUpdateState" data-uid="com.eyerunnman.patterns.AbstractState`2.OnUpdateState">OnUpdateState()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnUpdateState()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="com.eyerunnman.interfaces.IState-1.html">IState&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="com.eyerunnman.patterns.ITriggerable-1.html">ITriggerable&lt;T&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

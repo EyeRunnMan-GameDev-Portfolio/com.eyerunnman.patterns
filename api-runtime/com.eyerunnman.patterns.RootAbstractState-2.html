@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ServiceLocator
+    <title>Class RootAbstractState&lt;T, U&gt;
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ServiceLocator
+    <meta name="title" content="Class RootAbstractState&lt;T, U&gt;
    ">
     <meta name="generator" content="docfx 2.56.7.0">
     
@@ -68,21 +68,47 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="com.eyerunnman.patterns.ServiceLocator">
+            <article class="content wrap" id="_content" data-uid="com.eyerunnman.patterns.RootAbstractState`2">
   
   
-  <h1 id="com_eyerunnman_patterns_ServiceLocator" data-uid="com.eyerunnman.patterns.ServiceLocator" class="text-break">Class ServiceLocator
+  <h1 id="com_eyerunnman_patterns_RootAbstractState_2" data-uid="com.eyerunnman.patterns.RootAbstractState`2" class="text-break">Class RootAbstractState&lt;T, U&gt;
   </h1>
-  <div class="markdown level0 summary"><p>Simple service locator for <a class="xref" href="com.eyerunnman.interfaces.IGameService.html">IGameService</a> instances.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">ServiceLocator</span></div>
+    <div class="level1"><a class="xref" href="com.eyerunnman.patterns.AbstractState-2.html">AbstractState</a>&lt;T, U&gt;</div>
+    <div class="level2"><span class="xref">RootAbstractState&lt;T, U&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="com.eyerunnman.interfaces.IState-1.html">IState</a>&lt;T&gt;</div>
+    <div><a class="xref" href="com.eyerunnman.patterns.ITriggerable-1.html">ITriggerable</a>&lt;U&gt;</div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="com.eyerunnman.patterns.AbstractState-2.html#com_eyerunnman_patterns_AbstractState_2_Context">AbstractState&lt;T, U&gt;.Context</a>
+    </div>
+    <div>
+      <a class="xref" href="com.eyerunnman.patterns.AbstractState-2.html#com_eyerunnman_patterns_AbstractState_2_IsRootState">AbstractState&lt;T, U&gt;.IsRootState</a>
+    </div>
+    <div>
+      <a class="xref" href="com.eyerunnman.patterns.AbstractState-2.html#com_eyerunnman_patterns_AbstractState_2_OnEnterState">AbstractState&lt;T, U&gt;.OnEnterState()</a>
+    </div>
+    <div>
+      <a class="xref" href="com.eyerunnman.patterns.AbstractState-2.html#com_eyerunnman_patterns_AbstractState_2_OnUpdateState">AbstractState&lt;T, U&gt;.OnUpdateState()</a>
+    </div>
+    <div>
+      <a class="xref" href="com.eyerunnman.patterns.AbstractState-2.html#com_eyerunnman_patterns_AbstractState_2_OnTrigger__1_">AbstractState&lt;T, U&gt;.OnTrigger(U)</a>
+    </div>
+    <div>
+      <a class="xref" href="com.eyerunnman.patterns.AbstractState-2.html#com_eyerunnman_patterns_AbstractState_2_LoadChildState_com_eyerunnman_patterns_AbstractState__0__1__">AbstractState&lt;T, U&gt;.LoadChildState(AbstractState&lt;T, U&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="com.eyerunnman.patterns.AbstractState-2.html#com_eyerunnman_patterns_AbstractState_2_AddTransition_com_eyerunnman_patterns_AbstractState__0__1___1_">AbstractState&lt;T, U&gt;.AddTransition(AbstractState&lt;T, U&gt;, U)</a>
+    </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
@@ -107,68 +133,10 @@
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="com.eyerunnman.interfaces.html">com.eyerunnman.patterns</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="com_eyerunnman_patterns_ServiceLocator_syntax">Syntax</h5>
+  <h5 id="com_eyerunnman_patterns_RootAbstractState_2_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ServiceLocator</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class RootAbstractState&lt;T, U&gt; : AbstractState&lt;T, U&gt;, IState&lt;T&gt;, ITriggerable&lt;U&gt; where U : Enum</code></pre>
   </div>
-  <h3 id="properties">Properties
-  </h3>
-  
-  
-  <a id="com_eyerunnman_patterns_ServiceLocator_Current_" data-uid="com.eyerunnman.patterns.ServiceLocator.Current*"></a>
-  <h4 id="com_eyerunnman_patterns_ServiceLocator_Current" data-uid="com.eyerunnman.patterns.ServiceLocator.Current">Current</h4>
-  <div class="markdown level1 summary"><p>Gets the currently active service locator instance.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ServiceLocator Current { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="com.eyerunnman.patterns.ServiceLocator.html">ServiceLocator</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  
-  
-  <a id="com_eyerunnman_patterns_ServiceLocator_Get_" data-uid="com.eyerunnman.patterns.ServiceLocator.Get*"></a>
-  <h4 id="com_eyerunnman_patterns_ServiceLocator_Get__1" data-uid="com.eyerunnman.patterns.ServiceLocator.Get``1">Get&lt;T&gt;()</h4>
-  <div class="markdown level1 summary"><p>Gets the service instance of the given type.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T Get&lt;T&gt;()
-    where T : IGameService</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><p>The service instance.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -180,22 +148,25 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td><p>The type of the service to lookup.</p>
-</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
+  <h3 id="constructors">Constructors
+  </h3>
   
   
-  <a id="com_eyerunnman_patterns_ServiceLocator_Register_" data-uid="com.eyerunnman.patterns.ServiceLocator.Register*"></a>
-  <h4 id="com_eyerunnman_patterns_ServiceLocator_Register__1___0_System_Boolean_" data-uid="com.eyerunnman.patterns.ServiceLocator.Register``1(``0,System.Boolean)">Register&lt;T&gt;(T, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Registers the service with the current service locator.</p>
-</div>
+  <a id="com_eyerunnman_patterns_RootAbstractState_2__ctor_" data-uid="com.eyerunnman.patterns.RootAbstractState`2.#ctor*"></a>
+  <h4 id="com_eyerunnman_patterns_RootAbstractState_2__ctor_com_eyerunnman_patterns_AbstractStateMachine__0__1__" data-uid="com.eyerunnman.patterns.RootAbstractState`2.#ctor(com.eyerunnman.patterns.AbstractStateMachine{`0,`1})">RootAbstractState(AbstractStateMachine&lt;T, U&gt;)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Register&lt;T&gt;(T service, bool overrideService = false)
-    where T : IGameService</code></pre>
+    <pre><code class="lang-csharp hljs">public RootAbstractState(AbstractStateMachine&lt;T, U&gt; stateContext)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -208,45 +179,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">service</span></td>
-        <td><p>service instance.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">overrideService</span></td>
+        <td><a class="xref" href="com.eyerunnman.patterns.AbstractStateMachine-2.html">AbstractStateMachine</a>&lt;T, U&gt;</td>
+        <td><span class="parametername">stateContext</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>Service type.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+  <h3 id="properties">Properties
+  </h3>
   
   
-  <a id="com_eyerunnman_patterns_ServiceLocator_ServiceNotRegisteredException_" data-uid="com.eyerunnman.patterns.ServiceLocator.ServiceNotRegisteredException*"></a>
-  <h4 id="com_eyerunnman_patterns_ServiceLocator_ServiceNotRegisteredException__1" data-uid="com.eyerunnman.patterns.ServiceLocator.ServiceNotRegisteredException``1">ServiceNotRegisteredException&lt;T&gt;()</h4>
+  <a id="com_eyerunnman_patterns_RootAbstractState_2_IsRootState_" data-uid="com.eyerunnman.patterns.RootAbstractState`2.IsRootState*"></a>
+  <h4 id="com_eyerunnman_patterns_RootAbstractState_2_IsRootState" data-uid="com.eyerunnman.patterns.RootAbstractState`2.IsRootState">IsRootState</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Exception ServiceNotRegisteredException&lt;T&gt;()</code></pre>
+    <pre><code class="lang-csharp hljs">protected override bool IsRootState { get; }</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -256,54 +207,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Exception</span></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="com_eyerunnman_patterns_ServiceLocator_Unregister_" data-uid="com.eyerunnman.patterns.ServiceLocator.Unregister*"></a>
-  <h4 id="com_eyerunnman_patterns_ServiceLocator_Unregister__1" data-uid="com.eyerunnman.patterns.ServiceLocator.Unregister``1">Unregister&lt;T&gt;()</h4>
-  <div class="markdown level1 summary"><p>Unregisters the service from the current service locator.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Unregister&lt;T&gt;()
-    where T : IGameService</code></pre>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">com.eyerunnman.patterns.AbstractState&lt;T, U&gt;.IsRootState</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="com.eyerunnman.interfaces.IState-1.html">IState&lt;T&gt;</a>
   </div>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>Service type.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+  <div>
+      <a class="xref" href="com.eyerunnman.patterns.ITriggerable-1.html">ITriggerable&lt;T&gt;</a>
+  </div>
 </article>
           </div>
           
