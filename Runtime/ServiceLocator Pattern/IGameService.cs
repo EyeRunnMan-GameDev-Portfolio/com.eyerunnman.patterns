@@ -4,7 +4,7 @@ using UnityEditor;
 using System.ComponentModel;
 using System.Threading.Tasks;
 
-namespace com.eyerunnman.interfaces
+namespace com.eyerunnman.patterns
 {
     /// <summary>
     /// Base interface for our service locator to work with. Services implementing

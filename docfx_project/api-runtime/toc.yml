@@ -1,21 +1,21 @@
 ### YamlMime:TableOfContent
-- uid: com.eyerunnman.interfaces
-  name: com.eyerunnman.interfaces
-  items:
-  - uid: com.eyerunnman.interfaces.GameService
-    name: GameService
-  - uid: com.eyerunnman.interfaces.ICommand`1
-    name: ICommand<T>
-    name.vb: ICommand(Of T)
-  - uid: com.eyerunnman.interfaces.IGameService
-    name: IGameService
-  - uid: com.eyerunnman.interfaces.IState`1
-    name: IState<T>
-    name.vb: IState(Of T)
-  - uid: com.eyerunnman.interfaces.ServiceState
-    name: ServiceState
 - uid: com.eyerunnman.patterns
   name: com.eyerunnman.patterns
   items:
-  - uid: com.eyerunnman.patterns.ServiceLocator
-    name: ServiceLocator
+    - uid: com.eyerunnman.patterns.GameService
+      name: GameService
+    - uid: com.eyerunnman.patterns.ICommand`1
+      name: ICommand<T>
+      name.vb: ICommand(Of T)
+    - uid: com.eyerunnman.patterns.IGameService
+      name: IGameService
+    - uid: com.eyerunnman.patterns.IState`1
+      name: IState<T>
+      name.vb: IState(Of T)
+    - uid: com.eyerunnman.patterns.ServiceState
+      name: ServiceState
+- uid: com.eyerunnman.patterns
+  name: com.eyerunnman.patterns
+  items:
+    - uid: com.eyerunnman.patterns.ServiceLocator
+      name: ServiceLocator

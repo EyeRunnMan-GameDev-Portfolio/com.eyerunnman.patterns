@@ -1,216 +1,216 @@
 ### YamlMime:ManagedReference
 items:
-- uid: com.eyerunnman.interfaces.ServiceState
-  commentId: T:com.eyerunnman.interfaces.ServiceState
-  id: ServiceState
-  parent: com.eyerunnman.interfaces
-  children:
-  - com.eyerunnman.interfaces.ServiceState.Registered
-  - com.eyerunnman.interfaces.ServiceState.RegisterError
-  - com.eyerunnman.interfaces.ServiceState.Registering
-  - com.eyerunnman.interfaces.ServiceState.Undefined
-  - com.eyerunnman.interfaces.ServiceState.UnRegistered
-  - com.eyerunnman.interfaces.ServiceState.Waiting
-  langs:
-  - csharp
-  - vb
-  name: ServiceState
-  nameWithType: ServiceState
-  fullName: com.eyerunnman.interfaces.ServiceState
-  type: Enum
-  source:
+  - uid: com.eyerunnman.patterns.ServiceState
+    commentId: T:com.eyerunnman.patterns.ServiceState
     id: ServiceState
-    path: ''
-    startLine: 35
-  assemblies:
-  - cs.temp.dll
-  namespace: com.eyerunnman.interfaces
-  syntax:
-    content: public enum ServiceState
-    content.vb: Public Enum ServiceState
-  modifiers.csharp:
-  - public
-  - enum
-  modifiers.vb:
-  - Public
-  - Enum
-- uid: com.eyerunnman.interfaces.ServiceState.Undefined
-  commentId: F:com.eyerunnman.interfaces.ServiceState.Undefined
-  id: Undefined
-  parent: com.eyerunnman.interfaces.ServiceState
-  langs:
-  - csharp
-  - vb
-  name: Undefined
-  nameWithType: ServiceState.Undefined
-  fullName: com.eyerunnman.interfaces.ServiceState.Undefined
-  type: Field
-  source:
+    parent: com.eyerunnman.patterns
+    children:
+      - com.eyerunnman.patterns.ServiceState.Registered
+      - com.eyerunnman.patterns.ServiceState.RegisterError
+      - com.eyerunnman.patterns.ServiceState.Registering
+      - com.eyerunnman.patterns.ServiceState.Undefined
+      - com.eyerunnman.patterns.ServiceState.UnRegistered
+      - com.eyerunnman.patterns.ServiceState.Waiting
+    langs:
+      - csharp
+      - vb
+    name: ServiceState
+    nameWithType: ServiceState
+    fullName: com.eyerunnman.patterns.ServiceState
+    type: Enum
+    source:
+      id: ServiceState
+      path: ""
+      startLine: 35
+    assemblies:
+      - cs.temp.dll
+    namespace: com.eyerunnman.patterns
+    syntax:
+      content: public enum ServiceState
+      content.vb: Public Enum ServiceState
+    modifiers.csharp:
+      - public
+      - enum
+    modifiers.vb:
+      - Public
+      - Enum
+  - uid: com.eyerunnman.patterns.ServiceState.Undefined
+    commentId: F:com.eyerunnman.patterns.ServiceState.Undefined
     id: Undefined
-    path: ''
-    startLine: 38
-  assemblies:
-  - cs.temp.dll
-  namespace: com.eyerunnman.interfaces
-  syntax:
-    content: Undefined = 0
-    return:
-      type: com.eyerunnman.interfaces.ServiceState
-  modifiers.csharp:
-  - public
-  - const
-  modifiers.vb:
-  - Public
-  - Const
-- uid: com.eyerunnman.interfaces.ServiceState.Waiting
-  commentId: F:com.eyerunnman.interfaces.ServiceState.Waiting
-  id: Waiting
-  parent: com.eyerunnman.interfaces.ServiceState
-  langs:
-  - csharp
-  - vb
-  name: Waiting
-  nameWithType: ServiceState.Waiting
-  fullName: com.eyerunnman.interfaces.ServiceState.Waiting
-  type: Field
-  source:
+    parent: com.eyerunnman.patterns.ServiceState
+    langs:
+      - csharp
+      - vb
+    name: Undefined
+    nameWithType: ServiceState.Undefined
+    fullName: com.eyerunnman.patterns.ServiceState.Undefined
+    type: Field
+    source:
+      id: Undefined
+      path: ""
+      startLine: 38
+    assemblies:
+      - cs.temp.dll
+    namespace: com.eyerunnman.patterns
+    syntax:
+      content: Undefined = 0
+      return:
+        type: com.eyerunnman.patterns.ServiceState
+    modifiers.csharp:
+      - public
+      - const
+    modifiers.vb:
+      - Public
+      - Const
+  - uid: com.eyerunnman.patterns.ServiceState.Waiting
+    commentId: F:com.eyerunnman.patterns.ServiceState.Waiting
     id: Waiting
-    path: ''
-    startLine: 39
-  assemblies:
-  - cs.temp.dll
-  namespace: com.eyerunnman.interfaces
-  syntax:
-    content: Waiting = 1
-    return:
-      type: com.eyerunnman.interfaces.ServiceState
-  modifiers.csharp:
-  - public
-  - const
-  modifiers.vb:
-  - Public
-  - Const
-- uid: com.eyerunnman.interfaces.ServiceState.Registering
-  commentId: F:com.eyerunnman.interfaces.ServiceState.Registering
-  id: Registering
-  parent: com.eyerunnman.interfaces.ServiceState
-  langs:
-  - csharp
-  - vb
-  name: Registering
-  nameWithType: ServiceState.Registering
-  fullName: com.eyerunnman.interfaces.ServiceState.Registering
-  type: Field
-  source:
+    parent: com.eyerunnman.patterns.ServiceState
+    langs:
+      - csharp
+      - vb
+    name: Waiting
+    nameWithType: ServiceState.Waiting
+    fullName: com.eyerunnman.patterns.ServiceState.Waiting
+    type: Field
+    source:
+      id: Waiting
+      path: ""
+      startLine: 39
+    assemblies:
+      - cs.temp.dll
+    namespace: com.eyerunnman.patterns
+    syntax:
+      content: Waiting = 1
+      return:
+        type: com.eyerunnman.patterns.ServiceState
+    modifiers.csharp:
+      - public
+      - const
+    modifiers.vb:
+      - Public
+      - Const
+  - uid: com.eyerunnman.patterns.ServiceState.Registering
+    commentId: F:com.eyerunnman.patterns.ServiceState.Registering
     id: Registering
-    path: ''
-    startLine: 40
-  assemblies:
-  - cs.temp.dll
-  namespace: com.eyerunnman.interfaces
-  syntax:
-    content: Registering = 2
-    return:
-      type: com.eyerunnman.interfaces.ServiceState
-  modifiers.csharp:
-  - public
-  - const
-  modifiers.vb:
-  - Public
-  - Const
-- uid: com.eyerunnman.interfaces.ServiceState.Registered
-  commentId: F:com.eyerunnman.interfaces.ServiceState.Registered
-  id: Registered
-  parent: com.eyerunnman.interfaces.ServiceState
-  langs:
-  - csharp
-  - vb
-  name: Registered
-  nameWithType: ServiceState.Registered
-  fullName: com.eyerunnman.interfaces.ServiceState.Registered
-  type: Field
-  source:
+    parent: com.eyerunnman.patterns.ServiceState
+    langs:
+      - csharp
+      - vb
+    name: Registering
+    nameWithType: ServiceState.Registering
+    fullName: com.eyerunnman.patterns.ServiceState.Registering
+    type: Field
+    source:
+      id: Registering
+      path: ""
+      startLine: 40
+    assemblies:
+      - cs.temp.dll
+    namespace: com.eyerunnman.patterns
+    syntax:
+      content: Registering = 2
+      return:
+        type: com.eyerunnman.patterns.ServiceState
+    modifiers.csharp:
+      - public
+      - const
+    modifiers.vb:
+      - Public
+      - Const
+  - uid: com.eyerunnman.patterns.ServiceState.Registered
+    commentId: F:com.eyerunnman.patterns.ServiceState.Registered
     id: Registered
-    path: ''
-    startLine: 41
-  assemblies:
-  - cs.temp.dll
-  namespace: com.eyerunnman.interfaces
-  syntax:
-    content: Registered = 3
-    return:
-      type: com.eyerunnman.interfaces.ServiceState
-  modifiers.csharp:
-  - public
-  - const
-  modifiers.vb:
-  - Public
-  - Const
-- uid: com.eyerunnman.interfaces.ServiceState.UnRegistered
-  commentId: F:com.eyerunnman.interfaces.ServiceState.UnRegistered
-  id: UnRegistered
-  parent: com.eyerunnman.interfaces.ServiceState
-  langs:
-  - csharp
-  - vb
-  name: UnRegistered
-  nameWithType: ServiceState.UnRegistered
-  fullName: com.eyerunnman.interfaces.ServiceState.UnRegistered
-  type: Field
-  source:
+    parent: com.eyerunnman.patterns.ServiceState
+    langs:
+      - csharp
+      - vb
+    name: Registered
+    nameWithType: ServiceState.Registered
+    fullName: com.eyerunnman.patterns.ServiceState.Registered
+    type: Field
+    source:
+      id: Registered
+      path: ""
+      startLine: 41
+    assemblies:
+      - cs.temp.dll
+    namespace: com.eyerunnman.patterns
+    syntax:
+      content: Registered = 3
+      return:
+        type: com.eyerunnman.patterns.ServiceState
+    modifiers.csharp:
+      - public
+      - const
+    modifiers.vb:
+      - Public
+      - Const
+  - uid: com.eyerunnman.patterns.ServiceState.UnRegistered
+    commentId: F:com.eyerunnman.patterns.ServiceState.UnRegistered
     id: UnRegistered
-    path: ''
-    startLine: 42
-  assemblies:
-  - cs.temp.dll
-  namespace: com.eyerunnman.interfaces
-  syntax:
-    content: UnRegistered = 4
-    return:
-      type: com.eyerunnman.interfaces.ServiceState
-  modifiers.csharp:
-  - public
-  - const
-  modifiers.vb:
-  - Public
-  - Const
-- uid: com.eyerunnman.interfaces.ServiceState.RegisterError
-  commentId: F:com.eyerunnman.interfaces.ServiceState.RegisterError
-  id: RegisterError
-  parent: com.eyerunnman.interfaces.ServiceState
-  langs:
-  - csharp
-  - vb
-  name: RegisterError
-  nameWithType: ServiceState.RegisterError
-  fullName: com.eyerunnman.interfaces.ServiceState.RegisterError
-  type: Field
-  source:
+    parent: com.eyerunnman.patterns.ServiceState
+    langs:
+      - csharp
+      - vb
+    name: UnRegistered
+    nameWithType: ServiceState.UnRegistered
+    fullName: com.eyerunnman.patterns.ServiceState.UnRegistered
+    type: Field
+    source:
+      id: UnRegistered
+      path: ""
+      startLine: 42
+    assemblies:
+      - cs.temp.dll
+    namespace: com.eyerunnman.patterns
+    syntax:
+      content: UnRegistered = 4
+      return:
+        type: com.eyerunnman.patterns.ServiceState
+    modifiers.csharp:
+      - public
+      - const
+    modifiers.vb:
+      - Public
+      - Const
+  - uid: com.eyerunnman.patterns.ServiceState.RegisterError
+    commentId: F:com.eyerunnman.patterns.ServiceState.RegisterError
     id: RegisterError
-    path: ''
-    startLine: 43
-  assemblies:
-  - cs.temp.dll
-  namespace: com.eyerunnman.interfaces
-  syntax:
-    content: RegisterError = 5
-    return:
-      type: com.eyerunnman.interfaces.ServiceState
-  modifiers.csharp:
-  - public
-  - const
-  modifiers.vb:
-  - Public
-  - Const
+    parent: com.eyerunnman.patterns.ServiceState
+    langs:
+      - csharp
+      - vb
+    name: RegisterError
+    nameWithType: ServiceState.RegisterError
+    fullName: com.eyerunnman.patterns.ServiceState.RegisterError
+    type: Field
+    source:
+      id: RegisterError
+      path: ""
+      startLine: 43
+    assemblies:
+      - cs.temp.dll
+    namespace: com.eyerunnman.patterns
+    syntax:
+      content: RegisterError = 5
+      return:
+        type: com.eyerunnman.patterns.ServiceState
+    modifiers.csharp:
+      - public
+      - const
+    modifiers.vb:
+      - Public
+      - Const
 references:
-- uid: com.eyerunnman.interfaces
-  commentId: N:com.eyerunnman.interfaces
-  name: com.eyerunnman.interfaces
-  nameWithType: com.eyerunnman.interfaces
-  fullName: com.eyerunnman.interfaces
-- uid: com.eyerunnman.interfaces.ServiceState
-  commentId: T:com.eyerunnman.interfaces.ServiceState
-  parent: com.eyerunnman.interfaces
-  name: ServiceState
-  nameWithType: ServiceState
-  fullName: com.eyerunnman.interfaces.ServiceState
+  - uid: com.eyerunnman.patterns
+    commentId: N:com.eyerunnman.patterns
+    name: com.eyerunnman.patterns
+    nameWithType: com.eyerunnman.patterns
+    fullName: com.eyerunnman.patterns
+  - uid: com.eyerunnman.patterns.ServiceState
+    commentId: T:com.eyerunnman.patterns.ServiceState
+    parent: com.eyerunnman.patterns
+    name: ServiceState
+    nameWithType: ServiceState
+    fullName: com.eyerunnman.patterns.ServiceState

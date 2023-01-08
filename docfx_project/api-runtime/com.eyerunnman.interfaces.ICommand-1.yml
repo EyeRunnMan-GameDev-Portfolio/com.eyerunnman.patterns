@@ -1,86 +1,86 @@
 ### YamlMime:ManagedReference
 items:
-- uid: com.eyerunnman.interfaces.ICommand`1
-  commentId: T:com.eyerunnman.interfaces.ICommand`1
-  id: ICommand`1
-  parent: com.eyerunnman.interfaces
-  children:
-  - com.eyerunnman.interfaces.ICommand`1.Execute(`0)
-  langs:
-  - csharp
-  - vb
-  name: ICommand<T>
-  nameWithType: ICommand<T>
-  fullName: com.eyerunnman.interfaces.ICommand<T>
-  type: Interface
-  source:
-    id: ICommand
-    path: ''
-    startLine: 6
-  assemblies:
-  - cs.temp.dll
-  namespace: com.eyerunnman.interfaces
-  syntax:
-    content: public interface ICommand<T>
-    typeParameters:
-    - id: T
-    content.vb: Public Interface ICommand(Of T)
-  nameWithType.vb: ICommand(Of T)
-  modifiers.csharp:
-  - public
-  - interface
-  modifiers.vb:
-  - Public
-  - Interface
-  fullName.vb: com.eyerunnman.interfaces.ICommand(Of T)
-  name.vb: ICommand(Of T)
-- uid: com.eyerunnman.interfaces.ICommand`1.Execute(`0)
-  commentId: M:com.eyerunnman.interfaces.ICommand`1.Execute(`0)
-  id: Execute(`0)
-  parent: com.eyerunnman.interfaces.ICommand`1
-  langs:
-  - csharp
-  - vb
-  name: Execute(T)
-  nameWithType: ICommand<T>.Execute(T)
-  fullName: com.eyerunnman.interfaces.ICommand<T>.Execute(T)
-  type: Method
-  source:
-    id: Execute
-    path: ''
-    startLine: 8
-  assemblies:
-  - cs.temp.dll
-  namespace: com.eyerunnman.interfaces
-  syntax:
-    content: void Execute(T context)
-    parameters:
-    - id: context
-      type: '{T}'
-    content.vb: Sub Execute(context As T)
-  overload: com.eyerunnman.interfaces.ICommand`1.Execute*
-  nameWithType.vb: ICommand(Of T).Execute(T)
-  fullName.vb: com.eyerunnman.interfaces.ICommand(Of T).Execute(T)
+  - uid: com.eyerunnman.patterns.ICommand`1
+    commentId: T:com.eyerunnman.patterns.ICommand`1
+    id: ICommand`1
+    parent: com.eyerunnman.patterns
+    children:
+      - com.eyerunnman.patterns.ICommand`1.Execute(`0)
+    langs:
+      - csharp
+      - vb
+    name: ICommand<T>
+    nameWithType: ICommand<T>
+    fullName: com.eyerunnman.patterns.ICommand<T>
+    type: Interface
+    source:
+      id: ICommand
+      path: ""
+      startLine: 6
+    assemblies:
+      - cs.temp.dll
+    namespace: com.eyerunnman.patterns
+    syntax:
+      content: public interface ICommand<T>
+      typeParameters:
+        - id: T
+      content.vb: Public Interface ICommand(Of T)
+    nameWithType.vb: ICommand(Of T)
+    modifiers.csharp:
+      - public
+      - interface
+    modifiers.vb:
+      - Public
+      - Interface
+    fullName.vb: com.eyerunnman.patterns.ICommand(Of T)
+    name.vb: ICommand(Of T)
+  - uid: com.eyerunnman.patterns.ICommand`1.Execute(`0)
+    commentId: M:com.eyerunnman.patterns.ICommand`1.Execute(`0)
+    id: Execute(`0)
+    parent: com.eyerunnman.patterns.ICommand`1
+    langs:
+      - csharp
+      - vb
+    name: Execute(T)
+    nameWithType: ICommand<T>.Execute(T)
+    fullName: com.eyerunnman.patterns.ICommand<T>.Execute(T)
+    type: Method
+    source:
+      id: Execute
+      path: ""
+      startLine: 8
+    assemblies:
+      - cs.temp.dll
+    namespace: com.eyerunnman.patterns
+    syntax:
+      content: void Execute(T context)
+      parameters:
+        - id: context
+          type: "{T}"
+      content.vb: Sub Execute(context As T)
+    overload: com.eyerunnman.patterns.ICommand`1.Execute*
+    nameWithType.vb: ICommand(Of T).Execute(T)
+    fullName.vb: com.eyerunnman.patterns.ICommand(Of T).Execute(T)
 references:
-- uid: com.eyerunnman.interfaces
-  commentId: N:com.eyerunnman.interfaces
-  name: com.eyerunnman.interfaces
-  nameWithType: com.eyerunnman.interfaces
-  fullName: com.eyerunnman.interfaces
-- uid: com.eyerunnman.interfaces.ICommand`1.Execute*
-  commentId: Overload:com.eyerunnman.interfaces.ICommand`1.Execute
-  name: Execute
-  nameWithType: ICommand<T>.Execute
-  fullName: com.eyerunnman.interfaces.ICommand<T>.Execute
-  nameWithType.vb: ICommand(Of T).Execute
-  fullName.vb: com.eyerunnman.interfaces.ICommand(Of T).Execute
-- uid: '{T}'
-  commentId: '!:T'
-  definition: T
-  name: T
-  nameWithType: T
-  fullName: T
-- uid: T
-  name: T
-  nameWithType: T
-  fullName: T
+  - uid: com.eyerunnman.patterns
+    commentId: N:com.eyerunnman.patterns
+    name: com.eyerunnman.patterns
+    nameWithType: com.eyerunnman.patterns
+    fullName: com.eyerunnman.patterns
+  - uid: com.eyerunnman.patterns.ICommand`1.Execute*
+    commentId: Overload:com.eyerunnman.patterns.ICommand`1.Execute
+    name: Execute
+    nameWithType: ICommand<T>.Execute
+    fullName: com.eyerunnman.patterns.ICommand<T>.Execute
+    nameWithType.vb: ICommand(Of T).Execute
+    fullName.vb: com.eyerunnman.patterns.ICommand(Of T).Execute
+  - uid: "{T}"
+    commentId: "!:T"
+    definition: T
+    name: T
+    nameWithType: T
+    fullName: T
+  - uid: T
+    name: T
+    nameWithType: T
+    fullName: T

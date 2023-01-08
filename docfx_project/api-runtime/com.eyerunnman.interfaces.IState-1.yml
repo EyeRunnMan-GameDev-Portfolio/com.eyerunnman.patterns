@@ -1,231 +1,231 @@
 ### YamlMime:ManagedReference
 items:
-- uid: com.eyerunnman.interfaces.IState`1
-  commentId: T:com.eyerunnman.interfaces.IState`1
-  id: IState`1
-  parent: com.eyerunnman.interfaces
-  children:
-  - com.eyerunnman.interfaces.IState`1.OnEnterState(`0)
-  - com.eyerunnman.interfaces.IState`1.OnExitState(`0)
-  - com.eyerunnman.interfaces.IState`1.OnUpdateState(`0)
-  - com.eyerunnman.interfaces.IState`1.SwitchState(`0,com.eyerunnman.interfaces.IState{`0})
-  langs:
-  - csharp
-  - vb
-  name: IState<T>
-  nameWithType: IState<T>
-  fullName: com.eyerunnman.interfaces.IState<T>
-  type: Interface
-  source:
-    id: IState
-    path: ''
-    startLine: 207
-  assemblies:
-  - cs.temp.dll
-  namespace: com.eyerunnman.interfaces
-  syntax:
-    content: public interface IState<T>
-    typeParameters:
-    - id: T
-    content.vb: Public Interface IState(Of T)
-  nameWithType.vb: IState(Of T)
-  modifiers.csharp:
-  - public
-  - interface
-  modifiers.vb:
-  - Public
-  - Interface
-  fullName.vb: com.eyerunnman.interfaces.IState(Of T)
-  name.vb: IState(Of T)
-- uid: com.eyerunnman.interfaces.IState`1.OnEnterState(`0)
-  commentId: M:com.eyerunnman.interfaces.IState`1.OnEnterState(`0)
-  id: OnEnterState(`0)
-  parent: com.eyerunnman.interfaces.IState`1
-  langs:
-  - csharp
-  - vb
-  name: OnEnterState(T)
-  nameWithType: IState<T>.OnEnterState(T)
-  fullName: com.eyerunnman.interfaces.IState<T>.OnEnterState(T)
-  type: Method
-  source:
-    id: OnEnterState
-    path: ''
-    startLine: 209
-  assemblies:
-  - cs.temp.dll
-  namespace: com.eyerunnman.interfaces
-  syntax:
-    content: void OnEnterState(T context)
-    parameters:
-    - id: context
-      type: '{T}'
-    content.vb: Sub OnEnterState(context As T)
-  overload: com.eyerunnman.interfaces.IState`1.OnEnterState*
-  nameWithType.vb: IState(Of T).OnEnterState(T)
-  fullName.vb: com.eyerunnman.interfaces.IState(Of T).OnEnterState(T)
-- uid: com.eyerunnman.interfaces.IState`1.OnUpdateState(`0)
-  commentId: M:com.eyerunnman.interfaces.IState`1.OnUpdateState(`0)
-  id: OnUpdateState(`0)
-  parent: com.eyerunnman.interfaces.IState`1
-  langs:
-  - csharp
-  - vb
-  name: OnUpdateState(T)
-  nameWithType: IState<T>.OnUpdateState(T)
-  fullName: com.eyerunnman.interfaces.IState<T>.OnUpdateState(T)
-  type: Method
-  source:
-    id: OnUpdateState
-    path: ''
-    startLine: 210
-  assemblies:
-  - cs.temp.dll
-  namespace: com.eyerunnman.interfaces
-  syntax:
-    content: void OnUpdateState(T context)
-    parameters:
-    - id: context
-      type: '{T}'
-    content.vb: Sub OnUpdateState(context As T)
-  overload: com.eyerunnman.interfaces.IState`1.OnUpdateState*
-  nameWithType.vb: IState(Of T).OnUpdateState(T)
-  fullName.vb: com.eyerunnman.interfaces.IState(Of T).OnUpdateState(T)
-- uid: com.eyerunnman.interfaces.IState`1.OnExitState(`0)
-  commentId: M:com.eyerunnman.interfaces.IState`1.OnExitState(`0)
-  id: OnExitState(`0)
-  parent: com.eyerunnman.interfaces.IState`1
-  langs:
-  - csharp
-  - vb
-  name: OnExitState(T)
-  nameWithType: IState<T>.OnExitState(T)
-  fullName: com.eyerunnman.interfaces.IState<T>.OnExitState(T)
-  type: Method
-  source:
-    id: OnExitState
-    path: ''
-    startLine: 211
-  assemblies:
-  - cs.temp.dll
-  namespace: com.eyerunnman.interfaces
-  syntax:
-    content: void OnExitState(T context)
-    parameters:
-    - id: context
-      type: '{T}'
-    content.vb: Sub OnExitState(context As T)
-  overload: com.eyerunnman.interfaces.IState`1.OnExitState*
-  nameWithType.vb: IState(Of T).OnExitState(T)
-  fullName.vb: com.eyerunnman.interfaces.IState(Of T).OnExitState(T)
-- uid: com.eyerunnman.interfaces.IState`1.SwitchState(`0,com.eyerunnman.interfaces.IState{`0})
-  commentId: M:com.eyerunnman.interfaces.IState`1.SwitchState(`0,com.eyerunnman.interfaces.IState{`0})
-  id: SwitchState(`0,com.eyerunnman.interfaces.IState{`0})
-  parent: com.eyerunnman.interfaces.IState`1
-  langs:
-  - csharp
-  - vb
-  name: SwitchState(T, IState<T>)
-  nameWithType: IState<T>.SwitchState(T, IState<T>)
-  fullName: com.eyerunnman.interfaces.IState<T>.SwitchState(T, com.eyerunnman.interfaces.IState<T>)
-  type: Method
-  source:
-    id: SwitchState
-    path: ''
-    startLine: 212
-  assemblies:
-  - cs.temp.dll
-  namespace: com.eyerunnman.interfaces
-  syntax:
-    content: void SwitchState(T context, IState<T> state)
-    parameters:
-    - id: context
-      type: '{T}'
-    - id: state
-      type: com.eyerunnman.interfaces.IState`1
-    content.vb: Sub SwitchState(context As T, state As IState(Of T))
-  overload: com.eyerunnman.interfaces.IState`1.SwitchState*
-  nameWithType.vb: IState(Of T).SwitchState(T, IState(Of T))
-  fullName.vb: com.eyerunnman.interfaces.IState(Of T).SwitchState(T, com.eyerunnman.interfaces.IState(Of T))
-  name.vb: SwitchState(T, IState(Of T))
+  - uid: com.eyerunnman.patterns.IState`1
+    commentId: T:com.eyerunnman.patterns.IState`1
+    id: IState`1
+    parent: com.eyerunnman.patterns
+    children:
+      - com.eyerunnman.patterns.IState`1.OnEnterState(`0)
+      - com.eyerunnman.patterns.IState`1.OnExitState(`0)
+      - com.eyerunnman.patterns.IState`1.OnUpdateState(`0)
+      - com.eyerunnman.patterns.IState`1.SwitchState(`0,com.eyerunnman.patterns.IState{`0})
+    langs:
+      - csharp
+      - vb
+    name: IState<T>
+    nameWithType: IState<T>
+    fullName: com.eyerunnman.patterns.IState<T>
+    type: Interface
+    source:
+      id: IState
+      path: ""
+      startLine: 207
+    assemblies:
+      - cs.temp.dll
+    namespace: com.eyerunnman.patterns
+    syntax:
+      content: public interface IState<T>
+      typeParameters:
+        - id: T
+      content.vb: Public Interface IState(Of T)
+    nameWithType.vb: IState(Of T)
+    modifiers.csharp:
+      - public
+      - interface
+    modifiers.vb:
+      - Public
+      - Interface
+    fullName.vb: com.eyerunnman.patterns.IState(Of T)
+    name.vb: IState(Of T)
+  - uid: com.eyerunnman.patterns.IState`1.OnEnterState(`0)
+    commentId: M:com.eyerunnman.patterns.IState`1.OnEnterState(`0)
+    id: OnEnterState(`0)
+    parent: com.eyerunnman.patterns.IState`1
+    langs:
+      - csharp
+      - vb
+    name: OnEnterState(T)
+    nameWithType: IState<T>.OnEnterState(T)
+    fullName: com.eyerunnman.patterns.IState<T>.OnEnterState(T)
+    type: Method
+    source:
+      id: OnEnterState
+      path: ""
+      startLine: 209
+    assemblies:
+      - cs.temp.dll
+    namespace: com.eyerunnman.patterns
+    syntax:
+      content: void OnEnterState(T context)
+      parameters:
+        - id: context
+          type: "{T}"
+      content.vb: Sub OnEnterState(context As T)
+    overload: com.eyerunnman.patterns.IState`1.OnEnterState*
+    nameWithType.vb: IState(Of T).OnEnterState(T)
+    fullName.vb: com.eyerunnman.patterns.IState(Of T).OnEnterState(T)
+  - uid: com.eyerunnman.patterns.IState`1.OnUpdateState(`0)
+    commentId: M:com.eyerunnman.patterns.IState`1.OnUpdateState(`0)
+    id: OnUpdateState(`0)
+    parent: com.eyerunnman.patterns.IState`1
+    langs:
+      - csharp
+      - vb
+    name: OnUpdateState(T)
+    nameWithType: IState<T>.OnUpdateState(T)
+    fullName: com.eyerunnman.patterns.IState<T>.OnUpdateState(T)
+    type: Method
+    source:
+      id: OnUpdateState
+      path: ""
+      startLine: 210
+    assemblies:
+      - cs.temp.dll
+    namespace: com.eyerunnman.patterns
+    syntax:
+      content: void OnUpdateState(T context)
+      parameters:
+        - id: context
+          type: "{T}"
+      content.vb: Sub OnUpdateState(context As T)
+    overload: com.eyerunnman.patterns.IState`1.OnUpdateState*
+    nameWithType.vb: IState(Of T).OnUpdateState(T)
+    fullName.vb: com.eyerunnman.patterns.IState(Of T).OnUpdateState(T)
+  - uid: com.eyerunnman.patterns.IState`1.OnExitState(`0)
+    commentId: M:com.eyerunnman.patterns.IState`1.OnExitState(`0)
+    id: OnExitState(`0)
+    parent: com.eyerunnman.patterns.IState`1
+    langs:
+      - csharp
+      - vb
+    name: OnExitState(T)
+    nameWithType: IState<T>.OnExitState(T)
+    fullName: com.eyerunnman.patterns.IState<T>.OnExitState(T)
+    type: Method
+    source:
+      id: OnExitState
+      path: ""
+      startLine: 211
+    assemblies:
+      - cs.temp.dll
+    namespace: com.eyerunnman.patterns
+    syntax:
+      content: void OnExitState(T context)
+      parameters:
+        - id: context
+          type: "{T}"
+      content.vb: Sub OnExitState(context As T)
+    overload: com.eyerunnman.patterns.IState`1.OnExitState*
+    nameWithType.vb: IState(Of T).OnExitState(T)
+    fullName.vb: com.eyerunnman.patterns.IState(Of T).OnExitState(T)
+  - uid: com.eyerunnman.patterns.IState`1.SwitchState(`0,com.eyerunnman.patterns.IState{`0})
+    commentId: M:com.eyerunnman.patterns.IState`1.SwitchState(`0,com.eyerunnman.patterns.IState{`0})
+    id: SwitchState(`0,com.eyerunnman.patterns.IState{`0})
+    parent: com.eyerunnman.patterns.IState`1
+    langs:
+      - csharp
+      - vb
+    name: SwitchState(T, IState<T>)
+    nameWithType: IState<T>.SwitchState(T, IState<T>)
+    fullName: com.eyerunnman.patterns.IState<T>.SwitchState(T, com.eyerunnman.patterns.IState<T>)
+    type: Method
+    source:
+      id: SwitchState
+      path: ""
+      startLine: 212
+    assemblies:
+      - cs.temp.dll
+    namespace: com.eyerunnman.patterns
+    syntax:
+      content: void SwitchState(T context, IState<T> state)
+      parameters:
+        - id: context
+          type: "{T}"
+        - id: state
+          type: com.eyerunnman.patterns.IState`1
+      content.vb: Sub SwitchState(context As T, state As IState(Of T))
+    overload: com.eyerunnman.patterns.IState`1.SwitchState*
+    nameWithType.vb: IState(Of T).SwitchState(T, IState(Of T))
+    fullName.vb: com.eyerunnman.patterns.IState(Of T).SwitchState(T, com.eyerunnman.patterns.IState(Of T))
+    name.vb: SwitchState(T, IState(Of T))
 references:
-- uid: com.eyerunnman.interfaces
-  commentId: N:com.eyerunnman.interfaces
-  name: com.eyerunnman.interfaces
-  nameWithType: com.eyerunnman.interfaces
-  fullName: com.eyerunnman.interfaces
-- uid: com.eyerunnman.interfaces.IState`1.OnEnterState*
-  commentId: Overload:com.eyerunnman.interfaces.IState`1.OnEnterState
-  name: OnEnterState
-  nameWithType: IState<T>.OnEnterState
-  fullName: com.eyerunnman.interfaces.IState<T>.OnEnterState
-  nameWithType.vb: IState(Of T).OnEnterState
-  fullName.vb: com.eyerunnman.interfaces.IState(Of T).OnEnterState
-- uid: '{T}'
-  commentId: '!:T'
-  definition: T
-  name: T
-  nameWithType: T
-  fullName: T
-- uid: T
-  name: T
-  nameWithType: T
-  fullName: T
-- uid: com.eyerunnman.interfaces.IState`1.OnUpdateState*
-  commentId: Overload:com.eyerunnman.interfaces.IState`1.OnUpdateState
-  name: OnUpdateState
-  nameWithType: IState<T>.OnUpdateState
-  fullName: com.eyerunnman.interfaces.IState<T>.OnUpdateState
-  nameWithType.vb: IState(Of T).OnUpdateState
-  fullName.vb: com.eyerunnman.interfaces.IState(Of T).OnUpdateState
-- uid: com.eyerunnman.interfaces.IState`1.OnExitState*
-  commentId: Overload:com.eyerunnman.interfaces.IState`1.OnExitState
-  name: OnExitState
-  nameWithType: IState<T>.OnExitState
-  fullName: com.eyerunnman.interfaces.IState<T>.OnExitState
-  nameWithType.vb: IState(Of T).OnExitState
-  fullName.vb: com.eyerunnman.interfaces.IState(Of T).OnExitState
-- uid: com.eyerunnman.interfaces.IState`1.SwitchState*
-  commentId: Overload:com.eyerunnman.interfaces.IState`1.SwitchState
-  name: SwitchState
-  nameWithType: IState<T>.SwitchState
-  fullName: com.eyerunnman.interfaces.IState<T>.SwitchState
-  nameWithType.vb: IState(Of T).SwitchState
-  fullName.vb: com.eyerunnman.interfaces.IState(Of T).SwitchState
-- uid: com.eyerunnman.interfaces.IState`1
-  commentId: T:com.eyerunnman.interfaces.IState`1
-  parent: com.eyerunnman.interfaces
-  name: IState<T>
-  nameWithType: IState<T>
-  fullName: com.eyerunnman.interfaces.IState<T>
-  nameWithType.vb: IState(Of T)
-  fullName.vb: com.eyerunnman.interfaces.IState(Of T)
-  name.vb: IState(Of T)
-  spec.csharp:
-  - uid: com.eyerunnman.interfaces.IState`1
-    name: IState
-    nameWithType: IState
-    fullName: com.eyerunnman.interfaces.IState
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: T
+  - uid: com.eyerunnman.patterns
+    commentId: N:com.eyerunnman.patterns
+    name: com.eyerunnman.patterns
+    nameWithType: com.eyerunnman.patterns
+    fullName: com.eyerunnman.patterns
+  - uid: com.eyerunnman.patterns.IState`1.OnEnterState*
+    commentId: Overload:com.eyerunnman.patterns.IState`1.OnEnterState
+    name: OnEnterState
+    nameWithType: IState<T>.OnEnterState
+    fullName: com.eyerunnman.patterns.IState<T>.OnEnterState
+    nameWithType.vb: IState(Of T).OnEnterState
+    fullName.vb: com.eyerunnman.patterns.IState(Of T).OnEnterState
+  - uid: "{T}"
+    commentId: "!:T"
+    definition: T
+    name: T
     nameWithType: T
     fullName: T
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: com.eyerunnman.interfaces.IState`1
-    name: IState
-    nameWithType: IState
-    fullName: com.eyerunnman.interfaces.IState
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: T
+  - uid: T
+    name: T
     nameWithType: T
     fullName: T
-  - name: )
-    nameWithType: )
-    fullName: )
+  - uid: com.eyerunnman.patterns.IState`1.OnUpdateState*
+    commentId: Overload:com.eyerunnman.patterns.IState`1.OnUpdateState
+    name: OnUpdateState
+    nameWithType: IState<T>.OnUpdateState
+    fullName: com.eyerunnman.patterns.IState<T>.OnUpdateState
+    nameWithType.vb: IState(Of T).OnUpdateState
+    fullName.vb: com.eyerunnman.patterns.IState(Of T).OnUpdateState
+  - uid: com.eyerunnman.patterns.IState`1.OnExitState*
+    commentId: Overload:com.eyerunnman.patterns.IState`1.OnExitState
+    name: OnExitState
+    nameWithType: IState<T>.OnExitState
+    fullName: com.eyerunnman.patterns.IState<T>.OnExitState
+    nameWithType.vb: IState(Of T).OnExitState
+    fullName.vb: com.eyerunnman.patterns.IState(Of T).OnExitState
+  - uid: com.eyerunnman.patterns.IState`1.SwitchState*
+    commentId: Overload:com.eyerunnman.patterns.IState`1.SwitchState
+    name: SwitchState
+    nameWithType: IState<T>.SwitchState
+    fullName: com.eyerunnman.patterns.IState<T>.SwitchState
+    nameWithType.vb: IState(Of T).SwitchState
+    fullName.vb: com.eyerunnman.patterns.IState(Of T).SwitchState
+  - uid: com.eyerunnman.patterns.IState`1
+    commentId: T:com.eyerunnman.patterns.IState`1
+    parent: com.eyerunnman.patterns
+    name: IState<T>
+    nameWithType: IState<T>
+    fullName: com.eyerunnman.patterns.IState<T>
+    nameWithType.vb: IState(Of T)
+    fullName.vb: com.eyerunnman.patterns.IState(Of T)
+    name.vb: IState(Of T)
+    spec.csharp:
+      - uid: com.eyerunnman.patterns.IState`1
+        name: IState
+        nameWithType: IState
+        fullName: com.eyerunnman.patterns.IState
+      - name: <
+        nameWithType: <
+        fullName: <
+      - name: T
+        nameWithType: T
+        fullName: T
+      - name: ">"
+        nameWithType: ">"
+        fullName: ">"
+    spec.vb:
+      - uid: com.eyerunnman.patterns.IState`1
+        name: IState
+        nameWithType: IState
+        fullName: com.eyerunnman.patterns.IState
+      - name: "(Of "
+        nameWithType: "(Of "
+        fullName: "(Of "
+      - name: T
+        nameWithType: T
+        fullName: T
+      - name: )
+        nameWithType: )
+        fullName: )

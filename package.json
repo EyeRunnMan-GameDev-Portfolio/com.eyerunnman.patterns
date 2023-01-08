@@ -1,30 +1,30 @@
 {
-  "name": "com.eyerunnman.interfaces",
+  "name": "com.eyerunnman.patterns",
   "version": "1.0.1",
-  "displayName": "Interfaces Package",
-  "description": "A package containing various interfaces to be used in unity projects",
+  "displayName": "Patterns Package",
+  "description": "A package containing various patterns to be used in unity projects",
   "unity": "2019.1",
   "unityRelease": "6f1",
-  "documentationUrl": "https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.interfaces#readme",
-  "changelogUrl": "https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.interfaces/blob/main/CHANGELOG.md",
-  "licensesUrl": "https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.interfaces/blob/main/LICENSE.md",
+  "documentationUrl": "https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.patterns#readme",
+  "changelogUrl": "https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.patterns/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.patterns/blob/main/LICENSE.md",
   "hideInEditor": false,
   "scripts": {
     "test": "exit 0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.interfaces.git"
+    "url": "git+https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.patterns.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.interfaces/issues"
+    "url": "https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.patterns/issues"
   },
-  "homepage": "https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.interfaces",
+  "homepage": "https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.patterns",
   "author": "eyerunnman",
   "keywords": [
     "unity",
-    "interfaces",
+    "patterns",
     "game development"
   ]
 }

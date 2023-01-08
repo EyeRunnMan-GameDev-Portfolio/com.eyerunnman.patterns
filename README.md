@@ -1,10 +1,10 @@
-# Interfaces Package
+# patterns Package
 
 fasdf
 
-A package containing various interfaces to be used in unity projects.
+A package containing various patterns to be used in unity projects.
 
-Package can be accessed at https://www.npmjs.com/package/com.eyerunnman.interfaces
+Package can be accessed at https://www.npmjs.com/package/com.eyerunnman.patterns
 
 ## 🔗 Links
 

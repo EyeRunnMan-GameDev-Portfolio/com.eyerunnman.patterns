@@ -1,224 +1,224 @@
 ### YamlMime:ManagedReference
 items:
-- uid: com.eyerunnman.interfaces.IGameService
-  commentId: T:com.eyerunnman.interfaces.IGameService
-  id: IGameService
-  parent: com.eyerunnman.interfaces
-  children:
-  - com.eyerunnman.interfaces.IGameService.Initialize(System.Boolean)
-  - com.eyerunnman.interfaces.IGameService.OnRegister
-  - com.eyerunnman.interfaces.IGameService.OnRegisterError(System.String)
-  - com.eyerunnman.interfaces.IGameService.OnUnRegister
-  - com.eyerunnman.interfaces.IGameService.ServiceState
-  langs:
-  - csharp
-  - vb
-  name: IGameService
-  nameWithType: IGameService
-  fullName: com.eyerunnman.interfaces.IGameService
-  type: Interface
-  source:
+  - uid: com.eyerunnman.patterns.IGameService
+    commentId: T:com.eyerunnman.patterns.IGameService
     id: IGameService
-    path: ''
-    startLine: 25
-  assemblies:
-  - cs.temp.dll
-  namespace: com.eyerunnman.interfaces
-  summary: "\nBase interface for our service locator to work with. Services implementing\nthis interface will be retrievable using the locator.\n"
-  example: []
-  syntax:
-    content: public interface IGameService
-    content.vb: Public Interface IGameService
-  modifiers.csharp:
-  - public
-  - interface
-  modifiers.vb:
-  - Public
-  - Interface
-- uid: com.eyerunnman.interfaces.IGameService.OnRegister
-  commentId: M:com.eyerunnman.interfaces.IGameService.OnRegister
-  id: OnRegister
-  parent: com.eyerunnman.interfaces.IGameService
-  langs:
-  - csharp
-  - vb
-  name: OnRegister()
-  nameWithType: IGameService.OnRegister()
-  fullName: com.eyerunnman.interfaces.IGameService.OnRegister()
-  type: Method
-  source:
+    parent: com.eyerunnman.patterns
+    children:
+      - com.eyerunnman.patterns.IGameService.Initialize(System.Boolean)
+      - com.eyerunnman.patterns.IGameService.OnRegister
+      - com.eyerunnman.patterns.IGameService.OnRegisterError(System.String)
+      - com.eyerunnman.patterns.IGameService.OnUnRegister
+      - com.eyerunnman.patterns.IGameService.ServiceState
+    langs:
+      - csharp
+      - vb
+    name: IGameService
+    nameWithType: IGameService
+    fullName: com.eyerunnman.patterns.IGameService
+    type: Interface
+    source:
+      id: IGameService
+      path: ""
+      startLine: 25
+    assemblies:
+      - cs.temp.dll
+    namespace: com.eyerunnman.patterns
+    summary: "\nBase interface for our service locator to work with. Services implementing\nthis interface will be retrievable using the locator.\n"
+    example: []
+    syntax:
+      content: public interface IGameService
+      content.vb: Public Interface IGameService
+    modifiers.csharp:
+      - public
+      - interface
+    modifiers.vb:
+      - Public
+      - Interface
+  - uid: com.eyerunnman.patterns.IGameService.OnRegister
+    commentId: M:com.eyerunnman.patterns.IGameService.OnRegister
     id: OnRegister
-    path: ''
-    startLine: 27
-  assemblies:
-  - cs.temp.dll
-  namespace: com.eyerunnman.interfaces
-  syntax:
-    content: void OnRegister()
-    content.vb: Sub OnRegister
-  overload: com.eyerunnman.interfaces.IGameService.OnRegister*
-- uid: com.eyerunnman.interfaces.IGameService.OnUnRegister
-  commentId: M:com.eyerunnman.interfaces.IGameService.OnUnRegister
-  id: OnUnRegister
-  parent: com.eyerunnman.interfaces.IGameService
-  langs:
-  - csharp
-  - vb
-  name: OnUnRegister()
-  nameWithType: IGameService.OnUnRegister()
-  fullName: com.eyerunnman.interfaces.IGameService.OnUnRegister()
-  type: Method
-  source:
+    parent: com.eyerunnman.patterns.IGameService
+    langs:
+      - csharp
+      - vb
+    name: OnRegister()
+    nameWithType: IGameService.OnRegister()
+    fullName: com.eyerunnman.patterns.IGameService.OnRegister()
+    type: Method
+    source:
+      id: OnRegister
+      path: ""
+      startLine: 27
+    assemblies:
+      - cs.temp.dll
+    namespace: com.eyerunnman.patterns
+    syntax:
+      content: void OnRegister()
+      content.vb: Sub OnRegister
+    overload: com.eyerunnman.patterns.IGameService.OnRegister*
+  - uid: com.eyerunnman.patterns.IGameService.OnUnRegister
+    commentId: M:com.eyerunnman.patterns.IGameService.OnUnRegister
     id: OnUnRegister
-    path: ''
-    startLine: 28
-  assemblies:
-  - cs.temp.dll
-  namespace: com.eyerunnman.interfaces
-  syntax:
-    content: void OnUnRegister()
-    content.vb: Sub OnUnRegister
-  overload: com.eyerunnman.interfaces.IGameService.OnUnRegister*
-- uid: com.eyerunnman.interfaces.IGameService.OnRegisterError(System.String)
-  commentId: M:com.eyerunnman.interfaces.IGameService.OnRegisterError(System.String)
-  id: OnRegisterError(System.String)
-  parent: com.eyerunnman.interfaces.IGameService
-  langs:
-  - csharp
-  - vb
-  name: OnRegisterError(String)
-  nameWithType: IGameService.OnRegisterError(String)
-  fullName: com.eyerunnman.interfaces.IGameService.OnRegisterError(System.String)
-  type: Method
-  source:
-    id: OnRegisterError
-    path: ''
-    startLine: 29
-  assemblies:
-  - cs.temp.dll
-  namespace: com.eyerunnman.interfaces
-  syntax:
-    content: void OnRegisterError(string errMsg)
-    parameters:
-    - id: errMsg
-      type: System.String
-    content.vb: Sub OnRegisterError(errMsg As String)
-  overload: com.eyerunnman.interfaces.IGameService.OnRegisterError*
-- uid: com.eyerunnman.interfaces.IGameService.Initialize(System.Boolean)
-  commentId: M:com.eyerunnman.interfaces.IGameService.Initialize(System.Boolean)
-  id: Initialize(System.Boolean)
-  parent: com.eyerunnman.interfaces.IGameService
-  langs:
-  - csharp
-  - vb
-  name: Initialize(Boolean)
-  nameWithType: IGameService.Initialize(Boolean)
-  fullName: com.eyerunnman.interfaces.IGameService.Initialize(System.Boolean)
-  type: Method
-  source:
-    id: Initialize
-    path: ''
-    startLine: 30
-  assemblies:
-  - cs.temp.dll
-  namespace: com.eyerunnman.interfaces
-  syntax:
-    content: Task Initialize(bool overrideService = false)
-    parameters:
-    - id: overrideService
-      type: System.Boolean
-    return:
-      type: Task
-    content.vb: Function Initialize(overrideService As Boolean = False) As Task
-  overload: com.eyerunnman.interfaces.IGameService.Initialize*
-- uid: com.eyerunnman.interfaces.IGameService.ServiceState
-  commentId: P:com.eyerunnman.interfaces.IGameService.ServiceState
-  id: ServiceState
-  parent: com.eyerunnman.interfaces.IGameService
-  langs:
-  - csharp
-  - vb
-  name: ServiceState
-  nameWithType: IGameService.ServiceState
-  fullName: com.eyerunnman.interfaces.IGameService.ServiceState
-  type: Property
-  source:
+    parent: com.eyerunnman.patterns.IGameService
+    langs:
+      - csharp
+      - vb
+    name: OnUnRegister()
+    nameWithType: IGameService.OnUnRegister()
+    fullName: com.eyerunnman.patterns.IGameService.OnUnRegister()
+    type: Method
+    source:
+      id: OnUnRegister
+      path: ""
+      startLine: 28
+    assemblies:
+      - cs.temp.dll
+    namespace: com.eyerunnman.patterns
+    syntax:
+      content: void OnUnRegister()
+      content.vb: Sub OnUnRegister
+    overload: com.eyerunnman.patterns.IGameService.OnUnRegister*
+  - uid: com.eyerunnman.patterns.IGameService.OnRegisterError(System.String)
+    commentId: M:com.eyerunnman.patterns.IGameService.OnRegisterError(System.String)
+    id: OnRegisterError(System.String)
+    parent: com.eyerunnman.patterns.IGameService
+    langs:
+      - csharp
+      - vb
+    name: OnRegisterError(String)
+    nameWithType: IGameService.OnRegisterError(String)
+    fullName: com.eyerunnman.patterns.IGameService.OnRegisterError(System.String)
+    type: Method
+    source:
+      id: OnRegisterError
+      path: ""
+      startLine: 29
+    assemblies:
+      - cs.temp.dll
+    namespace: com.eyerunnman.patterns
+    syntax:
+      content: void OnRegisterError(string errMsg)
+      parameters:
+        - id: errMsg
+          type: System.String
+      content.vb: Sub OnRegisterError(errMsg As String)
+    overload: com.eyerunnman.patterns.IGameService.OnRegisterError*
+  - uid: com.eyerunnman.patterns.IGameService.Initialize(System.Boolean)
+    commentId: M:com.eyerunnman.patterns.IGameService.Initialize(System.Boolean)
+    id: Initialize(System.Boolean)
+    parent: com.eyerunnman.patterns.IGameService
+    langs:
+      - csharp
+      - vb
+    name: Initialize(Boolean)
+    nameWithType: IGameService.Initialize(Boolean)
+    fullName: com.eyerunnman.patterns.IGameService.Initialize(System.Boolean)
+    type: Method
+    source:
+      id: Initialize
+      path: ""
+      startLine: 30
+    assemblies:
+      - cs.temp.dll
+    namespace: com.eyerunnman.patterns
+    syntax:
+      content: Task Initialize(bool overrideService = false)
+      parameters:
+        - id: overrideService
+          type: System.Boolean
+      return:
+        type: Task
+      content.vb: Function Initialize(overrideService As Boolean = False) As Task
+    overload: com.eyerunnman.patterns.IGameService.Initialize*
+  - uid: com.eyerunnman.patterns.IGameService.ServiceState
+    commentId: P:com.eyerunnman.patterns.IGameService.ServiceState
     id: ServiceState
-    path: ''
-    startLine: 32
-  assemblies:
-  - cs.temp.dll
-  namespace: com.eyerunnman.interfaces
-  syntax:
-    content: ServiceState ServiceState { get; }
-    parameters: []
-    return:
-      type: com.eyerunnman.interfaces.ServiceState
-    content.vb: ReadOnly Property ServiceState As ServiceState
-  overload: com.eyerunnman.interfaces.IGameService.ServiceState*
-  modifiers.csharp:
-  - get
-  modifiers.vb:
-  - ReadOnly
+    parent: com.eyerunnman.patterns.IGameService
+    langs:
+      - csharp
+      - vb
+    name: ServiceState
+    nameWithType: IGameService.ServiceState
+    fullName: com.eyerunnman.patterns.IGameService.ServiceState
+    type: Property
+    source:
+      id: ServiceState
+      path: ""
+      startLine: 32
+    assemblies:
+      - cs.temp.dll
+    namespace: com.eyerunnman.patterns
+    syntax:
+      content: ServiceState ServiceState { get; }
+      parameters: []
+      return:
+        type: com.eyerunnman.patterns.ServiceState
+      content.vb: ReadOnly Property ServiceState As ServiceState
+    overload: com.eyerunnman.patterns.IGameService.ServiceState*
+    modifiers.csharp:
+      - get
+    modifiers.vb:
+      - ReadOnly
 references:
-- uid: com.eyerunnman.interfaces
-  commentId: N:com.eyerunnman.interfaces
-  name: com.eyerunnman.interfaces
-  nameWithType: com.eyerunnman.interfaces
-  fullName: com.eyerunnman.interfaces
-- uid: com.eyerunnman.interfaces.IGameService.OnRegister*
-  commentId: Overload:com.eyerunnman.interfaces.IGameService.OnRegister
-  name: OnRegister
-  nameWithType: IGameService.OnRegister
-  fullName: com.eyerunnman.interfaces.IGameService.OnRegister
-- uid: com.eyerunnman.interfaces.IGameService.OnUnRegister*
-  commentId: Overload:com.eyerunnman.interfaces.IGameService.OnUnRegister
-  name: OnUnRegister
-  nameWithType: IGameService.OnUnRegister
-  fullName: com.eyerunnman.interfaces.IGameService.OnUnRegister
-- uid: com.eyerunnman.interfaces.IGameService.OnRegisterError*
-  commentId: Overload:com.eyerunnman.interfaces.IGameService.OnRegisterError
-  name: OnRegisterError
-  nameWithType: IGameService.OnRegisterError
-  fullName: com.eyerunnman.interfaces.IGameService.OnRegisterError
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
-- uid: System
-  commentId: N:System
-  isExternal: true
-  name: System
-  nameWithType: System
-  fullName: System
-- uid: com.eyerunnman.interfaces.IGameService.Initialize*
-  commentId: Overload:com.eyerunnman.interfaces.IGameService.Initialize
-  name: Initialize
-  nameWithType: IGameService.Initialize
-  fullName: com.eyerunnman.interfaces.IGameService.Initialize
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  name: Boolean
-  nameWithType: Boolean
-  fullName: System.Boolean
-- uid: Task
-  isExternal: true
-  name: Task
-  nameWithType: Task
-  fullName: Task
-- uid: com.eyerunnman.interfaces.IGameService.ServiceState*
-  commentId: Overload:com.eyerunnman.interfaces.IGameService.ServiceState
-  name: ServiceState
-  nameWithType: IGameService.ServiceState
-  fullName: com.eyerunnman.interfaces.IGameService.ServiceState
-- uid: com.eyerunnman.interfaces.ServiceState
-  commentId: T:com.eyerunnman.interfaces.ServiceState
-  parent: com.eyerunnman.interfaces
-  name: ServiceState
-  nameWithType: ServiceState
-  fullName: com.eyerunnman.interfaces.ServiceState
+  - uid: com.eyerunnman.patterns
+    commentId: N:com.eyerunnman.patterns
+    name: com.eyerunnman.patterns
+    nameWithType: com.eyerunnman.patterns
+    fullName: com.eyerunnman.patterns
+  - uid: com.eyerunnman.patterns.IGameService.OnRegister*
+    commentId: Overload:com.eyerunnman.patterns.IGameService.OnRegister
+    name: OnRegister
+    nameWithType: IGameService.OnRegister
+    fullName: com.eyerunnman.patterns.IGameService.OnRegister
+  - uid: com.eyerunnman.patterns.IGameService.OnUnRegister*
+    commentId: Overload:com.eyerunnman.patterns.IGameService.OnUnRegister
+    name: OnUnRegister
+    nameWithType: IGameService.OnUnRegister
+    fullName: com.eyerunnman.patterns.IGameService.OnUnRegister
+  - uid: com.eyerunnman.patterns.IGameService.OnRegisterError*
+    commentId: Overload:com.eyerunnman.patterns.IGameService.OnRegisterError
+    name: OnRegisterError
+    nameWithType: IGameService.OnRegisterError
+    fullName: com.eyerunnman.patterns.IGameService.OnRegisterError
+  - uid: System.String
+    commentId: T:System.String
+    parent: System
+    isExternal: true
+    name: String
+    nameWithType: String
+    fullName: System.String
+  - uid: System
+    commentId: N:System
+    isExternal: true
+    name: System
+    nameWithType: System
+    fullName: System
+  - uid: com.eyerunnman.patterns.IGameService.Initialize*
+    commentId: Overload:com.eyerunnman.patterns.IGameService.Initialize
+    name: Initialize
+    nameWithType: IGameService.Initialize
+    fullName: com.eyerunnman.patterns.IGameService.Initialize
+  - uid: System.Boolean
+    commentId: T:System.Boolean
+    parent: System
+    isExternal: true
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+  - uid: Task
+    isExternal: true
+    name: Task
+    nameWithType: Task
+    fullName: Task
+  - uid: com.eyerunnman.patterns.IGameService.ServiceState*
+    commentId: Overload:com.eyerunnman.patterns.IGameService.ServiceState
+    name: ServiceState
+    nameWithType: IGameService.ServiceState
+    fullName: com.eyerunnman.patterns.IGameService.ServiceState
+  - uid: com.eyerunnman.patterns.ServiceState
+    commentId: T:com.eyerunnman.patterns.ServiceState
+    parent: com.eyerunnman.patterns
+    name: ServiceState
+    nameWithType: ServiceState
+    fullName: com.eyerunnman.patterns.ServiceState

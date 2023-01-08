@@ -7,25 +7,25 @@ qualifiedName:
 type: Assembly
 modifiers: {}
 items:
-- id: com.eyerunnman.interfaces
-  commentId: N:com.eyerunnman.interfaces
+- id: com.eyerunnman.patterns
+  commentId: N:com.eyerunnman.patterns
   language: CSharp
   name:
-    CSharp: com.eyerunnman.interfaces
-    VB: com.eyerunnman.interfaces
+    CSharp: com.eyerunnman.patterns
+    VB: com.eyerunnman.patterns
   nameWithType:
-    CSharp: com.eyerunnman.interfaces
-    VB: com.eyerunnman.interfaces
+    CSharp: com.eyerunnman.patterns
+    VB: com.eyerunnman.patterns
   qualifiedName:
-    CSharp: com.eyerunnman.interfaces
-    VB: com.eyerunnman.interfaces
+    CSharp: com.eyerunnman.patterns
+    VB: com.eyerunnman.patterns
   type: Namespace
   assemblies:
   - cs.temp.dll
   modifiers: {}
   items:
-  - id: com.eyerunnman.interfaces.ICommand`1
-    commentId: T:com.eyerunnman.interfaces.ICommand`1
+  - id: com.eyerunnman.patterns.ICommand`1
+    commentId: T:com.eyerunnman.patterns.ICommand`1
     language: CSharp
     name:
       CSharp: ICommand<T>
@@ -34,12 +34,12 @@ items:
       CSharp: ICommand<T>
       VB: ICommand(Of T)
     qualifiedName:
-      CSharp: com.eyerunnman.interfaces.ICommand<T>
-      VB: com.eyerunnman.interfaces.ICommand(Of T)
+      CSharp: com.eyerunnman.patterns.ICommand<T>
+      VB: com.eyerunnman.patterns.ICommand(Of T)
     type: Interface
     assemblies:
     - cs.temp.dll
-    namespace: com.eyerunnman.interfaces
+    namespace: com.eyerunnman.patterns
     source:
       id: ICommand
       path: ''
@@ -58,8 +58,8 @@ items:
       - Public
       - Interface
     items:
-    - id: com.eyerunnman.interfaces.ICommand`1.Execute(`0)
-      commentId: M:com.eyerunnman.interfaces.ICommand`1.Execute(`0)
+    - id: com.eyerunnman.patterns.ICommand`1.Execute(`0)
+      commentId: M:com.eyerunnman.patterns.ICommand`1.Execute(`0)
       language: CSharp
       name:
         CSharp: Execute(T)
@@ -68,12 +68,12 @@ items:
         CSharp: ICommand<T>.Execute(T)
         VB: ICommand(Of T).Execute(T)
       qualifiedName:
-        CSharp: com.eyerunnman.interfaces.ICommand<T>.Execute(T)
-        VB: com.eyerunnman.interfaces.ICommand(Of T).Execute(T)
+        CSharp: com.eyerunnman.patterns.ICommand<T>.Execute(T)
+        VB: com.eyerunnman.patterns.ICommand(Of T).Execute(T)
       type: Method
       assemblies:
       - cs.temp.dll
-      namespace: com.eyerunnman.interfaces
+      namespace: com.eyerunnman.patterns
       source:
         id: Execute
         path: ''
@@ -85,12 +85,12 @@ items:
         parameters:
         - id: context
           type: '{T}'
-      overload: com.eyerunnman.interfaces.ICommand`1.Execute*
+      overload: com.eyerunnman.patterns.ICommand`1.Execute*
       modifiers:
         CSharp: []
         VB: []
-  - id: com.eyerunnman.interfaces.IGameService
-    commentId: T:com.eyerunnman.interfaces.IGameService
+  - id: com.eyerunnman.patterns.IGameService
+    commentId: T:com.eyerunnman.patterns.IGameService
     language: CSharp
     name:
       CSharp: IGameService
@@ -99,12 +99,12 @@ items:
       CSharp: IGameService
       VB: IGameService
     qualifiedName:
-      CSharp: com.eyerunnman.interfaces.IGameService
-      VB: com.eyerunnman.interfaces.IGameService
+      CSharp: com.eyerunnman.patterns.IGameService
+      VB: com.eyerunnman.patterns.IGameService
     type: Interface
     assemblies:
     - cs.temp.dll
-    namespace: com.eyerunnman.interfaces
+    namespace: com.eyerunnman.patterns
     source:
       id: IGameService
       path: ''
@@ -123,8 +123,8 @@ items:
       - Public
       - Interface
     items:
-    - id: com.eyerunnman.interfaces.IGameService.OnRegister
-      commentId: M:com.eyerunnman.interfaces.IGameService.OnRegister
+    - id: com.eyerunnman.patterns.IGameService.OnRegister
+      commentId: M:com.eyerunnman.patterns.IGameService.OnRegister
       language: CSharp
       name:
         CSharp: OnRegister()
@@ -133,12 +133,12 @@ items:
         CSharp: IGameService.OnRegister()
         VB: IGameService.OnRegister()
       qualifiedName:
-        CSharp: com.eyerunnman.interfaces.IGameService.OnRegister()
-        VB: com.eyerunnman.interfaces.IGameService.OnRegister()
+        CSharp: com.eyerunnman.patterns.IGameService.OnRegister()
+        VB: com.eyerunnman.patterns.IGameService.OnRegister()
       type: Method
       assemblies:
       - cs.temp.dll
-      namespace: com.eyerunnman.interfaces
+      namespace: com.eyerunnman.patterns
       source:
         id: OnRegister
         path: ''
@@ -147,12 +147,12 @@ items:
         content:
           CSharp: void OnRegister()
           VB: Sub OnRegister
-      overload: com.eyerunnman.interfaces.IGameService.OnRegister*
+      overload: com.eyerunnman.patterns.IGameService.OnRegister*
       modifiers:
         CSharp: []
         VB: []
-    - id: com.eyerunnman.interfaces.IGameService.OnUnRegister
-      commentId: M:com.eyerunnman.interfaces.IGameService.OnUnRegister
+    - id: com.eyerunnman.patterns.IGameService.OnUnRegister
+      commentId: M:com.eyerunnman.patterns.IGameService.OnUnRegister
       language: CSharp
       name:
         CSharp: OnUnRegister()
@@ -161,12 +161,12 @@ items:
         CSharp: IGameService.OnUnRegister()
         VB: IGameService.OnUnRegister()
       qualifiedName:
-        CSharp: com.eyerunnman.interfaces.IGameService.OnUnRegister()
-        VB: com.eyerunnman.interfaces.IGameService.OnUnRegister()
+        CSharp: com.eyerunnman.patterns.IGameService.OnUnRegister()
+        VB: com.eyerunnman.patterns.IGameService.OnUnRegister()
       type: Method
       assemblies:
       - cs.temp.dll
-      namespace: com.eyerunnman.interfaces
+      namespace: com.eyerunnman.patterns
       source:
         id: OnUnRegister
         path: ''
@@ -175,12 +175,12 @@ items:
         content:
           CSharp: void OnUnRegister()
           VB: Sub OnUnRegister
-      overload: com.eyerunnman.interfaces.IGameService.OnUnRegister*
+      overload: com.eyerunnman.patterns.IGameService.OnUnRegister*
       modifiers:
         CSharp: []
         VB: []
-    - id: com.eyerunnman.interfaces.IGameService.OnRegisterError(System.String)
-      commentId: M:com.eyerunnman.interfaces.IGameService.OnRegisterError(System.String)
+    - id: com.eyerunnman.patterns.IGameService.OnRegisterError(System.String)
+      commentId: M:com.eyerunnman.patterns.IGameService.OnRegisterError(System.String)
       language: CSharp
       name:
         CSharp: OnRegisterError(String)
@@ -189,12 +189,12 @@ items:
         CSharp: IGameService.OnRegisterError(String)
         VB: IGameService.OnRegisterError(String)
       qualifiedName:
-        CSharp: com.eyerunnman.interfaces.IGameService.OnRegisterError(System.String)
-        VB: com.eyerunnman.interfaces.IGameService.OnRegisterError(System.String)
+        CSharp: com.eyerunnman.patterns.IGameService.OnRegisterError(System.String)
+        VB: com.eyerunnman.patterns.IGameService.OnRegisterError(System.String)
       type: Method
       assemblies:
       - cs.temp.dll
-      namespace: com.eyerunnman.interfaces
+      namespace: com.eyerunnman.patterns
       source:
         id: OnRegisterError
         path: ''
@@ -206,12 +206,12 @@ items:
         parameters:
         - id: errMsg
           type: System.String
-      overload: com.eyerunnman.interfaces.IGameService.OnRegisterError*
+      overload: com.eyerunnman.patterns.IGameService.OnRegisterError*
       modifiers:
         CSharp: []
         VB: []
-    - id: com.eyerunnman.interfaces.IGameService.Initialize(System.Boolean)
-      commentId: M:com.eyerunnman.interfaces.IGameService.Initialize(System.Boolean)
+    - id: com.eyerunnman.patterns.IGameService.Initialize(System.Boolean)
+      commentId: M:com.eyerunnman.patterns.IGameService.Initialize(System.Boolean)
       language: CSharp
       name:
         CSharp: Initialize(Boolean)
@@ -220,12 +220,12 @@ items:
         CSharp: IGameService.Initialize(Boolean)
         VB: IGameService.Initialize(Boolean)
       qualifiedName:
-        CSharp: com.eyerunnman.interfaces.IGameService.Initialize(System.Boolean)
-        VB: com.eyerunnman.interfaces.IGameService.Initialize(System.Boolean)
+        CSharp: com.eyerunnman.patterns.IGameService.Initialize(System.Boolean)
+        VB: com.eyerunnman.patterns.IGameService.Initialize(System.Boolean)
       type: Method
       assemblies:
       - cs.temp.dll
-      namespace: com.eyerunnman.interfaces
+      namespace: com.eyerunnman.patterns
       source:
         id: Initialize
         path: ''
@@ -239,12 +239,12 @@ items:
           type: System.Boolean
         return:
           type: Task
-      overload: com.eyerunnman.interfaces.IGameService.Initialize*
+      overload: com.eyerunnman.patterns.IGameService.Initialize*
       modifiers:
         CSharp: []
         VB: []
-    - id: com.eyerunnman.interfaces.IGameService.ServiceState
-      commentId: P:com.eyerunnman.interfaces.IGameService.ServiceState
+    - id: com.eyerunnman.patterns.IGameService.ServiceState
+      commentId: P:com.eyerunnman.patterns.IGameService.ServiceState
       language: CSharp
       name:
         CSharp: ServiceState
@@ -253,12 +253,12 @@ items:
         CSharp: IGameService.ServiceState
         VB: IGameService.ServiceState
       qualifiedName:
-        CSharp: com.eyerunnman.interfaces.IGameService.ServiceState
-        VB: com.eyerunnman.interfaces.IGameService.ServiceState
+        CSharp: com.eyerunnman.patterns.IGameService.ServiceState
+        VB: com.eyerunnman.patterns.IGameService.ServiceState
       type: Property
       assemblies:
       - cs.temp.dll
-      namespace: com.eyerunnman.interfaces
+      namespace: com.eyerunnman.patterns
       source:
         id: ServiceState
         path: ''
@@ -269,15 +269,15 @@ items:
           VB: ReadOnly Property ServiceState As ServiceState
         parameters: []
         return:
-          type: com.eyerunnman.interfaces.ServiceState
-      overload: com.eyerunnman.interfaces.IGameService.ServiceState*
+          type: com.eyerunnman.patterns.ServiceState
+      overload: com.eyerunnman.patterns.IGameService.ServiceState*
       modifiers:
         CSharp:
         - get
         VB:
         - ReadOnly
-  - id: com.eyerunnman.interfaces.ServiceState
-    commentId: T:com.eyerunnman.interfaces.ServiceState
+  - id: com.eyerunnman.patterns.ServiceState
+    commentId: T:com.eyerunnman.patterns.ServiceState
     language: CSharp
     name:
       CSharp: ServiceState
@@ -286,12 +286,12 @@ items:
       CSharp: ServiceState
       VB: ServiceState
     qualifiedName:
-      CSharp: com.eyerunnman.interfaces.ServiceState
-      VB: com.eyerunnman.interfaces.ServiceState
+      CSharp: com.eyerunnman.patterns.ServiceState
+      VB: com.eyerunnman.patterns.ServiceState
     type: Enum
     assemblies:
     - cs.temp.dll
-    namespace: com.eyerunnman.interfaces
+    namespace: com.eyerunnman.patterns
     source:
       id: ServiceState
       path: ''
@@ -308,8 +308,8 @@ items:
       - Public
       - Enum
     items:
-    - id: com.eyerunnman.interfaces.ServiceState.Undefined
-      commentId: F:com.eyerunnman.interfaces.ServiceState.Undefined
+    - id: com.eyerunnman.patterns.ServiceState.Undefined
+      commentId: F:com.eyerunnman.patterns.ServiceState.Undefined
       language: CSharp
       name:
         CSharp: Undefined
@@ -318,12 +318,12 @@ items:
         CSharp: ServiceState.Undefined
         VB: ServiceState.Undefined
       qualifiedName:
-        CSharp: com.eyerunnman.interfaces.ServiceState.Undefined
-        VB: com.eyerunnman.interfaces.ServiceState.Undefined
+        CSharp: com.eyerunnman.patterns.ServiceState.Undefined
+        VB: com.eyerunnman.patterns.ServiceState.Undefined
       type: Field
       assemblies:
       - cs.temp.dll
-      namespace: com.eyerunnman.interfaces
+      namespace: com.eyerunnman.patterns
       source:
         id: Undefined
         path: ''
@@ -333,7 +333,7 @@ items:
           CSharp: Undefined = 0
           VB: Undefined = 0
         return:
-          type: com.eyerunnman.interfaces.ServiceState
+          type: com.eyerunnman.patterns.ServiceState
       modifiers:
         CSharp:
         - public
@@ -341,8 +341,8 @@ items:
         VB:
         - Public
         - Const
-    - id: com.eyerunnman.interfaces.ServiceState.Waiting
-      commentId: F:com.eyerunnman.interfaces.ServiceState.Waiting
+    - id: com.eyerunnman.patterns.ServiceState.Waiting
+      commentId: F:com.eyerunnman.patterns.ServiceState.Waiting
       language: CSharp
       name:
         CSharp: Waiting
@@ -351,12 +351,12 @@ items:
         CSharp: ServiceState.Waiting
         VB: ServiceState.Waiting
       qualifiedName:
-        CSharp: com.eyerunnman.interfaces.ServiceState.Waiting
-        VB: com.eyerunnman.interfaces.ServiceState.Waiting
+        CSharp: com.eyerunnman.patterns.ServiceState.Waiting
+        VB: com.eyerunnman.patterns.ServiceState.Waiting
       type: Field
       assemblies:
       - cs.temp.dll
-      namespace: com.eyerunnman.interfaces
+      namespace: com.eyerunnman.patterns
       source:
         id: Waiting
         path: ''
@@ -366,7 +366,7 @@ items:
           CSharp: Waiting = 1
           VB: Waiting = 1
         return:
-          type: com.eyerunnman.interfaces.ServiceState
+          type: com.eyerunnman.patterns.ServiceState
       modifiers:
         CSharp:
         - public
@@ -374,8 +374,8 @@ items:
         VB:
         - Public
         - Const
-    - id: com.eyerunnman.interfaces.ServiceState.Registering
-      commentId: F:com.eyerunnman.interfaces.ServiceState.Registering
+    - id: com.eyerunnman.patterns.ServiceState.Registering
+      commentId: F:com.eyerunnman.patterns.ServiceState.Registering
       language: CSharp
       name:
         CSharp: Registering
@@ -384,12 +384,12 @@ items:
         CSharp: ServiceState.Registering
         VB: ServiceState.Registering
       qualifiedName:
-        CSharp: com.eyerunnman.interfaces.ServiceState.Registering
-        VB: com.eyerunnman.interfaces.ServiceState.Registering
+        CSharp: com.eyerunnman.patterns.ServiceState.Registering
+        VB: com.eyerunnman.patterns.ServiceState.Registering
       type: Field
       assemblies:
       - cs.temp.dll
-      namespace: com.eyerunnman.interfaces
+      namespace: com.eyerunnman.patterns
       source:
         id: Registering
         path: ''
@@ -399,7 +399,7 @@ items:
           CSharp: Registering = 2
           VB: Registering = 2
         return:
-          type: com.eyerunnman.interfaces.ServiceState
+          type: com.eyerunnman.patterns.ServiceState
       modifiers:
         CSharp:
         - public
@@ -407,8 +407,8 @@ items:
         VB:
         - Public
         - Const
-    - id: com.eyerunnman.interfaces.ServiceState.Registered
-      commentId: F:com.eyerunnman.interfaces.ServiceState.Registered
+    - id: com.eyerunnman.patterns.ServiceState.Registered
+      commentId: F:com.eyerunnman.patterns.ServiceState.Registered
       language: CSharp
       name:
         CSharp: Registered
@@ -417,12 +417,12 @@ items:
         CSharp: ServiceState.Registered
         VB: ServiceState.Registered
       qualifiedName:
-        CSharp: com.eyerunnman.interfaces.ServiceState.Registered
-        VB: com.eyerunnman.interfaces.ServiceState.Registered
+        CSharp: com.eyerunnman.patterns.ServiceState.Registered
+        VB: com.eyerunnman.patterns.ServiceState.Registered
       type: Field
       assemblies:
       - cs.temp.dll
-      namespace: com.eyerunnman.interfaces
+      namespace: com.eyerunnman.patterns
       source:
         id: Registered
         path: ''
@@ -432,7 +432,7 @@ items:
           CSharp: Registered = 3
           VB: Registered = 3
         return:
-          type: com.eyerunnman.interfaces.ServiceState
+          type: com.eyerunnman.patterns.ServiceState
       modifiers:
         CSharp:
         - public
@@ -440,8 +440,8 @@ items:
         VB:
         - Public
         - Const
-    - id: com.eyerunnman.interfaces.ServiceState.UnRegistered
-      commentId: F:com.eyerunnman.interfaces.ServiceState.UnRegistered
+    - id: com.eyerunnman.patterns.ServiceState.UnRegistered
+      commentId: F:com.eyerunnman.patterns.ServiceState.UnRegistered
       language: CSharp
       name:
         CSharp: UnRegistered
@@ -450,12 +450,12 @@ items:
         CSharp: ServiceState.UnRegistered
         VB: ServiceState.UnRegistered
       qualifiedName:
-        CSharp: com.eyerunnman.interfaces.ServiceState.UnRegistered
-        VB: com.eyerunnman.interfaces.ServiceState.UnRegistered
+        CSharp: com.eyerunnman.patterns.ServiceState.UnRegistered
+        VB: com.eyerunnman.patterns.ServiceState.UnRegistered
       type: Field
       assemblies:
       - cs.temp.dll
-      namespace: com.eyerunnman.interfaces
+      namespace: com.eyerunnman.patterns
       source:
         id: UnRegistered
         path: ''
@@ -465,7 +465,7 @@ items:
           CSharp: UnRegistered = 4
           VB: UnRegistered = 4
         return:
-          type: com.eyerunnman.interfaces.ServiceState
+          type: com.eyerunnman.patterns.ServiceState
       modifiers:
         CSharp:
         - public
@@ -473,8 +473,8 @@ items:
         VB:
         - Public
         - Const
-    - id: com.eyerunnman.interfaces.ServiceState.RegisterError
-      commentId: F:com.eyerunnman.interfaces.ServiceState.RegisterError
+    - id: com.eyerunnman.patterns.ServiceState.RegisterError
+      commentId: F:com.eyerunnman.patterns.ServiceState.RegisterError
       language: CSharp
       name:
         CSharp: RegisterError
@@ -483,12 +483,12 @@ items:
         CSharp: ServiceState.RegisterError
         VB: ServiceState.RegisterError
       qualifiedName:
-        CSharp: com.eyerunnman.interfaces.ServiceState.RegisterError
-        VB: com.eyerunnman.interfaces.ServiceState.RegisterError
+        CSharp: com.eyerunnman.patterns.ServiceState.RegisterError
+        VB: com.eyerunnman.patterns.ServiceState.RegisterError
       type: Field
       assemblies:
       - cs.temp.dll
-      namespace: com.eyerunnman.interfaces
+      namespace: com.eyerunnman.patterns
       source:
         id: RegisterError
         path: ''
@@ -498,7 +498,7 @@ items:
           CSharp: RegisterError = 5
           VB: RegisterError = 5
         return:
-          type: com.eyerunnman.interfaces.ServiceState
+          type: com.eyerunnman.patterns.ServiceState
       modifiers:
         CSharp:
         - public
@@ -506,8 +506,8 @@ items:
         VB:
         - Public
         - Const
-  - id: com.eyerunnman.interfaces.GameService
-    commentId: T:com.eyerunnman.interfaces.GameService
+  - id: com.eyerunnman.patterns.GameService
+    commentId: T:com.eyerunnman.patterns.GameService
     language: CSharp
     name:
       CSharp: GameService
@@ -516,12 +516,12 @@ items:
       CSharp: GameService
       VB: GameService
     qualifiedName:
-      CSharp: com.eyerunnman.interfaces.GameService
-      VB: com.eyerunnman.interfaces.GameService
+      CSharp: com.eyerunnman.patterns.GameService
+      VB: com.eyerunnman.patterns.GameService
     type: Class
     assemblies:
     - cs.temp.dll
-    namespace: com.eyerunnman.interfaces
+    namespace: com.eyerunnman.patterns
     source:
       id: GameService
       path: ''
@@ -538,7 +538,7 @@ items:
     inheritance:
     - System.Object
     implements:
-    - com.eyerunnman.interfaces.IGameService
+    - com.eyerunnman.patterns.IGameService
     modifiers:
       CSharp:
       - public
@@ -549,8 +549,8 @@ items:
       - MustInherit
       - Class
     items:
-    - id: com.eyerunnman.interfaces.GameService.ServiceState
-      commentId: P:com.eyerunnman.interfaces.GameService.ServiceState
+    - id: com.eyerunnman.patterns.GameService.ServiceState
+      commentId: P:com.eyerunnman.patterns.GameService.ServiceState
       language: CSharp
       name:
         CSharp: ServiceState
@@ -559,12 +559,12 @@ items:
         CSharp: GameService.ServiceState
         VB: GameService.ServiceState
       qualifiedName:
-        CSharp: com.eyerunnman.interfaces.GameService.ServiceState
-        VB: com.eyerunnman.interfaces.GameService.ServiceState
+        CSharp: com.eyerunnman.patterns.GameService.ServiceState
+        VB: com.eyerunnman.patterns.GameService.ServiceState
       type: Property
       assemblies:
       - cs.temp.dll
-      namespace: com.eyerunnman.interfaces
+      namespace: com.eyerunnman.patterns
       source:
         id: ServiceState
         path: ''
@@ -575,10 +575,10 @@ items:
           VB: Public ReadOnly Property ServiceState As ServiceState
         parameters: []
         return:
-          type: com.eyerunnman.interfaces.ServiceState
-      overload: com.eyerunnman.interfaces.GameService.ServiceState*
+          type: com.eyerunnman.patterns.ServiceState
+      overload: com.eyerunnman.patterns.GameService.ServiceState*
       implements:
-      - com.eyerunnman.interfaces.IGameService.ServiceState
+      - com.eyerunnman.patterns.IGameService.ServiceState
       modifiers:
         CSharp:
         - public
@@ -586,8 +586,8 @@ items:
         VB:
         - Public
         - ReadOnly
-    - id: com.eyerunnman.interfaces.GameService.OnRegister
-      commentId: M:com.eyerunnman.interfaces.GameService.OnRegister
+    - id: com.eyerunnman.patterns.GameService.OnRegister
+      commentId: M:com.eyerunnman.patterns.GameService.OnRegister
       language: CSharp
       name:
         CSharp: OnRegister()
@@ -596,12 +596,12 @@ items:
         CSharp: GameService.OnRegister()
         VB: GameService.OnRegister()
       qualifiedName:
-        CSharp: com.eyerunnman.interfaces.GameService.OnRegister()
-        VB: com.eyerunnman.interfaces.GameService.OnRegister()
+        CSharp: com.eyerunnman.patterns.GameService.OnRegister()
+        VB: com.eyerunnman.patterns.GameService.OnRegister()
       type: Method
       assemblies:
       - cs.temp.dll
-      namespace: com.eyerunnman.interfaces
+      namespace: com.eyerunnman.patterns
       source:
         id: OnRegister
         path: ''
@@ -610,16 +610,16 @@ items:
         content:
           CSharp: public void OnRegister()
           VB: Public Sub OnRegister
-      overload: com.eyerunnman.interfaces.GameService.OnRegister*
+      overload: com.eyerunnman.patterns.GameService.OnRegister*
       implements:
-      - com.eyerunnman.interfaces.IGameService.OnRegister
+      - com.eyerunnman.patterns.IGameService.OnRegister
       modifiers:
         CSharp:
         - public
         VB:
         - Public
-    - id: com.eyerunnman.interfaces.GameService.OnRegisterError(System.String)
-      commentId: M:com.eyerunnman.interfaces.GameService.OnRegisterError(System.String)
+    - id: com.eyerunnman.patterns.GameService.OnRegisterError(System.String)
+      commentId: M:com.eyerunnman.patterns.GameService.OnRegisterError(System.String)
       language: CSharp
       name:
         CSharp: OnRegisterError(String)
@@ -628,12 +628,12 @@ items:
         CSharp: GameService.OnRegisterError(String)
         VB: GameService.OnRegisterError(String)
       qualifiedName:
-        CSharp: com.eyerunnman.interfaces.GameService.OnRegisterError(System.String)
-        VB: com.eyerunnman.interfaces.GameService.OnRegisterError(System.String)
+        CSharp: com.eyerunnman.patterns.GameService.OnRegisterError(System.String)
+        VB: com.eyerunnman.patterns.GameService.OnRegisterError(System.String)
       type: Method
       assemblies:
       - cs.temp.dll
-      namespace: com.eyerunnman.interfaces
+      namespace: com.eyerunnman.patterns
       source:
         id: OnRegisterError
         path: ''
@@ -645,16 +645,16 @@ items:
         parameters:
         - id: errMsg
           type: System.String
-      overload: com.eyerunnman.interfaces.GameService.OnRegisterError*
+      overload: com.eyerunnman.patterns.GameService.OnRegisterError*
       implements:
-      - com.eyerunnman.interfaces.IGameService.OnRegisterError(System.String)
+      - com.eyerunnman.patterns.IGameService.OnRegisterError(System.String)
       modifiers:
         CSharp:
         - public
         VB:
         - Public
-    - id: com.eyerunnman.interfaces.GameService.OnUnRegister
-      commentId: M:com.eyerunnman.interfaces.GameService.OnUnRegister
+    - id: com.eyerunnman.patterns.GameService.OnUnRegister
+      commentId: M:com.eyerunnman.patterns.GameService.OnUnRegister
       language: CSharp
       name:
         CSharp: OnUnRegister()
@@ -663,12 +663,12 @@ items:
         CSharp: GameService.OnUnRegister()
         VB: GameService.OnUnRegister()
       qualifiedName:
-        CSharp: com.eyerunnman.interfaces.GameService.OnUnRegister()
-        VB: com.eyerunnman.interfaces.GameService.OnUnRegister()
+        CSharp: com.eyerunnman.patterns.GameService.OnUnRegister()
+        VB: com.eyerunnman.patterns.GameService.OnUnRegister()
       type: Method
       assemblies:
       - cs.temp.dll
-      namespace: com.eyerunnman.interfaces
+      namespace: com.eyerunnman.patterns
       source:
         id: OnUnRegister
         path: ''
@@ -677,16 +677,16 @@ items:
         content:
           CSharp: public void OnUnRegister()
           VB: Public Sub OnUnRegister
-      overload: com.eyerunnman.interfaces.GameService.OnUnRegister*
+      overload: com.eyerunnman.patterns.GameService.OnUnRegister*
       implements:
-      - com.eyerunnman.interfaces.IGameService.OnUnRegister
+      - com.eyerunnman.patterns.IGameService.OnUnRegister
       modifiers:
         CSharp:
         - public
         VB:
         - Public
-    - id: com.eyerunnman.interfaces.GameService.Initialize(System.Boolean)
-      commentId: M:com.eyerunnman.interfaces.GameService.Initialize(System.Boolean)
+    - id: com.eyerunnman.patterns.GameService.Initialize(System.Boolean)
+      commentId: M:com.eyerunnman.patterns.GameService.Initialize(System.Boolean)
       language: CSharp
       name:
         CSharp: Initialize(Boolean)
@@ -695,12 +695,12 @@ items:
         CSharp: GameService.Initialize(Boolean)
         VB: GameService.Initialize(Boolean)
       qualifiedName:
-        CSharp: com.eyerunnman.interfaces.GameService.Initialize(System.Boolean)
-        VB: com.eyerunnman.interfaces.GameService.Initialize(System.Boolean)
+        CSharp: com.eyerunnman.patterns.GameService.Initialize(System.Boolean)
+        VB: com.eyerunnman.patterns.GameService.Initialize(System.Boolean)
       type: Method
       assemblies:
       - cs.temp.dll
-      namespace: com.eyerunnman.interfaces
+      namespace: com.eyerunnman.patterns
       source:
         id: Initialize
         path: ''
@@ -714,9 +714,9 @@ items:
           type: System.Boolean
         return:
           type: Task
-      overload: com.eyerunnman.interfaces.GameService.Initialize*
+      overload: com.eyerunnman.patterns.GameService.Initialize*
       implements:
-      - com.eyerunnman.interfaces.IGameService.Initialize(System.Boolean)
+      - com.eyerunnman.patterns.IGameService.Initialize(System.Boolean)
       modifiers:
         CSharp:
         - public
@@ -725,8 +725,8 @@ items:
         VB:
         - Public
         - Overridable
-  - id: com.eyerunnman.interfaces.IState`1
-    commentId: T:com.eyerunnman.interfaces.IState`1
+  - id: com.eyerunnman.patterns.IState`1
+    commentId: T:com.eyerunnman.patterns.IState`1
     language: CSharp
     name:
       CSharp: IState<T>
@@ -735,12 +735,12 @@ items:
       CSharp: IState<T>
       VB: IState(Of T)
     qualifiedName:
-      CSharp: com.eyerunnman.interfaces.IState<T>
-      VB: com.eyerunnman.interfaces.IState(Of T)
+      CSharp: com.eyerunnman.patterns.IState<T>
+      VB: com.eyerunnman.patterns.IState(Of T)
     type: Interface
     assemblies:
     - cs.temp.dll
-    namespace: com.eyerunnman.interfaces
+    namespace: com.eyerunnman.patterns
     source:
       id: IState
       path: ''
@@ -759,8 +759,8 @@ items:
       - Public
       - Interface
     items:
-    - id: com.eyerunnman.interfaces.IState`1.OnEnterState(`0)
-      commentId: M:com.eyerunnman.interfaces.IState`1.OnEnterState(`0)
+    - id: com.eyerunnman.patterns.IState`1.OnEnterState(`0)
+      commentId: M:com.eyerunnman.patterns.IState`1.OnEnterState(`0)
       language: CSharp
       name:
         CSharp: OnEnterState(T)
@@ -769,12 +769,12 @@ items:
         CSharp: IState<T>.OnEnterState(T)
         VB: IState(Of T).OnEnterState(T)
       qualifiedName:
-        CSharp: com.eyerunnman.interfaces.IState<T>.OnEnterState(T)
-        VB: com.eyerunnman.interfaces.IState(Of T).OnEnterState(T)
+        CSharp: com.eyerunnman.patterns.IState<T>.OnEnterState(T)
+        VB: com.eyerunnman.patterns.IState(Of T).OnEnterState(T)
       type: Method
       assemblies:
       - cs.temp.dll
-      namespace: com.eyerunnman.interfaces
+      namespace: com.eyerunnman.patterns
       source:
         id: OnEnterState
         path: ''
@@ -786,12 +786,12 @@ items:
         parameters:
         - id: context
           type: '{T}'
-      overload: com.eyerunnman.interfaces.IState`1.OnEnterState*
+      overload: com.eyerunnman.patterns.IState`1.OnEnterState*
       modifiers:
         CSharp: []
         VB: []
-    - id: com.eyerunnman.interfaces.IState`1.OnUpdateState(`0)
-      commentId: M:com.eyerunnman.interfaces.IState`1.OnUpdateState(`0)
+    - id: com.eyerunnman.patterns.IState`1.OnUpdateState(`0)
+      commentId: M:com.eyerunnman.patterns.IState`1.OnUpdateState(`0)
       language: CSharp
       name:
         CSharp: OnUpdateState(T)
@@ -800,12 +800,12 @@ items:
         CSharp: IState<T>.OnUpdateState(T)
         VB: IState(Of T).OnUpdateState(T)
       qualifiedName:
-        CSharp: com.eyerunnman.interfaces.IState<T>.OnUpdateState(T)
-        VB: com.eyerunnman.interfaces.IState(Of T).OnUpdateState(T)
+        CSharp: com.eyerunnman.patterns.IState<T>.OnUpdateState(T)
+        VB: com.eyerunnman.patterns.IState(Of T).OnUpdateState(T)
       type: Method
       assemblies:
       - cs.temp.dll
-      namespace: com.eyerunnman.interfaces
+      namespace: com.eyerunnman.patterns
       source:
         id: OnUpdateState
         path: ''
@@ -817,12 +817,12 @@ items:
         parameters:
         - id: context
           type: '{T}'
-      overload: com.eyerunnman.interfaces.IState`1.OnUpdateState*
+      overload: com.eyerunnman.patterns.IState`1.OnUpdateState*
       modifiers:
         CSharp: []
         VB: []
-    - id: com.eyerunnman.interfaces.IState`1.OnExitState(`0)
-      commentId: M:com.eyerunnman.interfaces.IState`1.OnExitState(`0)
+    - id: com.eyerunnman.patterns.IState`1.OnExitState(`0)
+      commentId: M:com.eyerunnman.patterns.IState`1.OnExitState(`0)
       language: CSharp
       name:
         CSharp: OnExitState(T)
@@ -831,12 +831,12 @@ items:
         CSharp: IState<T>.OnExitState(T)
         VB: IState(Of T).OnExitState(T)
       qualifiedName:
-        CSharp: com.eyerunnman.interfaces.IState<T>.OnExitState(T)
-        VB: com.eyerunnman.interfaces.IState(Of T).OnExitState(T)
+        CSharp: com.eyerunnman.patterns.IState<T>.OnExitState(T)
+        VB: com.eyerunnman.patterns.IState(Of T).OnExitState(T)
       type: Method
       assemblies:
       - cs.temp.dll
-      namespace: com.eyerunnman.interfaces
+      namespace: com.eyerunnman.patterns
       source:
         id: OnExitState
         path: ''
@@ -848,12 +848,12 @@ items:
         parameters:
         - id: context
           type: '{T}'
-      overload: com.eyerunnman.interfaces.IState`1.OnExitState*
+      overload: com.eyerunnman.patterns.IState`1.OnExitState*
       modifiers:
         CSharp: []
         VB: []
-    - id: com.eyerunnman.interfaces.IState`1.SwitchState(`0,com.eyerunnman.interfaces.IState{`0})
-      commentId: M:com.eyerunnman.interfaces.IState`1.SwitchState(`0,com.eyerunnman.interfaces.IState{`0})
+    - id: com.eyerunnman.patterns.IState`1.SwitchState(`0,com.eyerunnman.patterns.IState{`0})
+      commentId: M:com.eyerunnman.patterns.IState`1.SwitchState(`0,com.eyerunnman.patterns.IState{`0})
       language: CSharp
       name:
         CSharp: SwitchState(T, IState<T>)
@@ -862,12 +862,12 @@ items:
         CSharp: IState<T>.SwitchState(T, IState<T>)
         VB: IState(Of T).SwitchState(T, IState(Of T))
       qualifiedName:
-        CSharp: com.eyerunnman.interfaces.IState<T>.SwitchState(T, com.eyerunnman.interfaces.IState<T>)
-        VB: com.eyerunnman.interfaces.IState(Of T).SwitchState(T, com.eyerunnman.interfaces.IState(Of T))
+        CSharp: com.eyerunnman.patterns.IState<T>.SwitchState(T, com.eyerunnman.patterns.IState<T>)
+        VB: com.eyerunnman.patterns.IState(Of T).SwitchState(T, com.eyerunnman.patterns.IState(Of T))
       type: Method
       assemblies:
       - cs.temp.dll
-      namespace: com.eyerunnman.interfaces
+      namespace: com.eyerunnman.patterns
       source:
         id: SwitchState
         path: ''
@@ -880,8 +880,8 @@ items:
         - id: context
           type: '{T}'
         - id: state
-          type: com.eyerunnman.interfaces.IState`1
-      overload: com.eyerunnman.interfaces.IState`1.SwitchState*
+          type: com.eyerunnman.patterns.IState`1
+      overload: com.eyerunnman.patterns.IState`1.SwitchState*
       modifiers:
         CSharp: []
         VB: []
@@ -1169,27 +1169,27 @@ references:
     isDefinition: false
     definition: T
     commentId: '!:T'
-  com.eyerunnman.interfaces.ICommand`1.Execute*:
+  com.eyerunnman.patterns.ICommand`1.Execute*:
     name:
       CSharp:
-      - id: com.eyerunnman.interfaces.ICommand`1.Execute*
+      - id: com.eyerunnman.patterns.ICommand`1.Execute*
         name: Execute
         nameWithType: ICommand<T>.Execute
-        qualifiedName: com.eyerunnman.interfaces.ICommand<T>.Execute
+        qualifiedName: com.eyerunnman.patterns.ICommand<T>.Execute
       VB:
-      - id: com.eyerunnman.interfaces.ICommand`1.Execute*
+      - id: com.eyerunnman.patterns.ICommand`1.Execute*
         name: Execute
         nameWithType: ICommand(Of T).Execute
-        qualifiedName: com.eyerunnman.interfaces.ICommand(Of T).Execute
+        qualifiedName: com.eyerunnman.patterns.ICommand(Of T).Execute
     isDefinition: true
-    commentId: Overload:com.eyerunnman.interfaces.ICommand`1.Execute
-  com.eyerunnman.interfaces.ICommand`1:
+    commentId: Overload:com.eyerunnman.patterns.ICommand`1.Execute
+  com.eyerunnman.patterns.ICommand`1:
     name:
       CSharp:
-      - id: com.eyerunnman.interfaces.ICommand`1
+      - id: com.eyerunnman.patterns.ICommand`1
         name: ICommand
         nameWithType: ICommand
-        qualifiedName: com.eyerunnman.interfaces.ICommand
+        qualifiedName: com.eyerunnman.patterns.ICommand
       - name: <
         nameWithType: <
         qualifiedName: <
@@ -1200,10 +1200,10 @@ references:
         nameWithType: '>'
         qualifiedName: '>'
       VB:
-      - id: com.eyerunnman.interfaces.ICommand`1
+      - id: com.eyerunnman.patterns.ICommand`1
         name: ICommand
         nameWithType: ICommand
-        qualifiedName: com.eyerunnman.interfaces.ICommand
+        qualifiedName: com.eyerunnman.patterns.ICommand
       - name: '(Of '
         nameWithType: '(Of '
         qualifiedName: '(Of '
@@ -1214,35 +1214,35 @@ references:
         nameWithType: )
         qualifiedName: )
     isDefinition: true
-    commentId: T:com.eyerunnman.interfaces.ICommand`1
-  com.eyerunnman.interfaces.IGameService.OnRegister*:
+    commentId: T:com.eyerunnman.patterns.ICommand`1
+  com.eyerunnman.patterns.IGameService.OnRegister*:
     name:
       CSharp:
-      - id: com.eyerunnman.interfaces.IGameService.OnRegister*
+      - id: com.eyerunnman.patterns.IGameService.OnRegister*
         name: OnRegister
         nameWithType: IGameService.OnRegister
-        qualifiedName: com.eyerunnman.interfaces.IGameService.OnRegister
+        qualifiedName: com.eyerunnman.patterns.IGameService.OnRegister
       VB:
-      - id: com.eyerunnman.interfaces.IGameService.OnRegister*
+      - id: com.eyerunnman.patterns.IGameService.OnRegister*
         name: OnRegister
         nameWithType: IGameService.OnRegister
-        qualifiedName: com.eyerunnman.interfaces.IGameService.OnRegister
+        qualifiedName: com.eyerunnman.patterns.IGameService.OnRegister
     isDefinition: true
-    commentId: Overload:com.eyerunnman.interfaces.IGameService.OnRegister
-  com.eyerunnman.interfaces.IGameService.OnUnRegister*:
+    commentId: Overload:com.eyerunnman.patterns.IGameService.OnRegister
+  com.eyerunnman.patterns.IGameService.OnUnRegister*:
     name:
       CSharp:
-      - id: com.eyerunnman.interfaces.IGameService.OnUnRegister*
+      - id: com.eyerunnman.patterns.IGameService.OnUnRegister*
         name: OnUnRegister
         nameWithType: IGameService.OnUnRegister
-        qualifiedName: com.eyerunnman.interfaces.IGameService.OnUnRegister
+        qualifiedName: com.eyerunnman.patterns.IGameService.OnUnRegister
       VB:
-      - id: com.eyerunnman.interfaces.IGameService.OnUnRegister*
+      - id: com.eyerunnman.patterns.IGameService.OnUnRegister*
         name: OnUnRegister
         nameWithType: IGameService.OnUnRegister
-        qualifiedName: com.eyerunnman.interfaces.IGameService.OnUnRegister
+        qualifiedName: com.eyerunnman.patterns.IGameService.OnUnRegister
     isDefinition: true
-    commentId: Overload:com.eyerunnman.interfaces.IGameService.OnUnRegister
+    commentId: Overload:com.eyerunnman.patterns.IGameService.OnUnRegister
   System:
     name:
       CSharp:
@@ -1273,20 +1273,20 @@ references:
     isDefinition: true
     parent: System
     commentId: T:System.String
-  com.eyerunnman.interfaces.IGameService.OnRegisterError*:
+  com.eyerunnman.patterns.IGameService.OnRegisterError*:
     name:
       CSharp:
-      - id: com.eyerunnman.interfaces.IGameService.OnRegisterError*
+      - id: com.eyerunnman.patterns.IGameService.OnRegisterError*
         name: OnRegisterError
         nameWithType: IGameService.OnRegisterError
-        qualifiedName: com.eyerunnman.interfaces.IGameService.OnRegisterError
+        qualifiedName: com.eyerunnman.patterns.IGameService.OnRegisterError
       VB:
-      - id: com.eyerunnman.interfaces.IGameService.OnRegisterError*
+      - id: com.eyerunnman.patterns.IGameService.OnRegisterError*
         name: OnRegisterError
         nameWithType: IGameService.OnRegisterError
-        qualifiedName: com.eyerunnman.interfaces.IGameService.OnRegisterError
+        qualifiedName: com.eyerunnman.patterns.IGameService.OnRegisterError
     isDefinition: true
-    commentId: Overload:com.eyerunnman.interfaces.IGameService.OnRegisterError
+    commentId: Overload:com.eyerunnman.patterns.IGameService.OnRegisterError
   Task:
     name:
       CSharp:
@@ -1319,126 +1319,126 @@ references:
     isDefinition: true
     parent: System
     commentId: T:System.Boolean
-  com.eyerunnman.interfaces.IGameService.Initialize*:
+  com.eyerunnman.patterns.IGameService.Initialize*:
     name:
       CSharp:
-      - id: com.eyerunnman.interfaces.IGameService.Initialize*
+      - id: com.eyerunnman.patterns.IGameService.Initialize*
         name: Initialize
         nameWithType: IGameService.Initialize
-        qualifiedName: com.eyerunnman.interfaces.IGameService.Initialize
+        qualifiedName: com.eyerunnman.patterns.IGameService.Initialize
       VB:
-      - id: com.eyerunnman.interfaces.IGameService.Initialize*
+      - id: com.eyerunnman.patterns.IGameService.Initialize*
         name: Initialize
         nameWithType: IGameService.Initialize
-        qualifiedName: com.eyerunnman.interfaces.IGameService.Initialize
+        qualifiedName: com.eyerunnman.patterns.IGameService.Initialize
     isDefinition: true
-    commentId: Overload:com.eyerunnman.interfaces.IGameService.Initialize
-  com.eyerunnman.interfaces:
+    commentId: Overload:com.eyerunnman.patterns.IGameService.Initialize
+  com.eyerunnman.patterns:
     name:
       CSharp:
-      - name: com.eyerunnman.interfaces
-        nameWithType: com.eyerunnman.interfaces
-        qualifiedName: com.eyerunnman.interfaces
+      - name: com.eyerunnman.patterns
+        nameWithType: com.eyerunnman.patterns
+        qualifiedName: com.eyerunnman.patterns
       VB:
-      - name: com.eyerunnman.interfaces
-        nameWithType: com.eyerunnman.interfaces
-        qualifiedName: com.eyerunnman.interfaces
+      - name: com.eyerunnman.patterns
+        nameWithType: com.eyerunnman.patterns
+        qualifiedName: com.eyerunnman.patterns
     isDefinition: true
-    commentId: N:com.eyerunnman.interfaces
-  com.eyerunnman.interfaces.ServiceState:
+    commentId: N:com.eyerunnman.patterns
+  com.eyerunnman.patterns.ServiceState:
     name:
       CSharp:
-      - id: com.eyerunnman.interfaces.ServiceState
+      - id: com.eyerunnman.patterns.ServiceState
         name: ServiceState
         nameWithType: ServiceState
-        qualifiedName: com.eyerunnman.interfaces.ServiceState
+        qualifiedName: com.eyerunnman.patterns.ServiceState
       VB:
-      - id: com.eyerunnman.interfaces.ServiceState
+      - id: com.eyerunnman.patterns.ServiceState
         name: ServiceState
         nameWithType: ServiceState
-        qualifiedName: com.eyerunnman.interfaces.ServiceState
+        qualifiedName: com.eyerunnman.patterns.ServiceState
     isDefinition: true
-    parent: com.eyerunnman.interfaces
-    commentId: T:com.eyerunnman.interfaces.ServiceState
-  com.eyerunnman.interfaces.IGameService.ServiceState*:
+    parent: com.eyerunnman.patterns
+    commentId: T:com.eyerunnman.patterns.ServiceState
+  com.eyerunnman.patterns.IGameService.ServiceState*:
     name:
       CSharp:
-      - id: com.eyerunnman.interfaces.IGameService.ServiceState*
+      - id: com.eyerunnman.patterns.IGameService.ServiceState*
         name: ServiceState
         nameWithType: IGameService.ServiceState
-        qualifiedName: com.eyerunnman.interfaces.IGameService.ServiceState
+        qualifiedName: com.eyerunnman.patterns.IGameService.ServiceState
       VB:
-      - id: com.eyerunnman.interfaces.IGameService.ServiceState*
+      - id: com.eyerunnman.patterns.IGameService.ServiceState*
         name: ServiceState
         nameWithType: IGameService.ServiceState
-        qualifiedName: com.eyerunnman.interfaces.IGameService.ServiceState
+        qualifiedName: com.eyerunnman.patterns.IGameService.ServiceState
     isDefinition: true
-    commentId: Overload:com.eyerunnman.interfaces.IGameService.ServiceState
-  com.eyerunnman.interfaces.IGameService:
+    commentId: Overload:com.eyerunnman.patterns.IGameService.ServiceState
+  com.eyerunnman.patterns.IGameService:
     name:
       CSharp:
-      - id: com.eyerunnman.interfaces.IGameService
+      - id: com.eyerunnman.patterns.IGameService
         name: IGameService
         nameWithType: IGameService
-        qualifiedName: com.eyerunnman.interfaces.IGameService
+        qualifiedName: com.eyerunnman.patterns.IGameService
       VB:
-      - id: com.eyerunnman.interfaces.IGameService
+      - id: com.eyerunnman.patterns.IGameService
         name: IGameService
         nameWithType: IGameService
-        qualifiedName: com.eyerunnman.interfaces.IGameService
+        qualifiedName: com.eyerunnman.patterns.IGameService
     isDefinition: true
-    parent: com.eyerunnman.interfaces
-    commentId: T:com.eyerunnman.interfaces.IGameService
-  com.eyerunnman.interfaces.GameService.ServiceState*:
+    parent: com.eyerunnman.patterns
+    commentId: T:com.eyerunnman.patterns.IGameService
+  com.eyerunnman.patterns.GameService.ServiceState*:
     name:
       CSharp:
-      - id: com.eyerunnman.interfaces.GameService.ServiceState*
+      - id: com.eyerunnman.patterns.GameService.ServiceState*
         name: ServiceState
         nameWithType: GameService.ServiceState
-        qualifiedName: com.eyerunnman.interfaces.GameService.ServiceState
+        qualifiedName: com.eyerunnman.patterns.GameService.ServiceState
       VB:
-      - id: com.eyerunnman.interfaces.GameService.ServiceState*
+      - id: com.eyerunnman.patterns.GameService.ServiceState*
         name: ServiceState
         nameWithType: GameService.ServiceState
-        qualifiedName: com.eyerunnman.interfaces.GameService.ServiceState
+        qualifiedName: com.eyerunnman.patterns.GameService.ServiceState
     isDefinition: true
-    commentId: Overload:com.eyerunnman.interfaces.GameService.ServiceState
-  com.eyerunnman.interfaces.IGameService.ServiceState:
+    commentId: Overload:com.eyerunnman.patterns.GameService.ServiceState
+  com.eyerunnman.patterns.IGameService.ServiceState:
     name:
       CSharp:
-      - id: com.eyerunnman.interfaces.IGameService.ServiceState
+      - id: com.eyerunnman.patterns.IGameService.ServiceState
         name: ServiceState
         nameWithType: IGameService.ServiceState
-        qualifiedName: com.eyerunnman.interfaces.IGameService.ServiceState
+        qualifiedName: com.eyerunnman.patterns.IGameService.ServiceState
       VB:
-      - id: com.eyerunnman.interfaces.IGameService.ServiceState
+      - id: com.eyerunnman.patterns.IGameService.ServiceState
         name: ServiceState
         nameWithType: IGameService.ServiceState
-        qualifiedName: com.eyerunnman.interfaces.IGameService.ServiceState
+        qualifiedName: com.eyerunnman.patterns.IGameService.ServiceState
     isDefinition: true
-    parent: com.eyerunnman.interfaces.IGameService
-    commentId: P:com.eyerunnman.interfaces.IGameService.ServiceState
-  com.eyerunnman.interfaces.GameService.OnRegister*:
+    parent: com.eyerunnman.patterns.IGameService
+    commentId: P:com.eyerunnman.patterns.IGameService.ServiceState
+  com.eyerunnman.patterns.GameService.OnRegister*:
     name:
       CSharp:
-      - id: com.eyerunnman.interfaces.GameService.OnRegister*
+      - id: com.eyerunnman.patterns.GameService.OnRegister*
         name: OnRegister
         nameWithType: GameService.OnRegister
-        qualifiedName: com.eyerunnman.interfaces.GameService.OnRegister
+        qualifiedName: com.eyerunnman.patterns.GameService.OnRegister
       VB:
-      - id: com.eyerunnman.interfaces.GameService.OnRegister*
+      - id: com.eyerunnman.patterns.GameService.OnRegister*
         name: OnRegister
         nameWithType: GameService.OnRegister
-        qualifiedName: com.eyerunnman.interfaces.GameService.OnRegister
+        qualifiedName: com.eyerunnman.patterns.GameService.OnRegister
     isDefinition: true
-    commentId: Overload:com.eyerunnman.interfaces.GameService.OnRegister
-  com.eyerunnman.interfaces.IGameService.OnRegister:
+    commentId: Overload:com.eyerunnman.patterns.GameService.OnRegister
+  com.eyerunnman.patterns.IGameService.OnRegister:
     name:
       CSharp:
-      - id: com.eyerunnman.interfaces.IGameService.OnRegister
+      - id: com.eyerunnman.patterns.IGameService.OnRegister
         name: OnRegister
         nameWithType: IGameService.OnRegister
-        qualifiedName: com.eyerunnman.interfaces.IGameService.OnRegister
+        qualifiedName: com.eyerunnman.patterns.IGameService.OnRegister
       - name: (
         nameWithType: (
         qualifiedName: (
@@ -1446,10 +1446,10 @@ references:
         nameWithType: )
         qualifiedName: )
       VB:
-      - id: com.eyerunnman.interfaces.IGameService.OnRegister
+      - id: com.eyerunnman.patterns.IGameService.OnRegister
         name: OnRegister
         nameWithType: IGameService.OnRegister
-        qualifiedName: com.eyerunnman.interfaces.IGameService.OnRegister
+        qualifiedName: com.eyerunnman.patterns.IGameService.OnRegister
       - name: (
         nameWithType: (
         qualifiedName: (
@@ -1457,29 +1457,29 @@ references:
         nameWithType: )
         qualifiedName: )
     isDefinition: true
-    parent: com.eyerunnman.interfaces.IGameService
-    commentId: M:com.eyerunnman.interfaces.IGameService.OnRegister
-  com.eyerunnman.interfaces.GameService.OnRegisterError*:
+    parent: com.eyerunnman.patterns.IGameService
+    commentId: M:com.eyerunnman.patterns.IGameService.OnRegister
+  com.eyerunnman.patterns.GameService.OnRegisterError*:
     name:
       CSharp:
-      - id: com.eyerunnman.interfaces.GameService.OnRegisterError*
+      - id: com.eyerunnman.patterns.GameService.OnRegisterError*
         name: OnRegisterError
         nameWithType: GameService.OnRegisterError
-        qualifiedName: com.eyerunnman.interfaces.GameService.OnRegisterError
+        qualifiedName: com.eyerunnman.patterns.GameService.OnRegisterError
       VB:
-      - id: com.eyerunnman.interfaces.GameService.OnRegisterError*
+      - id: com.eyerunnman.patterns.GameService.OnRegisterError*
         name: OnRegisterError
         nameWithType: GameService.OnRegisterError
-        qualifiedName: com.eyerunnman.interfaces.GameService.OnRegisterError
+        qualifiedName: com.eyerunnman.patterns.GameService.OnRegisterError
     isDefinition: true
-    commentId: Overload:com.eyerunnman.interfaces.GameService.OnRegisterError
-  com.eyerunnman.interfaces.IGameService.OnRegisterError(System.String):
+    commentId: Overload:com.eyerunnman.patterns.GameService.OnRegisterError
+  com.eyerunnman.patterns.IGameService.OnRegisterError(System.String):
     name:
       CSharp:
-      - id: com.eyerunnman.interfaces.IGameService.OnRegisterError(System.String)
+      - id: com.eyerunnman.patterns.IGameService.OnRegisterError(System.String)
         name: OnRegisterError
         nameWithType: IGameService.OnRegisterError
-        qualifiedName: com.eyerunnman.interfaces.IGameService.OnRegisterError
+        qualifiedName: com.eyerunnman.patterns.IGameService.OnRegisterError
       - name: (
         nameWithType: (
         qualifiedName: (
@@ -1492,10 +1492,10 @@ references:
         nameWithType: )
         qualifiedName: )
       VB:
-      - id: com.eyerunnman.interfaces.IGameService.OnRegisterError(System.String)
+      - id: com.eyerunnman.patterns.IGameService.OnRegisterError(System.String)
         name: OnRegisterError
         nameWithType: IGameService.OnRegisterError
-        qualifiedName: com.eyerunnman.interfaces.IGameService.OnRegisterError
+        qualifiedName: com.eyerunnman.patterns.IGameService.OnRegisterError
       - name: (
         nameWithType: (
         qualifiedName: (
@@ -1508,29 +1508,29 @@ references:
         nameWithType: )
         qualifiedName: )
     isDefinition: true
-    parent: com.eyerunnman.interfaces.IGameService
-    commentId: M:com.eyerunnman.interfaces.IGameService.OnRegisterError(System.String)
-  com.eyerunnman.interfaces.GameService.OnUnRegister*:
+    parent: com.eyerunnman.patterns.IGameService
+    commentId: M:com.eyerunnman.patterns.IGameService.OnRegisterError(System.String)
+  com.eyerunnman.patterns.GameService.OnUnRegister*:
     name:
       CSharp:
-      - id: com.eyerunnman.interfaces.GameService.OnUnRegister*
+      - id: com.eyerunnman.patterns.GameService.OnUnRegister*
         name: OnUnRegister
         nameWithType: GameService.OnUnRegister
-        qualifiedName: com.eyerunnman.interfaces.GameService.OnUnRegister
+        qualifiedName: com.eyerunnman.patterns.GameService.OnUnRegister
       VB:
-      - id: com.eyerunnman.interfaces.GameService.OnUnRegister*
+      - id: com.eyerunnman.patterns.GameService.OnUnRegister*
         name: OnUnRegister
         nameWithType: GameService.OnUnRegister
-        qualifiedName: com.eyerunnman.interfaces.GameService.OnUnRegister
+        qualifiedName: com.eyerunnman.patterns.GameService.OnUnRegister
     isDefinition: true
-    commentId: Overload:com.eyerunnman.interfaces.GameService.OnUnRegister
-  com.eyerunnman.interfaces.IGameService.OnUnRegister:
+    commentId: Overload:com.eyerunnman.patterns.GameService.OnUnRegister
+  com.eyerunnman.patterns.IGameService.OnUnRegister:
     name:
       CSharp:
-      - id: com.eyerunnman.interfaces.IGameService.OnUnRegister
+      - id: com.eyerunnman.patterns.IGameService.OnUnRegister
         name: OnUnRegister
         nameWithType: IGameService.OnUnRegister
-        qualifiedName: com.eyerunnman.interfaces.IGameService.OnUnRegister
+        qualifiedName: com.eyerunnman.patterns.IGameService.OnUnRegister
       - name: (
         nameWithType: (
         qualifiedName: (
@@ -1538,10 +1538,10 @@ references:
         nameWithType: )
         qualifiedName: )
       VB:
-      - id: com.eyerunnman.interfaces.IGameService.OnUnRegister
+      - id: com.eyerunnman.patterns.IGameService.OnUnRegister
         name: OnUnRegister
         nameWithType: IGameService.OnUnRegister
-        qualifiedName: com.eyerunnman.interfaces.IGameService.OnUnRegister
+        qualifiedName: com.eyerunnman.patterns.IGameService.OnUnRegister
       - name: (
         nameWithType: (
         qualifiedName: (
@@ -1549,29 +1549,29 @@ references:
         nameWithType: )
         qualifiedName: )
     isDefinition: true
-    parent: com.eyerunnman.interfaces.IGameService
-    commentId: M:com.eyerunnman.interfaces.IGameService.OnUnRegister
-  com.eyerunnman.interfaces.GameService.Initialize*:
+    parent: com.eyerunnman.patterns.IGameService
+    commentId: M:com.eyerunnman.patterns.IGameService.OnUnRegister
+  com.eyerunnman.patterns.GameService.Initialize*:
     name:
       CSharp:
-      - id: com.eyerunnman.interfaces.GameService.Initialize*
+      - id: com.eyerunnman.patterns.GameService.Initialize*
         name: Initialize
         nameWithType: GameService.Initialize
-        qualifiedName: com.eyerunnman.interfaces.GameService.Initialize
+        qualifiedName: com.eyerunnman.patterns.GameService.Initialize
       VB:
-      - id: com.eyerunnman.interfaces.GameService.Initialize*
+      - id: com.eyerunnman.patterns.GameService.Initialize*
         name: Initialize
         nameWithType: GameService.Initialize
-        qualifiedName: com.eyerunnman.interfaces.GameService.Initialize
+        qualifiedName: com.eyerunnman.patterns.GameService.Initialize
     isDefinition: true
-    commentId: Overload:com.eyerunnman.interfaces.GameService.Initialize
-  com.eyerunnman.interfaces.IGameService.Initialize(System.Boolean):
+    commentId: Overload:com.eyerunnman.patterns.GameService.Initialize
+  com.eyerunnman.patterns.IGameService.Initialize(System.Boolean):
     name:
       CSharp:
-      - id: com.eyerunnman.interfaces.IGameService.Initialize(System.Boolean)
+      - id: com.eyerunnman.patterns.IGameService.Initialize(System.Boolean)
         name: Initialize
         nameWithType: IGameService.Initialize
-        qualifiedName: com.eyerunnman.interfaces.IGameService.Initialize
+        qualifiedName: com.eyerunnman.patterns.IGameService.Initialize
       - name: (
         nameWithType: (
         qualifiedName: (
@@ -1584,10 +1584,10 @@ references:
         nameWithType: )
         qualifiedName: )
       VB:
-      - id: com.eyerunnman.interfaces.IGameService.Initialize(System.Boolean)
+      - id: com.eyerunnman.patterns.IGameService.Initialize(System.Boolean)
         name: Initialize
         nameWithType: IGameService.Initialize
-        qualifiedName: com.eyerunnman.interfaces.IGameService.Initialize
+        qualifiedName: com.eyerunnman.patterns.IGameService.Initialize
       - name: (
         nameWithType: (
         qualifiedName: (
@@ -1600,71 +1600,71 @@ references:
         nameWithType: )
         qualifiedName: )
     isDefinition: true
-    parent: com.eyerunnman.interfaces.IGameService
-    commentId: M:com.eyerunnman.interfaces.IGameService.Initialize(System.Boolean)
-  com.eyerunnman.interfaces.GameService:
+    parent: com.eyerunnman.patterns.IGameService
+    commentId: M:com.eyerunnman.patterns.IGameService.Initialize(System.Boolean)
+  com.eyerunnman.patterns.GameService:
     name:
       CSharp:
-      - id: com.eyerunnman.interfaces.GameService
+      - id: com.eyerunnman.patterns.GameService
         name: GameService
         nameWithType: GameService
-        qualifiedName: com.eyerunnman.interfaces.GameService
+        qualifiedName: com.eyerunnman.patterns.GameService
       VB:
-      - id: com.eyerunnman.interfaces.GameService
+      - id: com.eyerunnman.patterns.GameService
         name: GameService
         nameWithType: GameService
-        qualifiedName: com.eyerunnman.interfaces.GameService
+        qualifiedName: com.eyerunnman.patterns.GameService
     isDefinition: true
-    commentId: T:com.eyerunnman.interfaces.GameService
-  com.eyerunnman.interfaces.IState`1.OnEnterState*:
+    commentId: T:com.eyerunnman.patterns.GameService
+  com.eyerunnman.patterns.IState`1.OnEnterState*:
     name:
       CSharp:
-      - id: com.eyerunnman.interfaces.IState`1.OnEnterState*
+      - id: com.eyerunnman.patterns.IState`1.OnEnterState*
         name: OnEnterState
         nameWithType: IState<T>.OnEnterState
-        qualifiedName: com.eyerunnman.interfaces.IState<T>.OnEnterState
+        qualifiedName: com.eyerunnman.patterns.IState<T>.OnEnterState
       VB:
-      - id: com.eyerunnman.interfaces.IState`1.OnEnterState*
+      - id: com.eyerunnman.patterns.IState`1.OnEnterState*
         name: OnEnterState
         nameWithType: IState(Of T).OnEnterState
-        qualifiedName: com.eyerunnman.interfaces.IState(Of T).OnEnterState
+        qualifiedName: com.eyerunnman.patterns.IState(Of T).OnEnterState
     isDefinition: true
-    commentId: Overload:com.eyerunnman.interfaces.IState`1.OnEnterState
-  com.eyerunnman.interfaces.IState`1.OnUpdateState*:
+    commentId: Overload:com.eyerunnman.patterns.IState`1.OnEnterState
+  com.eyerunnman.patterns.IState`1.OnUpdateState*:
     name:
       CSharp:
-      - id: com.eyerunnman.interfaces.IState`1.OnUpdateState*
+      - id: com.eyerunnman.patterns.IState`1.OnUpdateState*
         name: OnUpdateState
         nameWithType: IState<T>.OnUpdateState
-        qualifiedName: com.eyerunnman.interfaces.IState<T>.OnUpdateState
+        qualifiedName: com.eyerunnman.patterns.IState<T>.OnUpdateState
       VB:
-      - id: com.eyerunnman.interfaces.IState`1.OnUpdateState*
+      - id: com.eyerunnman.patterns.IState`1.OnUpdateState*
         name: OnUpdateState
         nameWithType: IState(Of T).OnUpdateState
-        qualifiedName: com.eyerunnman.interfaces.IState(Of T).OnUpdateState
+        qualifiedName: com.eyerunnman.patterns.IState(Of T).OnUpdateState
     isDefinition: true
-    commentId: Overload:com.eyerunnman.interfaces.IState`1.OnUpdateState
-  com.eyerunnman.interfaces.IState`1.OnExitState*:
+    commentId: Overload:com.eyerunnman.patterns.IState`1.OnUpdateState
+  com.eyerunnman.patterns.IState`1.OnExitState*:
     name:
       CSharp:
-      - id: com.eyerunnman.interfaces.IState`1.OnExitState*
+      - id: com.eyerunnman.patterns.IState`1.OnExitState*
         name: OnExitState
         nameWithType: IState<T>.OnExitState
-        qualifiedName: com.eyerunnman.interfaces.IState<T>.OnExitState
+        qualifiedName: com.eyerunnman.patterns.IState<T>.OnExitState
       VB:
-      - id: com.eyerunnman.interfaces.IState`1.OnExitState*
+      - id: com.eyerunnman.patterns.IState`1.OnExitState*
         name: OnExitState
         nameWithType: IState(Of T).OnExitState
-        qualifiedName: com.eyerunnman.interfaces.IState(Of T).OnExitState
+        qualifiedName: com.eyerunnman.patterns.IState(Of T).OnExitState
     isDefinition: true
-    commentId: Overload:com.eyerunnman.interfaces.IState`1.OnExitState
-  com.eyerunnman.interfaces.IState`1:
+    commentId: Overload:com.eyerunnman.patterns.IState`1.OnExitState
+  com.eyerunnman.patterns.IState`1:
     name:
       CSharp:
-      - id: com.eyerunnman.interfaces.IState`1
+      - id: com.eyerunnman.patterns.IState`1
         name: IState
         nameWithType: IState
-        qualifiedName: com.eyerunnman.interfaces.IState
+        qualifiedName: com.eyerunnman.patterns.IState
       - name: <
         nameWithType: <
         qualifiedName: <
@@ -1675,10 +1675,10 @@ references:
         nameWithType: '>'
         qualifiedName: '>'
       VB:
-      - id: com.eyerunnman.interfaces.IState`1
+      - id: com.eyerunnman.patterns.IState`1
         name: IState
         nameWithType: IState
-        qualifiedName: com.eyerunnman.interfaces.IState
+        qualifiedName: com.eyerunnman.patterns.IState
       - name: '(Of '
         nameWithType: '(Of '
         qualifiedName: '(Of '
@@ -1689,22 +1689,22 @@ references:
         nameWithType: )
         qualifiedName: )
     isDefinition: true
-    parent: com.eyerunnman.interfaces
-    commentId: T:com.eyerunnman.interfaces.IState`1
-  com.eyerunnman.interfaces.IState`1.SwitchState*:
+    parent: com.eyerunnman.patterns
+    commentId: T:com.eyerunnman.patterns.IState`1
+  com.eyerunnman.patterns.IState`1.SwitchState*:
     name:
       CSharp:
-      - id: com.eyerunnman.interfaces.IState`1.SwitchState*
+      - id: com.eyerunnman.patterns.IState`1.SwitchState*
         name: SwitchState
         nameWithType: IState<T>.SwitchState
-        qualifiedName: com.eyerunnman.interfaces.IState<T>.SwitchState
+        qualifiedName: com.eyerunnman.patterns.IState<T>.SwitchState
       VB:
-      - id: com.eyerunnman.interfaces.IState`1.SwitchState*
+      - id: com.eyerunnman.patterns.IState`1.SwitchState*
         name: SwitchState
         nameWithType: IState(Of T).SwitchState
-        qualifiedName: com.eyerunnman.interfaces.IState(Of T).SwitchState
+        qualifiedName: com.eyerunnman.patterns.IState(Of T).SwitchState
     isDefinition: true
-    commentId: Overload:com.eyerunnman.interfaces.IState`1.SwitchState
+    commentId: Overload:com.eyerunnman.patterns.IState`1.SwitchState
   System.Object:
     name:
       CSharp:
