@@ -2,10 +2,9 @@
 {
     public interface IState<T>
     {
-        public void OnEnterState();
-
-        public void OnUpdateState();
-
+        public void ExecuteStateEnter();
+        public void ExecuteStateUpdate();
+        public void ExecuteStateExit();
     }
 
 }
