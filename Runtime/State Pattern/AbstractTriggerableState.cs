@@ -9,41 +9,40 @@ namespace com.eyerunnman.patterns
     public abstract class AbstractTriggerableState<Context, TriggerEnums, StateEnum> : IState<Context> where TriggerEnums : Enum where StateEnum : Enum
     {
 
+        
+        #region Context Getters
         private AbstractStateMachine<Context, TriggerEnums, StateEnum> StateContext { get; set; }
 
         protected AbstractTriggerableState<Context, TriggerEnums, StateEnum> CurrentContextState => StateContext.CurrentRootState;
         protected IFactory<AbstractTriggerableState<Context, TriggerEnums, StateEnum>, StateEnum> StateFactory => StateContext.StateFactory;
         protected Context Ctx => StateContext.Ctx;
-
         protected HashSet<TriggerEnums> CurrentFrameTriggers => StateContext.CurrentFrameTriggers;
-        protected virtual bool IsRootState => false;
+        #endregion
 
-        public StateEnum StateID { get; private set; }
-
+        #region State Properties
+        internal StateEnum StateID { get; private set; }
         protected Status TriggerStatus { get; private set; }
 
-        private bool IsChildState => CurrentParentState != null;
-        private bool IsParentState => CurrentChildState != null;
+        #endregion
 
-        private AbstractTriggerableState<Context,TriggerEnums, StateEnum> CurrentParentState { get; set; }
-        internal AbstractTriggerableState<Context, TriggerEnums, StateEnum> CurrentChildState { get; set; }
-        private HashSet<StateEnum> LoadedChildStates { get;set; }
+        #region State Properties
+        protected internal virtual bool IsRootState => false;
 
-        private HashSet<StateEnum> Transitions { get; set; }
+        internal bool IsChildState => ParentStateRef != null;
+        internal bool IsParentState => ChildStateNode != null;
 
+        private AbstractTriggerableState<Context, TriggerEnums, StateEnum> ParentStateRef { get; set; }
+        internal AbstractTriggerableState<Context, TriggerEnums, StateEnum> ChildStateNode { get; private set; }
 
-        public AbstractTriggerableState(AbstractStateMachine<Context, TriggerEnums, StateEnum> context,StateEnum stateID){
+        #endregion
 
-            StateContext = context;
+        #region Transition Properties
+        internal HashSet<StateEnum> ChildNodeEnums { get; private  set; }
 
-            StateID = stateID;
+        private HashSet<StateEnum> InternalStateTransitions { get; set; }
+        #endregion
 
-            LoadedChildStates = new();
-            Transitions = new();
-
-            TriggerStatus = new();
-        }
-
+        #region IState
         public virtual void ExecuteStateEnter()
         {
             Debug.Log((IsRootState ? ("Root : ") : ("-> ")) + StateID.ToString() + " Enter ");
@@ -62,47 +61,80 @@ namespace com.eyerunnman.patterns
         {
             OnStateExit();
         }
+        #endregion
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="context"></param>
+        /// <param name="stateID"></param>
+        public AbstractTriggerableState(AbstractStateMachine<Context, TriggerEnums, StateEnum> context, StateEnum stateID)
+        {
+
+            StateContext = context;
+
+            StateID = stateID;
+
+            ChildNodeEnums = new();
+            InternalStateTransitions = new();
+
+            TriggerStatus = new();
+        }
+
+        #region State LifeCycle
         protected abstract void OnStateEnter();
-
         protected abstract void OnStateUpdate();
-
         protected abstract void OnStateExit();
-
         protected abstract void OnMultipleTriggers();
+        #endregion
 
         public void ExecuteMultipleTriggers()
         {
             if (TriggerStatus.Enabled)
             {
                 OnMultipleTriggers();
-                CurrentChildState?.OnMultipleTriggers();
+                ChildStateNode?.OnMultipleTriggers();
             }
         }
 
+        #region Transition Execution Methods
 
-        protected void InvokeTransition(StateEnum transitionToState)
+        protected void InvokeTransition(StateEnum transitionToState,bool sendToParent=false)
         {
-            if(Transitions.Contains(transitionToState))
+            if (InternalStateTransitions.Contains(transitionToState))
             {
                 SwitchState(StateFactory.Create(transitionToState));
             }
+            else
+            {
+                if (IsChildState)
+                {
+                    ParentStateRef.InvokeTransition(transitionToState, sendToParent);
+                }
+            }
         }
+
+        #endregion
+
+        #region State Initilization Initilization Methods
 
         protected void LoadChildState(StateEnum stateEnum)
         {
-            LoadedChildStates.Add(stateEnum);
+            ChildNodeEnums.Add(stateEnum);
 
-            if (LoadedChildStates.Count == 1)
+            if (ChildNodeEnums.Count == 1)
             {
                 SetCurrentChildState(StateFactory.Create(stateEnum));
             }
         }
-
         protected void AddTransition(StateEnum stateEnum)
         {
-            Transitions.Add(stateEnum);
+            InternalStateTransitions.Add(stateEnum);
         }
+
+        #endregion
+
+        #region Triggers Check Methods
         protected bool AreTriggersPresentCurrentFrame(List<TriggerEnums> triggersToCompare)
         {
             if (triggersToCompare.All(trigger => IsTriggerPresentCurrentFrame(trigger)))
@@ -116,30 +148,34 @@ namespace com.eyerunnman.patterns
         {
             return CurrentFrameTriggers.Contains(triggerToCompare);
         }
+        #endregion
 
+        #region Child State LifeCycle Execution Methods
         private void EnterChildState()
         {
             if (IsParentState)
             {
-                CurrentChildState.ExecuteStateEnter();
+                ChildStateNode.ExecuteStateEnter();
             }
         }
         private void UpdateChildStates()
         {
             if (IsParentState)
             {
-                CurrentChildState?.ExecuteStateUpdate();
+                ChildStateNode?.ExecuteStateUpdate();
             }
         }
+        #endregion
 
+        #region State Switch Methods
         private void SwitchState(AbstractTriggerableState<Context, TriggerEnums, StateEnum> newState)
         {
-            if(newState == null)
+            if (newState == null)
             {
                 return;
             }
 
-            if(IsRootState && newState.IsRootState || IsChildState && newState.IsChildState)
+            if (IsRootState && newState.IsRootState || IsChildState && newState.IsChildState)
             {
                 ExecuteStateExit();
                 newState.ExecuteStateEnter();
@@ -148,9 +184,9 @@ namespace com.eyerunnman.patterns
                 {
                     StateContext.CurrentRootState = newState;
                 }
-                else if(IsChildState)
+                else if (IsChildState)
                 {
-                    CurrentParentState.SetCurrentChildState(newState);
+                    ParentStateRef.SetCurrentChildState(newState);
                 }
             }
 
@@ -158,9 +194,9 @@ namespace com.eyerunnman.patterns
 
         private void SetCurrentChildState(AbstractTriggerableState<Context, TriggerEnums, StateEnum> childState)
         {
-            if (LoadedChildStates.Contains(childState.StateID))
+            if (ChildNodeEnums.Contains(childState.StateID))
             {
-                CurrentChildState = childState;
+                ChildStateNode = childState;
                 childState.SetCurrentParentState(this);
             }
             else
@@ -170,10 +206,10 @@ namespace com.eyerunnman.patterns
         }
         private void SetCurrentParentState(AbstractTriggerableState<Context, TriggerEnums, StateEnum> newSuperState)
         {
-            CurrentParentState = newSuperState;
+            ParentStateRef = newSuperState;
         }
+        #endregion
 
-       
     }
 }
 

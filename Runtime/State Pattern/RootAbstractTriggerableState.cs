@@ -10,7 +10,7 @@ namespace com.eyerunnman.patterns
 
         }
 
-        protected override bool IsRootState => true;
+        protected internal override bool IsRootState => true;
     }
 }
 
