@@ -15,9 +15,7 @@ namespace com.eyerunnman.patterns
             public List<StateTreeNode> ChildNodes { get; private set; }
 
             public bool IsRootNode { get; private set; }
-
             public bool IsChildNode { get; private set; }
-
             public bool IsParentNode { get; private set; }
 
             public StateTreeNode(StateEnum stateId, List<StateTreeNode> childNodes, bool IsRoot = false)
@@ -57,7 +55,7 @@ namespace com.eyerunnman.patterns
             {
                 var currentStateObj = StateFactory.Create(stateEnum);
 
-                if (currentStateObj?.IsRootState is not null)
+                if (currentStateObj is not null &&  currentStateObj.IsRootState)
                 {
                     rootStateObjects.Add(currentStateObj);
                 }
@@ -71,7 +69,7 @@ namespace com.eyerunnman.patterns
 
                 StateTreeNode getStateTreeNode(AbstractTriggerableState<Context, TriggerEnum, StateEnum> state)
                 {
-                    List<AbstractTriggerableState<Context, TriggerEnum, StateEnum>> childStates =new (state.ChildNodeEnums.Select(childEnum => StateFactory.Create(childEnum)));
+                    List<AbstractTriggerableState<Context, TriggerEnum, StateEnum>> childStates =new (state.LoadedChildStates.Select(childEnum => StateFactory.Create(childEnum)));
 
                     if (childStates.Count == 0)
                     {
@@ -105,7 +103,7 @@ namespace com.eyerunnman.patterns
 
         protected internal List<StateEnum> CurrentStateChain { get {
 
-                List <StateEnum> chain = new();
+                List <StateEnum> chain = new(){ RootEnum };
 
                 var stateRef= CurrentRootState;
 
@@ -114,10 +112,10 @@ namespace com.eyerunnman.patterns
                     chain.Add(stateRef.StateID);
                 }
                 
-                while (stateRef?.ChildStateNode is not null)
+                while (stateRef?.ActiveChildStateNode is not null)
                 {
-                    chain.Add(stateRef.ChildStateNode.StateID);
-                    stateRef = stateRef?.ChildStateNode;
+                    chain.Add(stateRef.ActiveChildStateNode.StateID);
+                    stateRef = stateRef?.ActiveChildStateNode;
                 }
 
                 return chain;
