@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
 
 namespace com.eyerunnman.patterns
 {
-    public abstract class AbstractStateMachine<Context, TriggerEnum, StateEnum> : MonoBehaviour where StateEnum : Enum where TriggerEnum : Enum
+    public interface IAbstractStateMachine<Context, StateEnum, TriggerEnum> where StateEnum : Enum where TriggerEnum : Enum
     {
 
-        protected sealed class StateTreeNode : ITreeNode<StateTreeNode>
+        public sealed class StateTreeNode : ITreeNode<StateTreeNode>
         {
             public StateEnum StateID { get; private set; }
 
@@ -45,17 +44,15 @@ namespace com.eyerunnman.patterns
             }
         }
 
-        protected StateTreeNode StateTree{ get; private set; }
-
-        protected void ComputeStateTree()
+        public void ComputeStateTree()
         {
-            List<AbstractTriggerableState<Context, TriggerEnum, StateEnum>> rootStateObjects = new();
+            List<AbstractTriggerableState<Context, StateEnum, TriggerEnum>> rootStateObjects = new();
 
             foreach (StateEnum stateEnum in Enum.GetValues(typeof(StateEnum)))
             {
                 var currentStateObj = StateFactory.Create(stateEnum);
 
-                if (currentStateObj is not null &&  currentStateObj.IsRootState)
+                if (currentStateObj is not null && currentStateObj.IsRootState)
                 {
                     rootStateObjects.Add(currentStateObj);
                 }
@@ -67,13 +64,13 @@ namespace com.eyerunnman.patterns
             {
                 childTreeNodes.Add(getStateTreeNode(item));
 
-                StateTreeNode getStateTreeNode(AbstractTriggerableState<Context, TriggerEnum, StateEnum> state)
+                StateTreeNode getStateTreeNode(AbstractTriggerableState<Context, StateEnum, TriggerEnum> state)
                 {
-                    List<AbstractTriggerableState<Context, TriggerEnum, StateEnum>> childStates =new (state.LoadedChildStates.Select(childEnum => StateFactory.Create(childEnum)));
+                    List<AbstractTriggerableState<Context, StateEnum, TriggerEnum>> childStates =new (state.LoadedChildStates.Select(childEnum => StateFactory.Create(childEnum)));
 
                     if (childStates.Count == 0)
                     {
-                        return new(state.StateID,  new List<StateTreeNode>());
+                        return new(state.StateID, new List<StateTreeNode>());
                     }
                     else
                     {
@@ -83,7 +80,8 @@ namespace com.eyerunnman.patterns
                         {
                             StateTreeNode childnode = getStateTreeNode(childStateObject);
 
-                            if (childnode != null) {
+                            if (childnode != null)
+                            {
                                 childNodeList.Add(childnode);
                             }
                         }
@@ -96,12 +94,10 @@ namespace com.eyerunnman.patterns
             StateTree = new StateTreeNode(RootEnum, childTreeNodes, true);
         }
 
-        protected abstract StateEnum RootEnum { get;}
-
-        protected internal IFactory<AbstractTriggerableState<Context, TriggerEnum, StateEnum>, StateEnum> StateFactory { get; set; }
-        protected internal AbstractTriggerableState<Context, TriggerEnum, StateEnum> CurrentRootState { get; set; }
-
-        protected internal List<StateEnum> CurrentStateChain { get {
+        protected internal List<StateEnum> CurrentStateChain
+        {
+            get
+            {
 
                 List <StateEnum> chain = new(){ RootEnum };
 
@@ -111,7 +107,7 @@ namespace com.eyerunnman.patterns
                 {
                     chain.Add(stateRef.StateID);
                 }
-                
+
                 while (stateRef?.ActiveChildStateNode is not null)
                 {
                     chain.Add(stateRef.ActiveChildStateNode.StateID);
@@ -119,10 +115,16 @@ namespace com.eyerunnman.patterns
                 }
 
                 return chain;
-            } }
+            }
+        }
 
-        protected internal Context Ctx { get; set; }
-        protected internal HashSet<TriggerEnum> CurrentFrameTriggers { get; set; }
+
+        protected abstract StateEnum RootEnum { get; }
+        protected StateTreeNode StateTree { get; set; }
+        protected internal IFactory<AbstractTriggerableState<Context, StateEnum, TriggerEnum>, StateEnum> StateFactory { get; }
+        protected internal AbstractTriggerableState<Context, StateEnum, TriggerEnum> CurrentRootState { get; set; }
+        protected internal Context Ctx { get;}
+        protected internal HashSet<TriggerEnum> CurrentFrameTriggers { get; }
     }
 }
 
