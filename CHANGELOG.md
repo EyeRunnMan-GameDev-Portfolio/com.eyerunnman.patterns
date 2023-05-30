@@ -1,5 +1,20 @@
 # Changelog
 
+## [2.1.0](https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.patterns/compare/v2.0.0...v2.1.0) (2023-05-30)
+
+
+### Features
+
+* added new datatypes like status, cooldown etc also created interface for statemachine ([73f06a5](https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.patterns/commit/73f06a5a714403b31a7a5f019d5862f69788f493))
+* added tree which  store all the  computed states hierarchies ([1a25494](https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.patterns/commit/1a25494935f725cb4db4e1a4e9b9200770e23a50))
+
+
+### Bug Fixes
+
+* Added invoke transition menthos with default child and updated api for states ([2c88f07](https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.patterns/commit/2c88f07b66b6e2ba8050ecb669b1af02687f5846))
+* modified the status commit ([01822fb](https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.patterns/commit/01822fb5efe643fd09be26753e2037a20cfd60a6))
+* updated abstract classes for state pattern also added trigger status ([9ba44ba](https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.patterns/commit/9ba44ba156023cab95d9dd540b7c8e335295254c))
+
 ## [2.0.0](https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.patterns/compare/v1.0.1...v2.0.0) (2023-01-08)
 
 

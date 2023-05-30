@@ -1,6 +1,6 @@
 {
   "name": "com.eyerunnman.patterns",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "displayName": "EyeRunnMan  Patterns Package",
   "description": "A package containing various patterns to be used in unity projects",
   "unity": "2019.1",
