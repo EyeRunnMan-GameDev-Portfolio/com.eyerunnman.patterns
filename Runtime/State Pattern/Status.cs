@@ -1,12 +1,16 @@
-﻿using UnityEngine;
-
-namespace com.eyerunnman.patterns
+﻿namespace com.eyerunnman.patterns
 {
     public class Status
     {
         bool status;
-        public bool Enabled { get => status; set => status = value; }
-        public bool Disabled { get => !status; set => status = !value; }
+        public bool Enabled
+        {
+            get => status; set => status = value;
+        }
+        public bool Disabled
+        {
+            get => !status; set => status = !value;
+        }
 
         public Status()
         {
@@ -28,10 +32,12 @@ namespace com.eyerunnman.patterns
         private T currentFrame;
         private T previousFrame;
 
-        public FrameData(){
+        public FrameData()
+        {
             currentFrame = new();
             previousFrame = new();
         }
+
         public FrameData(T defaultValue)
         {
             currentFrame = defaultValue;
@@ -50,14 +56,26 @@ namespace com.eyerunnman.patterns
 
         public T CurrentFrame
         {
-            get { return currentFrame; }
-            set { currentFrame = value; }
+            get
+            {
+                return currentFrame;
+            }
+            set
+            {
+                currentFrame = value;
+            }
         }
 
         public T PreviousFrame
         {
-            get { return previousFrame; }
-            set { previousFrame = value; }
+            get
+            {
+                return previousFrame;
+            }
+            set
+            {
+                previousFrame = value;
+            }
         }
     }
 
