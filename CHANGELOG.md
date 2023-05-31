@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.1](https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.patterns/compare/v2.1.0...v2.1.1) (2023-05-31)
+
+
+### Bug Fixes
+
+* added comments to state machine ([7e82069](https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.patterns/commit/7e8206955e778fa02056608c30da579e36321991))
+
 ## [2.1.0](https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.patterns/compare/v2.0.0...v2.1.0) (2023-05-30)
 
 
