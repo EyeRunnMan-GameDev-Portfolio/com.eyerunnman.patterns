@@ -6,18 +6,36 @@ namespace com.eyerunnman.patterns
 {
     public interface IAbstractStateMachine<Context, StateEnum, TriggerEnum> where StateEnum : Enum where TriggerEnum : Enum
     {
-
+        /// <summary>
+        /// State machine Tree Representation 
+        /// </summary>
         public sealed class StateTreeNode : ITreeNode<StateTreeNode>
         {
+            /// <summary>
+            /// State Id of Node
+            /// </summary>
             public StateEnum StateID { get; private set; }
 
+            /// <summary>
+            /// list of child tree nodes
+            /// </summary>
             public List<StateTreeNode> ChildNodes { get; private set; }
 
+            /// <summary>
+            /// bool is root node
+            /// </summary>
             public bool IsRootNode { get; private set; }
+
+            /// <summary>
+            /// bool is root node
+            /// </summary>
             public bool IsChildNode { get; private set; }
+            /// <summary>
+            /// bool is a parent of a node
+            /// </summary>
             public bool IsParentNode { get; private set; }
 
-            public StateTreeNode(StateEnum stateId, List<StateTreeNode> childNodes, bool IsRoot = false)
+            internal StateTreeNode(StateEnum stateId, List<StateTreeNode> childNodes, bool IsRoot = false)
             {
                 StateID = stateId;
 
@@ -44,7 +62,7 @@ namespace com.eyerunnman.patterns
             }
         }
 
-        public void ComputeStateTree()
+        internal void ComputeStateTree()
         {
             List<AbstractTriggerableState<Context, StateEnum, TriggerEnum>> rootStateObjects = new();
 

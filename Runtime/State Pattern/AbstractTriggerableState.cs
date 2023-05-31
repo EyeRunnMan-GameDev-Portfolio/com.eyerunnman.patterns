@@ -20,12 +20,23 @@ namespace com.eyerunnman.patterns
         #endregion
 
         #region State Properties
+        /// <summary>
+        /// state id
+        /// </summary>
         public StateEnum StateID { get; private set; }
+        /// <summary>
+        /// to handle triggers or not
+        /// </summary>
         protected Status TriggerStatus { get; private set; }
 
+        /// <summary>
+        /// set the undefined state
+        /// </summary>
         protected abstract StateEnum UndefinedState { get; }
 
-
+        /// <summary>
+        /// get the enum of current child state
+        /// </summary>
         protected StateEnum CurrentChildState
         {
             get
@@ -39,10 +50,20 @@ namespace com.eyerunnman.patterns
             }
         }
 
+        /// <summary>
+        /// Is root state
+        /// NOTE : If you want this to be true use root state abstract class
+        /// </summary>
         protected internal virtual bool IsRootState => false;
 
-        internal bool IsChildState => ParentStateRef != null;
-        internal bool IsParentState => ActiveChildStateNode != null;
+        /// <summary>
+        /// Is current state child state
+        /// </summary>
+        protected internal bool IsChildState => ParentStateRef != null;
+        /// <summary>
+        /// is current state parent state
+        /// </summary>
+        protected internal bool IsParentState => ActiveChildStateNode != null;
 
         private AbstractTriggerableState<Context, StateEnum, TriggerEnum> ParentStateRef { get; set; }
         internal AbstractTriggerableState<Context, StateEnum, TriggerEnum> ActiveChildStateNode { get; private set; }
@@ -57,7 +78,10 @@ namespace com.eyerunnman.patterns
 
         #region IState
 
-        public virtual void ExecuteStateEnter()
+        /// <summary>
+        /// call in awake when setting up the first state
+        /// </summary>
+        public void ExecuteStateEnter()
         {
             OnStateAwake();
             SetCurrentDefaultChildState();
@@ -70,13 +94,19 @@ namespace com.eyerunnman.patterns
                 SetCurrentChildState(StateFactory.Create(DefaultChildEnum));
         }
 
-        public virtual void ExecuteStateUpdate()
+        /// <summary>
+        /// Execute State Update in the update method
+        /// </summary>
+        public void ExecuteStateUpdate()
         {
             OnStateUpdate();
             UpdateChildStates();
         }
 
-        public virtual void ExecuteStateFixedUpdate()
+        /// <summary>
+        /// execute state fixed update in fixed update
+        /// </summary>
+        public void ExecuteStateFixedUpdate()
         {
             OnStateFixedUpdate();
             FixedUpdateChildStates();
@@ -110,15 +140,35 @@ namespace com.eyerunnman.patterns
 
 
         #region State LifeCycle
-
+        /// <summary>
+        /// Is called on state Setup
+        /// </summary>
         protected virtual void OnStateSetup(){}
+        /// <summary>
+        /// Is called on State Awake
+        /// </summary>
         protected virtual void OnStateAwake() { }
+        /// <summary>
+        /// is called on State Update
+        /// </summary>
         protected virtual void OnStateUpdate(){}
+        /// <summary>
+        /// is called on State Fixed Update
+        /// </summary>
         protected virtual void OnStateFixedUpdate(){}
+        /// <summary>
+        /// Is called on state fixed update
+        /// </summary>
         protected virtual void OnStateExit() { }
+        /// <summary>
+        /// When Triggers are fired
+        /// </summary>
         protected virtual void OnMultipleTriggers(){}
         #endregion
 
+        /// <summary>
+        /// call this in the child update after calculating the list of triggers
+        /// </summary>
         public void ExecuteMultipleTriggers()
         {
             if (TriggerStatus.Enabled)
@@ -129,7 +179,10 @@ namespace com.eyerunnman.patterns
         }
 
         #region Transition Execution Methods
-
+        /// <summary>
+        /// Invoke this in child for transition
+        /// </summary>
+        /// <param name="transitionToState">the state to transition to </param>
         protected void InvokeTransition(StateEnum transitionToState)
         {
             if (InternalStateTransitions.Contains(transitionToState))
@@ -137,6 +190,11 @@ namespace com.eyerunnman.patterns
                 SwitchState(StateFactory.Create(transitionToState));
             }
         }
+        /// <summary>
+        /// Invoke this in child for transition
+        /// </summary>
+        /// <param name="transitionToState">the state to transition to </param>
+        /// <param name="activeChildOfTargetState">the active child that should be in the next state</param>
         protected void InvokeTransition(StateEnum transitionToState, StateEnum activeChildOfTargetState)
         {
             if (InternalStateTransitions.Contains(transitionToState))
@@ -149,6 +207,10 @@ namespace com.eyerunnman.patterns
 
         #region State Initilization Initilization Methods
 
+        /// <summary>
+        /// add child to child state in the setup lifecycle
+        /// </summary>
+        /// <param name="stateEnum"></param>
         protected void LoadChildState(StateEnum stateEnum)
         {
             LoadedChildStates.Add(stateEnum);
@@ -158,12 +220,19 @@ namespace com.eyerunnman.patterns
                 SetDefaultChildState(stateEnum);
             }
         }
-
+        /// <summary>
+        /// add all the allowed states in the setup lifecycle
+        /// </summary>
+        /// <param name="stateEnum"></param>
         protected void AddTransition(StateEnum stateEnum)
         {
             InternalStateTransitions.Add(stateEnum);
         }
 
+        /// <summary>
+        /// set default child state 
+        /// </summary>
+        /// <param name="stateEnum"></param>
         protected void SetDefaultChildState(StateEnum stateEnum)
         {
             DefaultChildEnum = stateEnum;
@@ -172,6 +241,11 @@ namespace com.eyerunnman.patterns
         #endregion
 
         #region Triggers Check Methods
+        /// <summary>
+        /// check if triggers are present in current frame check in the trigger lifecycle
+        /// </summary>
+        /// <param name="triggersToCompare">list of triggers to compare to</param>
+        /// <returns></returns>
         protected bool AreTriggersPresentCurrentFrame(List<TriggerEnum> triggersToCompare)
         {
             if (triggersToCompare.All(trigger => IsTriggerPresentCurrentFrame(trigger)))
@@ -181,6 +255,11 @@ namespace com.eyerunnman.patterns
             else
                 return false;
         }
+        /// <summary>
+        /// check if single triggers is present in current frame check in the trigger lifecycle
+        /// </summary>
+        /// <param name="triggerToCompare">trigger to comare to</param>
+        /// <returns></returns>
         protected bool IsTriggerPresentCurrentFrame(TriggerEnum triggerToCompare)
         {
             return CurrentFrameTriggers.Contains(triggerToCompare);

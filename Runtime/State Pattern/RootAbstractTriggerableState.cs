@@ -9,7 +9,9 @@ namespace com.eyerunnman.patterns
         {
 
         }
-
+        /// <summary>
+        /// is root state for current state is true for root abstract state
+        /// </summary>
         protected internal override bool IsRootState => true;
     }
 }
