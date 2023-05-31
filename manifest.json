@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "CHANGELOG.html",
-          "hash": "/DXrMo6v2FVQUe/IYtE+TQ=="
+          "hash": "ONlHvgFkwulqkkky1R+Jiw=="
         }
       },
       "is_incremental": false,
@@ -43,6 +43,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api-runtime/com.eyerunnman.interfaces.ICommand-1.yml",
       "output": {
@@ -55,9 +58,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api-runtime/com.eyerunnman.interfaces.IGameService.yml",
       "output": {
@@ -100,12 +100,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api-runtime/com.eyerunnman.interfaces.yml",
       "output": {
         ".html": {
           "relative_path": "api-runtime/com.eyerunnman.interfaces.html",
-          "hash": "u3PZNiW6htvPPA4yNg1oEQ=="
+          "hash": "ejl+37H9Lm2W1ju3RWsTLQ=="
         }
       },
       "is_incremental": false,
@@ -117,7 +120,7 @@
       "output": {
         ".html": {
           "relative_path": "api-runtime/com.eyerunnman.patterns.AbstractTriggerableState-3.html",
-          "hash": "ADWwfAcxQjYgZLJy6Kba1w=="
+          "hash": "NYtVFpJGfNsyJte9FN2uYQ=="
         }
       },
       "is_incremental": false,
@@ -165,7 +168,7 @@
       "output": {
         ".html": {
           "relative_path": "api-runtime/com.eyerunnman.patterns.IAbstractStateMachine-3.StateTreeNode.html",
-          "hash": "ntkM2ZiSyfjxZ0lmTTM1LQ=="
+          "hash": "a474kSdOS2B4Nh5F58azTQ=="
         }
       },
       "is_incremental": false,
@@ -184,9 +187,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api-runtime/com.eyerunnman.patterns.ICommand-1.yml",
       "output": {
@@ -223,6 +223,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api-runtime/com.eyerunnman.patterns.IGameService.yml",
       "output": {
@@ -264,7 +267,7 @@
       "output": {
         ".html": {
           "relative_path": "api-runtime/com.eyerunnman.patterns.ITreeNode-1.html",
-          "hash": "I5WsmOLLyJ0vYYqmlwo3WQ=="
+          "hash": "Fe6mAQ0GGSwi3HSZUh4ymw=="
         }
       },
       "is_incremental": false,
@@ -288,7 +291,7 @@
       "output": {
         ".html": {
           "relative_path": "api-runtime/com.eyerunnman.patterns.MonobehaviourAbstractStateMachine-3.html",
-          "hash": "D7GL1hAp6hxCARXH2+0x7Q=="
+          "hash": "+OczmsTMMdgfPGQ1Gy1ykw=="
         }
       },
       "is_incremental": false,
@@ -300,7 +303,7 @@
       "output": {
         ".html": {
           "relative_path": "api-runtime/com.eyerunnman.patterns.RootAbstractTriggerableState-3.html",
-          "hash": "IrV6OA5wurbJMcFyhYPkXQ=="
+          "hash": "OzxwS4nl/AtJWH8pQaO3gA=="
         }
       },
       "is_incremental": false,
@@ -312,7 +315,7 @@
       "output": {
         ".html": {
           "relative_path": "api-runtime/com.eyerunnman.patterns.ServiceLocator.html",
-          "hash": "xoYVMvg4oV54OU6ncRZTOw=="
+          "hash": "wyeaUiB4tND2J4Megc5shg=="
         }
       },
       "is_incremental": false,
@@ -324,7 +327,7 @@
       "output": {
         ".html": {
           "relative_path": "api-runtime/com.eyerunnman.patterns.ServiceState.html",
-          "hash": "cZPlmYLnxhr5OmvgebiF0Q=="
+          "hash": "5b49NaCk3tKpEqS9d/EXRA=="
         }
       },
       "is_incremental": false,
@@ -343,15 +346,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api-runtime/com.eyerunnman.patterns.yml",
       "output": {
         ".html": {
           "relative_path": "api-runtime/com.eyerunnman.patterns.html",
-          "hash": "Js3/QHJ3jyq3IiqWfSD52Q=="
+          "hash": "Ci9xRcTWA1czRkJDpfGhxw=="
         }
       },
       "is_incremental": false,
