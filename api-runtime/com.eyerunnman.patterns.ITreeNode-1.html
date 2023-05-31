@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IState&lt;T&gt;
+    <title>Interface ITreeNode&lt;T&gt;
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IState&lt;T&gt;
+    <meta name="title" content="Interface ITreeNode&lt;T&gt;
    ">
     <meta name="generator" content="docfx 2.56.7.0">
     
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="../fusion/toc.html">
     
     
     
@@ -59,20 +59,27 @@
         </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
-        <div class="article row grid">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="com.eyerunnman.patterns.IState`1">
+            <article class="content wrap" id="_content" data-uid="com.eyerunnman.patterns.ITreeNode`1">
   
   
-  <h1 id="com_eyerunnman_patterns_IState_1" data-uid="com.eyerunnman.patterns.IState`1" class="text-break">Interface IState&lt;T&gt;
+  <h1 id="com_eyerunnman_patterns_ITreeNode_1" data-uid="com.eyerunnman.patterns.ITreeNode`1" class="text-break">Interface ITreeNode&lt;T&gt;
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="com.eyerunnman.interfaces.html">com.eyerunnman.patterns</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="com_eyerunnman_patterns_IState_1_syntax">Syntax</h5>
+  <h5 id="com_eyerunnman_patterns_ITreeNode_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IState&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public interface ITreeNode&lt;T&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -89,38 +96,108 @@
       </tr>
     </tbody>
   </table>
-  <h3 id="methods">Methods
+  <h3 id="properties">Properties
   </h3>
   
   
-  <a id="com_eyerunnman_patterns_IState_1_ExecuteStateEnter_" data-uid="com.eyerunnman.patterns.IState`1.ExecuteStateEnter*"></a>
-  <h4 id="com_eyerunnman_patterns_IState_1_ExecuteStateEnter" data-uid="com.eyerunnman.patterns.IState`1.ExecuteStateEnter">ExecuteStateEnter()</h4>
+  <a id="com_eyerunnman_patterns_ITreeNode_1_ChildNodes_" data-uid="com.eyerunnman.patterns.ITreeNode`1.ChildNodes*"></a>
+  <h4 id="com_eyerunnman_patterns_ITreeNode_1_ChildNodes" data-uid="com.eyerunnman.patterns.ITreeNode`1.ChildNodes">ChildNodes</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExecuteStateEnter()</code></pre>
+    <pre><code class="lang-csharp hljs">List&lt;T&gt; ChildNodes { get; }</code></pre>
   </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
-  <a id="com_eyerunnman_patterns_IState_1_ExecuteStateExit_" data-uid="com.eyerunnman.patterns.IState`1.ExecuteStateExit*"></a>
-  <h4 id="com_eyerunnman_patterns_IState_1_ExecuteStateExit" data-uid="com.eyerunnman.patterns.IState`1.ExecuteStateExit">ExecuteStateExit()</h4>
+  <a id="com_eyerunnman_patterns_ITreeNode_1_IsChildNode_" data-uid="com.eyerunnman.patterns.ITreeNode`1.IsChildNode*"></a>
+  <h4 id="com_eyerunnman_patterns_ITreeNode_1_IsChildNode" data-uid="com.eyerunnman.patterns.ITreeNode`1.IsChildNode">IsChildNode</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExecuteStateExit()</code></pre>
+    <pre><code class="lang-csharp hljs">bool IsChildNode { get; }</code></pre>
   </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
-  <a id="com_eyerunnman_patterns_IState_1_ExecuteStateUpdate_" data-uid="com.eyerunnman.patterns.IState`1.ExecuteStateUpdate*"></a>
-  <h4 id="com_eyerunnman_patterns_IState_1_ExecuteStateUpdate" data-uid="com.eyerunnman.patterns.IState`1.ExecuteStateUpdate">ExecuteStateUpdate()</h4>
+  <a id="com_eyerunnman_patterns_ITreeNode_1_IsParentNode_" data-uid="com.eyerunnman.patterns.ITreeNode`1.IsParentNode*"></a>
+  <h4 id="com_eyerunnman_patterns_ITreeNode_1_IsParentNode" data-uid="com.eyerunnman.patterns.ITreeNode`1.IsParentNode">IsParentNode</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ExecuteStateUpdate()</code></pre>
+    <pre><code class="lang-csharp hljs">bool IsParentNode { get; }</code></pre>
   </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="com_eyerunnman_patterns_ITreeNode_1_IsRootNode_" data-uid="com.eyerunnman.patterns.ITreeNode`1.IsRootNode*"></a>
+  <h4 id="com_eyerunnman_patterns_ITreeNode_1_IsRootNode" data-uid="com.eyerunnman.patterns.ITreeNode`1.IsRootNode">IsRootNode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsRootNode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class RootAbstractState&lt;T, U&gt;
+    <title>Class Cooldown
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class RootAbstractState&lt;T, U&gt;
+    <meta name="title" content="Class Cooldown
    ">
     <meta name="generator" content="docfx 2.56.7.0">
     
@@ -68,47 +68,20 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="com.eyerunnman.patterns.RootAbstractState`2">
+            <article class="content wrap" id="_content" data-uid="com.eyerunnman.patterns.Cooldown">
   
   
-  <h1 id="com_eyerunnman_patterns_RootAbstractState_2" data-uid="com.eyerunnman.patterns.RootAbstractState`2" class="text-break">Class RootAbstractState&lt;T, U&gt;
+  <h1 id="com_eyerunnman_patterns_Cooldown" data-uid="com.eyerunnman.patterns.Cooldown" class="text-break">Class Cooldown
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><a class="xref" href="com.eyerunnman.patterns.AbstractState-2.html">AbstractState</a>&lt;T, U&gt;</div>
-    <div class="level2"><span class="xref">RootAbstractState&lt;T, U&gt;</span></div>
-  </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="com.eyerunnman.interfaces.IState-1.html">IState</a>&lt;T&gt;</div>
-    <div><a class="xref" href="com.eyerunnman.patterns.ITriggerable-1.html">ITriggerable</a>&lt;U&gt;</div>
+    <div class="level1"><span class="xref">Cooldown</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="com.eyerunnman.patterns.AbstractState-2.html#com_eyerunnman_patterns_AbstractState_2_Context">AbstractState&lt;T, U&gt;.Context</a>
-    </div>
-    <div>
-      <a class="xref" href="com.eyerunnman.patterns.AbstractState-2.html#com_eyerunnman_patterns_AbstractState_2_IsRootState">AbstractState&lt;T, U&gt;.IsRootState</a>
-    </div>
-    <div>
-      <a class="xref" href="com.eyerunnman.patterns.AbstractState-2.html#com_eyerunnman_patterns_AbstractState_2_OnEnterState">AbstractState&lt;T, U&gt;.OnEnterState()</a>
-    </div>
-    <div>
-      <a class="xref" href="com.eyerunnman.patterns.AbstractState-2.html#com_eyerunnman_patterns_AbstractState_2_OnUpdateState">AbstractState&lt;T, U&gt;.OnUpdateState()</a>
-    </div>
-    <div>
-      <a class="xref" href="com.eyerunnman.patterns.AbstractState-2.html#com_eyerunnman_patterns_AbstractState_2_OnTrigger__1_">AbstractState&lt;T, U&gt;.OnTrigger(U)</a>
-    </div>
-    <div>
-      <a class="xref" href="com.eyerunnman.patterns.AbstractState-2.html#com_eyerunnman_patterns_AbstractState_2_LoadChildState_com_eyerunnman_patterns_AbstractState__0__1__">AbstractState&lt;T, U&gt;.LoadChildState(AbstractState&lt;T, U&gt;)</a>
-    </div>
-    <div>
-      <a class="xref" href="com.eyerunnman.patterns.AbstractState-2.html#com_eyerunnman_patterns_AbstractState_2_AddTransition_com_eyerunnman_patterns_AbstractState__0__1___1_">AbstractState&lt;T, U&gt;.AddTransition(AbstractState&lt;T, U&gt;, U)</a>
-    </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
@@ -133,40 +106,21 @@
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="com.eyerunnman.interfaces.html">com.eyerunnman.patterns</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="com_eyerunnman_patterns_RootAbstractState_2_syntax">Syntax</h5>
+  <h5 id="com_eyerunnman_patterns_Cooldown_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class RootAbstractState&lt;T, U&gt; : AbstractState&lt;T, U&gt;, IState&lt;T&gt;, ITriggerable&lt;U&gt; where U : Enum</code></pre>
+    <pre><code class="lang-csharp hljs">public class Cooldown</code></pre>
   </div>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="parametername">U</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="com_eyerunnman_patterns_RootAbstractState_2__ctor_" data-uid="com.eyerunnman.patterns.RootAbstractState`2.#ctor*"></a>
-  <h4 id="com_eyerunnman_patterns_RootAbstractState_2__ctor_com_eyerunnman_patterns_AbstractStateMachine__0__1__" data-uid="com.eyerunnman.patterns.RootAbstractState`2.#ctor(com.eyerunnman.patterns.AbstractStateMachine{`0,`1})">RootAbstractState(AbstractStateMachine&lt;T, U&gt;)</h4>
+  <a id="com_eyerunnman_patterns_Cooldown__ctor_" data-uid="com.eyerunnman.patterns.Cooldown.#ctor*"></a>
+  <h4 id="com_eyerunnman_patterns_Cooldown__ctor_System_Single_" data-uid="com.eyerunnman.patterns.Cooldown.#ctor(System.Single)">Cooldown(Single)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RootAbstractState(AbstractStateMachine&lt;T, U&gt; stateContext)</code></pre>
+    <pre><code class="lang-csharp hljs">public Cooldown(float duration)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -179,8 +133,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="com.eyerunnman.patterns.AbstractStateMachine-2.html">AbstractStateMachine</a>&lt;T, U&gt;</td>
-        <td><span class="parametername">stateContext</span></td>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -189,13 +143,13 @@
   </h3>
   
   
-  <a id="com_eyerunnman_patterns_RootAbstractState_2_IsRootState_" data-uid="com.eyerunnman.patterns.RootAbstractState`2.IsRootState*"></a>
-  <h4 id="com_eyerunnman_patterns_RootAbstractState_2_IsRootState" data-uid="com.eyerunnman.patterns.RootAbstractState`2.IsRootState">IsRootState</h4>
+  <a id="com_eyerunnman_patterns_Cooldown_IsCooldownAvailable_" data-uid="com.eyerunnman.patterns.Cooldown.IsCooldownAvailable*"></a>
+  <h4 id="com_eyerunnman_patterns_Cooldown_IsCooldownAvailable" data-uid="com.eyerunnman.patterns.Cooldown.IsCooldownAvailable">IsCooldownAvailable</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override bool IsRootState { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsCooldownAvailable { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -212,14 +166,52 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">com.eyerunnman.patterns.AbstractState&lt;T, U&gt;.IsRootState</span></div>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="com.eyerunnman.interfaces.IState-1.html">IState&lt;T&gt;</a>
+  
+  
+  <a id="com_eyerunnman_patterns_Cooldown_RemainingTime_" data-uid="com.eyerunnman.patterns.Cooldown.RemainingTime*"></a>
+  <h4 id="com_eyerunnman_patterns_Cooldown_RemainingTime" data-uid="com.eyerunnman.patterns.Cooldown.RemainingTime">RemainingTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RemainingTime { get; }</code></pre>
   </div>
-  <div>
-      <a class="xref" href="com.eyerunnman.patterns.ITriggerable-1.html">ITriggerable&lt;T&gt;</a>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="com_eyerunnman_patterns_Cooldown_OnReset_" data-uid="com.eyerunnman.patterns.Cooldown.OnReset*"></a>
+  <h4 id="com_eyerunnman_patterns_Cooldown_OnReset" data-uid="com.eyerunnman.patterns.Cooldown.OnReset">OnReset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnReset()</code></pre>
+  </div>
+  
+  
+  <a id="com_eyerunnman_patterns_Cooldown_OnUpdate_" data-uid="com.eyerunnman.patterns.Cooldown.OnUpdate*"></a>
+  <h4 id="com_eyerunnman_patterns_Cooldown_OnUpdate" data-uid="com.eyerunnman.patterns.Cooldown.OnUpdate">OnUpdate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnUpdate()</code></pre>
   </div>
 </article>
           </div>

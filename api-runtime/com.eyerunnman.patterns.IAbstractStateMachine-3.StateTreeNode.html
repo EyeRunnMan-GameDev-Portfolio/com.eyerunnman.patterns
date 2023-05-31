@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ServiceLocator
+    <title>Class IAbstractStateMachine&lt;Context, StateEnum, TriggerEnum&gt;.StateTreeNode
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ServiceLocator
+    <meta name="title" content="Class IAbstractStateMachine&lt;Context, StateEnum, TriggerEnum&gt;.StateTreeNode
    ">
     <meta name="generator" content="docfx 2.56.7.0">
     
@@ -68,18 +68,22 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="com.eyerunnman.patterns.ServiceLocator">
+            <article class="content wrap" id="_content" data-uid="com.eyerunnman.patterns.IAbstractStateMachine`3.StateTreeNode">
   
   
-  <h1 id="com_eyerunnman_patterns_ServiceLocator" data-uid="com.eyerunnman.patterns.ServiceLocator" class="text-break">Class ServiceLocator
+  <h1 id="com_eyerunnman_patterns_IAbstractStateMachine_3_StateTreeNode" data-uid="com.eyerunnman.patterns.IAbstractStateMachine`3.StateTreeNode" class="text-break">Class IAbstractStateMachine&lt;Context, StateEnum, TriggerEnum&gt;.StateTreeNode
   </h1>
-  <div class="markdown level0 summary"><p>Simple service locator for <a class="xref" href="com.eyerunnman.interfaces.IGameService.html">IGameService</a> instances.</p>
+  <div class="markdown level0 summary"><p>State machine Tree Representation</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">ServiceLocator</span></div>
+    <div class="level1"><span class="xref">IAbstractStateMachine&lt;Context, StateEnum, TriggerEnum&gt;.StateTreeNode</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="com.eyerunnman.patterns.ITreeNode-1.html">ITreeNode</a>&lt;<a class="xref" href="com.eyerunnman.patterns.IAbstractStateMachine-3.StateTreeNode.html">IAbstractStateMachine.StateTreeNode</a>&lt;&gt;&gt;</div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -107,22 +111,22 @@
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="com.eyerunnman.interfaces.html">com.eyerunnman.patterns</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="com_eyerunnman_patterns_ServiceLocator_syntax">Syntax</h5>
+  <h5 id="com_eyerunnman_patterns_IAbstractStateMachine_3_StateTreeNode_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ServiceLocator</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class StateTreeNode : ITreeNode&lt;IAbstractStateMachine&lt;Context, StateEnum, TriggerEnum&gt;.StateTreeNode&gt;</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   
   
-  <a id="com_eyerunnman_patterns_ServiceLocator_Current_" data-uid="com.eyerunnman.patterns.ServiceLocator.Current*"></a>
-  <h4 id="com_eyerunnman_patterns_ServiceLocator_Current" data-uid="com.eyerunnman.patterns.ServiceLocator.Current">Current</h4>
-  <div class="markdown level1 summary"><p>Gets the currently active service locator instance.</p>
+  <a id="com_eyerunnman_patterns_IAbstractStateMachine_3_StateTreeNode_ChildNodes_" data-uid="com.eyerunnman.patterns.IAbstractStateMachine`3.StateTreeNode.ChildNodes*"></a>
+  <h4 id="com_eyerunnman_patterns_IAbstractStateMachine_3_StateTreeNode_ChildNodes" data-uid="com.eyerunnman.patterns.IAbstractStateMachine`3.StateTreeNode.ChildNodes">ChildNodes</h4>
+  <div class="markdown level1 summary"><p>list of child tree nodes</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ServiceLocator Current { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;IAbstractStateMachine&lt;Context, StateEnum, TriggerEnum&gt;.StateTreeNode&gt; ChildNodes { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -134,26 +138,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="com.eyerunnman.patterns.ServiceLocator.html">ServiceLocator</a></td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="com.eyerunnman.patterns.IAbstractStateMachine-3.StateTreeNode.html">IAbstractStateMachine.StateTreeNode</a>&lt;&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="methods">Methods
-  </h3>
   
   
-  <a id="com_eyerunnman_patterns_ServiceLocator_Get_" data-uid="com.eyerunnman.patterns.ServiceLocator.Get*"></a>
-  <h4 id="com_eyerunnman_patterns_ServiceLocator_Get__1" data-uid="com.eyerunnman.patterns.ServiceLocator.Get``1">Get&lt;T&gt;()</h4>
-  <div class="markdown level1 summary"><p>Gets the service instance of the given type.</p>
+  <a id="com_eyerunnman_patterns_IAbstractStateMachine_3_StateTreeNode_IsChildNode_" data-uid="com.eyerunnman.patterns.IAbstractStateMachine`3.StateTreeNode.IsChildNode*"></a>
+  <h4 id="com_eyerunnman_patterns_IAbstractStateMachine_3_StateTreeNode_IsChildNode" data-uid="com.eyerunnman.patterns.IAbstractStateMachine`3.StateTreeNode.IsChildNode">IsChildNode</h4>
+  <div class="markdown level1 summary"><p>bool is root node</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T Get&lt;T&gt;()
-    where T : IGameService</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsChildNode { get; }</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -162,91 +163,24 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><p>The service instance.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>The type of the service to lookup.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="com_eyerunnman_patterns_ServiceLocator_Register_" data-uid="com.eyerunnman.patterns.ServiceLocator.Register*"></a>
-  <h4 id="com_eyerunnman_patterns_ServiceLocator_Register__1___0_System_Boolean_" data-uid="com.eyerunnman.patterns.ServiceLocator.Register``1(``0,System.Boolean)">Register&lt;T&gt;(T, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Registers the service with the current service locator.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Register&lt;T&gt;(T service, bool overrideService = false)
-    where T : IGameService</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">service</span></td>
-        <td><p>service instance.</p>
-</td>
-      </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">overrideService</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>Service type.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   
   
-  <a id="com_eyerunnman_patterns_ServiceLocator_ServiceNotRegisteredException_" data-uid="com.eyerunnman.patterns.ServiceLocator.ServiceNotRegisteredException*"></a>
-  <h4 id="com_eyerunnman_patterns_ServiceLocator_ServiceNotRegisteredException__1" data-uid="com.eyerunnman.patterns.ServiceLocator.ServiceNotRegisteredException``1">ServiceNotRegisteredException&lt;T&gt;()</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="com_eyerunnman_patterns_IAbstractStateMachine_3_StateTreeNode_IsParentNode_" data-uid="com.eyerunnman.patterns.IAbstractStateMachine`3.StateTreeNode.IsParentNode*"></a>
+  <h4 id="com_eyerunnman_patterns_IAbstractStateMachine_3_StateTreeNode_IsParentNode" data-uid="com.eyerunnman.patterns.IAbstractStateMachine`3.StateTreeNode.IsParentNode">IsParentNode</h4>
+  <div class="markdown level1 summary"><p>bool is a parent of a node</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Exception ServiceNotRegisteredException&lt;T&gt;()</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsParentNode { get; }</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -256,54 +190,67 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Exception</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="com_eyerunnman_patterns_ServiceLocator_Unregister_" data-uid="com.eyerunnman.patterns.ServiceLocator.Unregister*"></a>
-  <h4 id="com_eyerunnman_patterns_ServiceLocator_Unregister__1" data-uid="com.eyerunnman.patterns.ServiceLocator.Unregister``1">Unregister&lt;T&gt;()</h4>
-  <div class="markdown level1 summary"><p>Unregisters the service from the current service locator.</p>
+  <a id="com_eyerunnman_patterns_IAbstractStateMachine_3_StateTreeNode_IsRootNode_" data-uid="com.eyerunnman.patterns.IAbstractStateMachine`3.StateTreeNode.IsRootNode*"></a>
+  <h4 id="com_eyerunnman_patterns_IAbstractStateMachine_3_StateTreeNode_IsRootNode" data-uid="com.eyerunnman.patterns.IAbstractStateMachine`3.StateTreeNode.IsRootNode">IsRootNode</h4>
+  <div class="markdown level1 summary"><p>bool is root node</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Unregister&lt;T&gt;()
-    where T : IGameService</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsRootNode { get; }</code></pre>
   </div>
-  <h5 class="typeParameters">Type Parameters</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Name</th>
+        <th>Type</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>Service type.</p>
-</td>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="com_eyerunnman_patterns_IAbstractStateMachine_3_StateTreeNode_StateID_" data-uid="com.eyerunnman.patterns.IAbstractStateMachine`3.StateTreeNode.StateID*"></a>
+  <h4 id="com_eyerunnman_patterns_IAbstractStateMachine_3_StateTreeNode_StateID" data-uid="com.eyerunnman.patterns.IAbstractStateMachine`3.StateTreeNode.StateID">StateID</h4>
+  <div class="markdown level1 summary"><p>State Id of Node</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StateEnum StateID { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StateEnum</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="com.eyerunnman.patterns.ITreeNode-1.html">ITreeNode&lt;T&gt;</a>
+  </div>
 </article>
           </div>
           

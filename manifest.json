@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "CHANGELOG.html",
-          "hash": "yzJKB3EbvMUvOgLFIUx9VQ=="
+          "hash": "/DXrMo6v2FVQUe/IYtE+TQ=="
         }
       },
       "is_incremental": false,
@@ -28,6 +28,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api-runtime/com.eyerunnman.interfaces.GameService.yml",
       "output": {
@@ -52,6 +55,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api-runtime/com.eyerunnman.interfaces.IGameService.yml",
       "output": {
@@ -64,6 +70,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api-runtime/com.eyerunnman.interfaces.IState-1.yml",
       "output": {
@@ -76,6 +85,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api-runtime/com.eyerunnman.interfaces.ServiceState.yml",
       "output": {
@@ -88,15 +100,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api-runtime/com.eyerunnman.interfaces.yml",
       "output": {
         ".html": {
           "relative_path": "api-runtime/com.eyerunnman.interfaces.html",
-          "hash": "ejl+37H9Lm2W1ju3RWsTLQ=="
+          "hash": "u3PZNiW6htvPPA4yNg1oEQ=="
         }
       },
       "is_incremental": false,
@@ -104,11 +113,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api-runtime/com.eyerunnman.patterns.AbstractState-2.yml",
+      "source_relative_path": "api-runtime/com.eyerunnman.patterns.AbstractTriggerableState-3.yml",
       "output": {
         ".html": {
-          "relative_path": "api-runtime/com.eyerunnman.patterns.AbstractState-2.html",
-          "hash": "Bbj1i8YgSHBQsPHm35Robg=="
+          "relative_path": "api-runtime/com.eyerunnman.patterns.AbstractTriggerableState-3.html",
+          "hash": "ADWwfAcxQjYgZLJy6Kba1w=="
         }
       },
       "is_incremental": false,
@@ -116,26 +125,59 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api-runtime/com.eyerunnman.patterns.AbstractStateMachine-2.yml",
+      "source_relative_path": "api-runtime/com.eyerunnman.patterns.Cooldown.yml",
       "output": {
         ".html": {
-          "relative_path": "api-runtime/com.eyerunnman.patterns.AbstractStateMachine-2.html",
-          "hash": "GSNuAA8wlhve4e+Wr61hGA=="
+          "relative_path": "api-runtime/com.eyerunnman.patterns.Cooldown.html",
+          "hash": "DAS/iGR5+9/tKqnfeqdisg=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
+      "type": "ManagedReference",
+      "source_relative_path": "api-runtime/com.eyerunnman.patterns.FrameData-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-runtime/com.eyerunnman.patterns.FrameData-1.html",
+          "hash": "2ZzO7bPiCIyw36hdLXXHKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "ManagedReference",
       "source_relative_path": "api-runtime/com.eyerunnman.patterns.GameService.yml",
       "output": {
         ".html": {
           "relative_path": "api-runtime/com.eyerunnman.patterns.GameService.html",
           "hash": "FWAVgnJsg1HLfMWbDNGg8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-runtime/com.eyerunnman.patterns.IAbstractStateMachine-3.StateTreeNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-runtime/com.eyerunnman.patterns.IAbstractStateMachine-3.StateTreeNode.html",
+          "hash": "ntkM2ZiSyfjxZ0lmTTM1LQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-runtime/com.eyerunnman.patterns.IAbstractStateMachine-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-runtime/com.eyerunnman.patterns.IAbstractStateMachine-3.html",
+          "hash": "hfq1CB3bajeFSjbgVwZNJw=="
         }
       },
       "is_incremental": false,
@@ -181,9 +223,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api-runtime/com.eyerunnman.patterns.IGameService.yml",
       "output": {
@@ -208,15 +247,24 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api-runtime/com.eyerunnman.patterns.IState-1.yml",
       "output": {
         ".html": {
           "relative_path": "api-runtime/com.eyerunnman.patterns.IState-1.html",
-          "hash": "VBCLW0cT1/9YgO+NkA+Skw=="
+          "hash": "hvHU1TUAu5aSN2lh5NdMcg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-runtime/com.eyerunnman.patterns.ITreeNode-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-runtime/com.eyerunnman.patterns.ITreeNode-1.html",
+          "hash": "I5WsmOLLyJ0vYYqmlwo3WQ=="
         }
       },
       "is_incremental": false,
@@ -236,11 +284,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api-runtime/com.eyerunnman.patterns.RootAbstractState-2.yml",
+      "source_relative_path": "api-runtime/com.eyerunnman.patterns.MonobehaviourAbstractStateMachine-3.yml",
       "output": {
         ".html": {
-          "relative_path": "api-runtime/com.eyerunnman.patterns.RootAbstractState-2.html",
-          "hash": "a/ODZks2gcX7wgf4g6VWQw=="
+          "relative_path": "api-runtime/com.eyerunnman.patterns.MonobehaviourAbstractStateMachine-3.html",
+          "hash": "D7GL1hAp6hxCARXH2+0x7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-runtime/com.eyerunnman.patterns.RootAbstractTriggerableState-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-runtime/com.eyerunnman.patterns.RootAbstractTriggerableState-3.html",
+          "hash": "IrV6OA5wurbJMcFyhYPkXQ=="
         }
       },
       "is_incremental": false,
@@ -252,7 +312,31 @@
       "output": {
         ".html": {
           "relative_path": "api-runtime/com.eyerunnman.patterns.ServiceLocator.html",
-          "hash": "wyeaUiB4tND2J4Megc5shg=="
+          "hash": "xoYVMvg4oV54OU6ncRZTOw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-runtime/com.eyerunnman.patterns.ServiceState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-runtime/com.eyerunnman.patterns.ServiceState.html",
+          "hash": "cZPlmYLnxhr5OmvgebiF0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-runtime/com.eyerunnman.patterns.Status.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-runtime/com.eyerunnman.patterns.Status.html",
+          "hash": "9JJ87dh5kXzMVC676C99uw=="
         }
       },
       "is_incremental": false,
@@ -263,23 +347,11 @@
         "DuplicateUids"
       ],
       "type": "ManagedReference",
-      "source_relative_path": "api-runtime/com.eyerunnman.patterns.ServiceState.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api-runtime/com.eyerunnman.patterns.ServiceState.html",
-          "hash": "5b49NaCk3tKpEqS9d/EXRA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api-runtime/com.eyerunnman.patterns.yml",
       "output": {
         ".html": {
           "relative_path": "api-runtime/com.eyerunnman.patterns.html",
-          "hash": "OoEigfSeAYrGy4mXN4xWvg=="
+          "hash": "Js3/QHJ3jyq3IiqWfSD52Q=="
         }
       },
       "is_incremental": false,
@@ -327,7 +399,7 @@
       "output": {
         ".html": {
           "relative_path": "fusion/toc.html",
-          "hash": "YVSXFsbtM+CoY2h8M4Hj9A=="
+          "hash": "NqU68CxqiUTFWPrnNUIs4w=="
         }
       },
       "is_incremental": false,
@@ -444,7 +516,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 20,
+          "total_file_count": 26,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

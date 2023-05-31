@@ -1,0 +1,859 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AbstractTriggerableState&lt;Context, StateEnum, TriggerEnum&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AbstractTriggerableState&lt;Context, StateEnum, TriggerEnum&gt;
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href=".././images/fav.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="../fusion/toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src=".././images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3">
+  
+  
+  <h1 id="com_eyerunnman_patterns_AbstractTriggerableState_3" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3" class="text-break">Class AbstractTriggerableState&lt;Context, StateEnum, TriggerEnum&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">AbstractTriggerableState&lt;Context, StateEnum, TriggerEnum&gt;</span></div>
+      <div class="level2"><a class="xref" href="com.eyerunnman.patterns.RootAbstractTriggerableState-3.html">RootAbstractTriggerableState&lt;Context, StateEnum, TriggerEnum&gt;</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="com.eyerunnman.interfaces.IState-1.html">IState</a>&lt;Context&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="com.eyerunnman.interfaces.html">com.eyerunnman.patterns</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="com_eyerunnman_patterns_AbstractTriggerableState_3_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class AbstractTriggerableState&lt;Context, StateEnum, TriggerEnum&gt; : IState&lt;Context&gt; where StateEnum : Enum where TriggerEnum : Enum</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">Context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">StateEnum</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TriggerEnum</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3__ctor_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.#ctor*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3__ctor_com_eyerunnman_patterns_IAbstractStateMachine__0__1__2___1_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.#ctor(com.eyerunnman.patterns.IAbstractStateMachine{`0,`1,`2},`1)">AbstractTriggerableState(IAbstractStateMachine&lt;Context, StateEnum, TriggerEnum&gt;, StateEnum)</h4>
+  <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AbstractTriggerableState(IAbstractStateMachine&lt;Context, StateEnum, TriggerEnum&gt; context, StateEnum stateID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="com.eyerunnman.patterns.IAbstractStateMachine-3.html">IAbstractStateMachine</a>&lt;Context, StateEnum, TriggerEnum&gt;</td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">StateEnum</span></td>
+        <td><span class="parametername">stateID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_Ctx_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.Ctx*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_Ctx" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.Ctx">Ctx</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Context Ctx { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_CurrentChildState_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.CurrentChildState*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_CurrentChildState" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.CurrentChildState">CurrentChildState</h4>
+  <div class="markdown level1 summary"><p>get the enum of current child state</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected StateEnum CurrentChildState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StateEnum</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_CurrentContextState_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.CurrentContextState*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_CurrentContextState" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.CurrentContextState">CurrentContextState</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AbstractTriggerableState&lt;Context, StateEnum, TriggerEnum&gt; CurrentContextState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="com.eyerunnman.patterns.AbstractTriggerableState-3.html">AbstractTriggerableState</a>&lt;Context, StateEnum, TriggerEnum&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_CurrentFrameTriggers_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.CurrentFrameTriggers*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_CurrentFrameTriggers" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.CurrentFrameTriggers">CurrentFrameTriggers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HashSet&lt;TriggerEnum&gt; CurrentFrameTriggers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HashSet</span>&lt;TriggerEnum&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_IsChildState_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.IsChildState*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_IsChildState" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.IsChildState">IsChildState</h4>
+  <div class="markdown level1 summary"><p>Is current state child state</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool IsChildState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_IsParentState_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.IsParentState*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_IsParentState" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.IsParentState">IsParentState</h4>
+  <div class="markdown level1 summary"><p>is current state parent state</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool IsParentState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_IsRootState_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.IsRootState*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_IsRootState" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.IsRootState">IsRootState</h4>
+  <div class="markdown level1 summary"><p>Is root state
+NOTE : If you want this to be true use root state abstract class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsRootState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_StateFactory_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.StateFactory*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_StateFactory" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.StateFactory">StateFactory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IFactory&lt;AbstractTriggerableState&lt;Context, StateEnum, TriggerEnum&gt;, StateEnum&gt; StateFactory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="com.eyerunnman.patterns.IFactory-2.html">IFactory</a>&lt;<a class="xref" href="com.eyerunnman.patterns.AbstractTriggerableState-3.html">AbstractTriggerableState</a>&lt;Context, StateEnum, TriggerEnum&gt;, StateEnum&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_StateID_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.StateID*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_StateID" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.StateID">StateID</h4>
+  <div class="markdown level1 summary"><p>state id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StateEnum StateID { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StateEnum</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_TriggerStatus_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.TriggerStatus*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_TriggerStatus" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.TriggerStatus">TriggerStatus</h4>
+  <div class="markdown level1 summary"><p>to handle triggers or not</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Status TriggerStatus { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="com.eyerunnman.patterns.Status.html">Status</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_UndefinedState_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.UndefinedState*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_UndefinedState" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.UndefinedState">UndefinedState</h4>
+  <div class="markdown level1 summary"><p>set the undefined state</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract StateEnum UndefinedState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StateEnum</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_AddTransition_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.AddTransition*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_AddTransition__1_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.AddTransition(`1)">AddTransition(StateEnum)</h4>
+  <div class="markdown level1 summary"><p>add all the allowed states in the setup lifecycle</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddTransition(StateEnum stateEnum)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StateEnum</span></td>
+        <td><span class="parametername">stateEnum</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_AreTriggersPresentCurrentFrame_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.AreTriggersPresentCurrentFrame*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_AreTriggersPresentCurrentFrame_List__2__" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.AreTriggersPresentCurrentFrame(List{`2})">AreTriggersPresentCurrentFrame(List&lt;TriggerEnum&gt;)</h4>
+  <div class="markdown level1 summary"><p>check if triggers are present in current frame check in the trigger lifecycle</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool AreTriggersPresentCurrentFrame(List&lt;TriggerEnum&gt; triggersToCompare)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;TriggerEnum&gt;</td>
+        <td><span class="parametername">triggersToCompare</span></td>
+        <td><p>list of triggers to compare to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_ExecuteMultipleTriggers_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.ExecuteMultipleTriggers*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_ExecuteMultipleTriggers" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.ExecuteMultipleTriggers">ExecuteMultipleTriggers()</h4>
+  <div class="markdown level1 summary"><p>call this in the child update after calculating the list of triggers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteMultipleTriggers()</code></pre>
+  </div>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_ExecuteStateEnter_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.ExecuteStateEnter*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_ExecuteStateEnter" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.ExecuteStateEnter">ExecuteStateEnter()</h4>
+  <div class="markdown level1 summary"><p>call in awake when setting up the first state</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteStateEnter()</code></pre>
+  </div>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_ExecuteStateExit_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.ExecuteStateExit*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_ExecuteStateExit" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.ExecuteStateExit">ExecuteStateExit()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteStateExit()</code></pre>
+  </div>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_ExecuteStateFixedUpdate_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.ExecuteStateFixedUpdate*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_ExecuteStateFixedUpdate" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.ExecuteStateFixedUpdate">ExecuteStateFixedUpdate()</h4>
+  <div class="markdown level1 summary"><p>execute state fixed update in fixed update</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteStateFixedUpdate()</code></pre>
+  </div>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_ExecuteStateUpdate_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.ExecuteStateUpdate*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_ExecuteStateUpdate" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.ExecuteStateUpdate">ExecuteStateUpdate()</h4>
+  <div class="markdown level1 summary"><p>Execute State Update in the update method</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteStateUpdate()</code></pre>
+  </div>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_InvokeTransition_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.InvokeTransition*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_InvokeTransition__1_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.InvokeTransition(`1)">InvokeTransition(StateEnum)</h4>
+  <div class="markdown level1 summary"><p>Invoke this in child for transition</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void InvokeTransition(StateEnum transitionToState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StateEnum</span></td>
+        <td><span class="parametername">transitionToState</span></td>
+        <td><p>the state to transition to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_InvokeTransition_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.InvokeTransition*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_InvokeTransition__1__1_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.InvokeTransition(`1,`1)">InvokeTransition(StateEnum, StateEnum)</h4>
+  <div class="markdown level1 summary"><p>Invoke this in child for transition</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void InvokeTransition(StateEnum transitionToState, StateEnum activeChildOfTargetState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StateEnum</span></td>
+        <td><span class="parametername">transitionToState</span></td>
+        <td><p>the state to transition to</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">StateEnum</span></td>
+        <td><span class="parametername">activeChildOfTargetState</span></td>
+        <td><p>the active child that should be in the next state</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_IsTriggerPresentCurrentFrame_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.IsTriggerPresentCurrentFrame*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_IsTriggerPresentCurrentFrame__2_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.IsTriggerPresentCurrentFrame(`2)">IsTriggerPresentCurrentFrame(TriggerEnum)</h4>
+  <div class="markdown level1 summary"><p>check if single triggers is present in current frame check in the trigger lifecycle</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool IsTriggerPresentCurrentFrame(TriggerEnum triggerToCompare)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TriggerEnum</span></td>
+        <td><span class="parametername">triggerToCompare</span></td>
+        <td><p>trigger to comare to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_LoadChildState_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.LoadChildState*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_LoadChildState__1_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.LoadChildState(`1)">LoadChildState(StateEnum)</h4>
+  <div class="markdown level1 summary"><p>add child to child state in the setup lifecycle</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void LoadChildState(StateEnum stateEnum)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StateEnum</span></td>
+        <td><span class="parametername">stateEnum</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_OnMultipleTriggers_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.OnMultipleTriggers*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_OnMultipleTriggers" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.OnMultipleTriggers">OnMultipleTriggers()</h4>
+  <div class="markdown level1 summary"><p>When Triggers are fired</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnMultipleTriggers()</code></pre>
+  </div>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_OnStateAwake_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.OnStateAwake*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_OnStateAwake" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.OnStateAwake">OnStateAwake()</h4>
+  <div class="markdown level1 summary"><p>Is called on State Awake</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnStateAwake()</code></pre>
+  </div>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_OnStateExit_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.OnStateExit*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_OnStateExit" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.OnStateExit">OnStateExit()</h4>
+  <div class="markdown level1 summary"><p>Is called on state fixed update</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnStateExit()</code></pre>
+  </div>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_OnStateFixedUpdate_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.OnStateFixedUpdate*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_OnStateFixedUpdate" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.OnStateFixedUpdate">OnStateFixedUpdate()</h4>
+  <div class="markdown level1 summary"><p>is called on State Fixed Update</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnStateFixedUpdate()</code></pre>
+  </div>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_OnStateSetup_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.OnStateSetup*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_OnStateSetup" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.OnStateSetup">OnStateSetup()</h4>
+  <div class="markdown level1 summary"><p>Is called on state Setup</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnStateSetup()</code></pre>
+  </div>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_OnStateUpdate_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.OnStateUpdate*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_OnStateUpdate" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.OnStateUpdate">OnStateUpdate()</h4>
+  <div class="markdown level1 summary"><p>is called on State Update</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnStateUpdate()</code></pre>
+  </div>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_SetDefaultChildState_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.SetDefaultChildState*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_SetDefaultChildState__1_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.SetDefaultChildState(`1)">SetDefaultChildState(StateEnum)</h4>
+  <div class="markdown level1 summary"><p>set default child state</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetDefaultChildState(StateEnum stateEnum)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StateEnum</span></td>
+        <td><span class="parametername">stateEnum</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="com.eyerunnman.interfaces.IState-1.html">IState&lt;T&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
