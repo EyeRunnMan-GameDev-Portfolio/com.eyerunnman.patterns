@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.patterns/compare/v2.1.1...v2.2.0) (2023-06-01)
+
+
+### Features
+
+* added pause resume functionality to the abstract triggerable state ([844259f](https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.patterns/commit/844259f267838b9d025a390298dc4b3f1d280e48))
+
 ## [2.1.1](https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.patterns/compare/v2.1.0...v2.1.1) (2023-05-31)
 
 
