@@ -18,6 +18,7 @@ namespace com.eyerunnman.patterns
 
         /// <summary>
         /// Root State Enum , the enum should have a value as root and give that value to this variable
+        /// NOTE : this is not an actual state but is used as the root node for computing 
         /// </summary>
         protected abstract StateEnum RootEnum { get; }
         /// <summary>

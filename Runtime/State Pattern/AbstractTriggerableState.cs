@@ -17,6 +17,8 @@ namespace com.eyerunnman.patterns
         protected IFactory<AbstractTriggerableState<Context, StateEnum, TriggerEnum>, StateEnum> StateFactory => StateContext.StateFactory;
         protected Context Ctx => StateContext.Ctx;
         protected HashSet<TriggerEnum> CurrentFrameTriggers => StateContext.CurrentFrameTriggers;
+
+        protected bool IsPaused { get; private set; } = false;
         #endregion
 
         #region State Properties
@@ -88,6 +90,32 @@ namespace com.eyerunnman.patterns
             EnterChildState();
         }
 
+        /// <summary>
+        /// To Pause the state and its child states
+        /// </summary>
+        public void ExecuteStatePause()
+        {
+            if(!IsPaused)
+            {
+                OnStatePause();
+            }
+            PauseChildStates();
+            IsPaused = true;
+        }
+
+        /// <summary>
+        /// To Resume the state and its child states
+        /// </summary>
+        public void ExecuteStateResume()
+        {
+            if (IsPaused)
+            {
+                OnStateResume();
+            }
+            ResumeChildStates();
+            IsPaused = false;
+        }
+
         private void SetCurrentDefaultChildState()
         {
             if (LoadedChildStates.Contains(DefaultChildEnum))
@@ -99,8 +127,11 @@ namespace com.eyerunnman.patterns
         /// </summary>
         public void ExecuteStateUpdate()
         {
-            OnStateUpdate();
-            UpdateChildStates();
+            if (!IsPaused)
+            {
+                OnStateUpdate();
+                UpdateChildStates();
+            }
         }
 
         /// <summary>
@@ -108,8 +139,11 @@ namespace com.eyerunnman.patterns
         /// </summary>
         public void ExecuteStateFixedUpdate()
         {
-            OnStateFixedUpdate();
-            FixedUpdateChildStates();
+            if (!IsPaused)
+            {
+                OnStateFixedUpdate();
+                FixedUpdateChildStates();
+            }
         }
 
         public void ExecuteStateExit()
@@ -164,6 +198,16 @@ namespace com.eyerunnman.patterns
         /// When Triggers are fired
         /// </summary>
         protected virtual void OnMultipleTriggers(){}
+
+        /// <summary>
+        /// When Triggers are fired
+        /// </summary>
+        protected virtual void OnStatePause() { }
+
+        /// <summary>
+        /// When Triggers are fired
+        /// </summary>
+        protected virtual void OnStateResume() { }
         #endregion
 
         /// <summary>
@@ -171,11 +215,15 @@ namespace com.eyerunnman.patterns
         /// </summary>
         public void ExecuteMultipleTriggers()
         {
-            if (TriggerStatus.Enabled)
+            if (!IsPaused)
             {
-                OnMultipleTriggers();
-                ActiveChildStateNode?.ExecuteMultipleTriggers();
+                if (TriggerStatus.Enabled)
+                {
+                    OnMultipleTriggers();
+                    ActiveChildStateNode?.ExecuteMultipleTriggers();
+                }
             }
+            
         }
 
         #region Transition Execution Methods
@@ -279,6 +327,21 @@ namespace com.eyerunnman.patterns
             if (IsParentState)
             {
                 ActiveChildStateNode?.ExecuteStateUpdate();
+            }
+        }
+        private void PauseChildStates()
+        {
+            if (IsParentState)
+            {
+                ActiveChildStateNode?.ExecuteStatePause();
+            }
+        }
+
+        private void ResumeChildStates()
+        {
+            if (IsParentState)
+            {
+                ActiveChildStateNode?.ExecuteStateResume();
             }
         }
 
