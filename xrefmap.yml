@@ -205,6 +205,40 @@ references:
   fullName.vb: com.eyerunnman.patterns.AbstractTriggerableState(Of Context, StateEnum, TriggerEnum).ExecuteStateFixedUpdate
   nameWithType: AbstractTriggerableState<Context, StateEnum, TriggerEnum>.ExecuteStateFixedUpdate
   nameWithType.vb: AbstractTriggerableState(Of Context, StateEnum, TriggerEnum).ExecuteStateFixedUpdate
+- uid: com.eyerunnman.patterns.AbstractTriggerableState`3.ExecuteStatePause
+  name: ExecuteStatePause()
+  href: api-runtime/com.eyerunnman.patterns.AbstractTriggerableState-3.html#com_eyerunnman_patterns_AbstractTriggerableState_3_ExecuteStatePause
+  commentId: M:com.eyerunnman.patterns.AbstractTriggerableState`3.ExecuteStatePause
+  fullName: com.eyerunnman.patterns.AbstractTriggerableState<Context, StateEnum, TriggerEnum>.ExecuteStatePause()
+  fullName.vb: com.eyerunnman.patterns.AbstractTriggerableState(Of Context, StateEnum, TriggerEnum).ExecuteStatePause()
+  nameWithType: AbstractTriggerableState<Context, StateEnum, TriggerEnum>.ExecuteStatePause()
+  nameWithType.vb: AbstractTriggerableState(Of Context, StateEnum, TriggerEnum).ExecuteStatePause()
+- uid: com.eyerunnman.patterns.AbstractTriggerableState`3.ExecuteStatePause*
+  name: ExecuteStatePause
+  href: api-runtime/com.eyerunnman.patterns.AbstractTriggerableState-3.html#com_eyerunnman_patterns_AbstractTriggerableState_3_ExecuteStatePause_
+  commentId: Overload:com.eyerunnman.patterns.AbstractTriggerableState`3.ExecuteStatePause
+  isSpec: "True"
+  fullName: com.eyerunnman.patterns.AbstractTriggerableState<Context, StateEnum, TriggerEnum>.ExecuteStatePause
+  fullName.vb: com.eyerunnman.patterns.AbstractTriggerableState(Of Context, StateEnum, TriggerEnum).ExecuteStatePause
+  nameWithType: AbstractTriggerableState<Context, StateEnum, TriggerEnum>.ExecuteStatePause
+  nameWithType.vb: AbstractTriggerableState(Of Context, StateEnum, TriggerEnum).ExecuteStatePause
+- uid: com.eyerunnman.patterns.AbstractTriggerableState`3.ExecuteStateResume
+  name: ExecuteStateResume()
+  href: api-runtime/com.eyerunnman.patterns.AbstractTriggerableState-3.html#com_eyerunnman_patterns_AbstractTriggerableState_3_ExecuteStateResume
+  commentId: M:com.eyerunnman.patterns.AbstractTriggerableState`3.ExecuteStateResume
+  fullName: com.eyerunnman.patterns.AbstractTriggerableState<Context, StateEnum, TriggerEnum>.ExecuteStateResume()
+  fullName.vb: com.eyerunnman.patterns.AbstractTriggerableState(Of Context, StateEnum, TriggerEnum).ExecuteStateResume()
+  nameWithType: AbstractTriggerableState<Context, StateEnum, TriggerEnum>.ExecuteStateResume()
+  nameWithType.vb: AbstractTriggerableState(Of Context, StateEnum, TriggerEnum).ExecuteStateResume()
+- uid: com.eyerunnman.patterns.AbstractTriggerableState`3.ExecuteStateResume*
+  name: ExecuteStateResume
+  href: api-runtime/com.eyerunnman.patterns.AbstractTriggerableState-3.html#com_eyerunnman_patterns_AbstractTriggerableState_3_ExecuteStateResume_
+  commentId: Overload:com.eyerunnman.patterns.AbstractTriggerableState`3.ExecuteStateResume
+  isSpec: "True"
+  fullName: com.eyerunnman.patterns.AbstractTriggerableState<Context, StateEnum, TriggerEnum>.ExecuteStateResume
+  fullName.vb: com.eyerunnman.patterns.AbstractTriggerableState(Of Context, StateEnum, TriggerEnum).ExecuteStateResume
+  nameWithType: AbstractTriggerableState<Context, StateEnum, TriggerEnum>.ExecuteStateResume
+  nameWithType.vb: AbstractTriggerableState(Of Context, StateEnum, TriggerEnum).ExecuteStateResume
 - uid: com.eyerunnman.patterns.AbstractTriggerableState`3.ExecuteStateUpdate
   name: ExecuteStateUpdate()
   href: api-runtime/com.eyerunnman.patterns.AbstractTriggerableState-3.html#com_eyerunnman_patterns_AbstractTriggerableState_3_ExecuteStateUpdate
@@ -281,6 +315,23 @@ references:
   fullName.vb: com.eyerunnman.patterns.AbstractTriggerableState(Of Context, StateEnum, TriggerEnum).IsParentState
   nameWithType: AbstractTriggerableState<Context, StateEnum, TriggerEnum>.IsParentState
   nameWithType.vb: AbstractTriggerableState(Of Context, StateEnum, TriggerEnum).IsParentState
+- uid: com.eyerunnman.patterns.AbstractTriggerableState`3.IsPaused
+  name: IsPaused
+  href: api-runtime/com.eyerunnman.patterns.AbstractTriggerableState-3.html#com_eyerunnman_patterns_AbstractTriggerableState_3_IsPaused
+  commentId: P:com.eyerunnman.patterns.AbstractTriggerableState`3.IsPaused
+  fullName: com.eyerunnman.patterns.AbstractTriggerableState<Context, StateEnum, TriggerEnum>.IsPaused
+  fullName.vb: com.eyerunnman.patterns.AbstractTriggerableState(Of Context, StateEnum, TriggerEnum).IsPaused
+  nameWithType: AbstractTriggerableState<Context, StateEnum, TriggerEnum>.IsPaused
+  nameWithType.vb: AbstractTriggerableState(Of Context, StateEnum, TriggerEnum).IsPaused
+- uid: com.eyerunnman.patterns.AbstractTriggerableState`3.IsPaused*
+  name: IsPaused
+  href: api-runtime/com.eyerunnman.patterns.AbstractTriggerableState-3.html#com_eyerunnman_patterns_AbstractTriggerableState_3_IsPaused_
+  commentId: Overload:com.eyerunnman.patterns.AbstractTriggerableState`3.IsPaused
+  isSpec: "True"
+  fullName: com.eyerunnman.patterns.AbstractTriggerableState<Context, StateEnum, TriggerEnum>.IsPaused
+  fullName.vb: com.eyerunnman.patterns.AbstractTriggerableState(Of Context, StateEnum, TriggerEnum).IsPaused
+  nameWithType: AbstractTriggerableState<Context, StateEnum, TriggerEnum>.IsPaused
+  nameWithType.vb: AbstractTriggerableState(Of Context, StateEnum, TriggerEnum).IsPaused
 - uid: com.eyerunnman.patterns.AbstractTriggerableState`3.IsRootState
   name: IsRootState
   href: api-runtime/com.eyerunnman.patterns.AbstractTriggerableState-3.html#com_eyerunnman_patterns_AbstractTriggerableState_3_IsRootState
@@ -400,6 +451,40 @@ references:
   fullName.vb: com.eyerunnman.patterns.AbstractTriggerableState(Of Context, StateEnum, TriggerEnum).OnStateFixedUpdate
   nameWithType: AbstractTriggerableState<Context, StateEnum, TriggerEnum>.OnStateFixedUpdate
   nameWithType.vb: AbstractTriggerableState(Of Context, StateEnum, TriggerEnum).OnStateFixedUpdate
+- uid: com.eyerunnman.patterns.AbstractTriggerableState`3.OnStatePause
+  name: OnStatePause()
+  href: api-runtime/com.eyerunnman.patterns.AbstractTriggerableState-3.html#com_eyerunnman_patterns_AbstractTriggerableState_3_OnStatePause
+  commentId: M:com.eyerunnman.patterns.AbstractTriggerableState`3.OnStatePause
+  fullName: com.eyerunnman.patterns.AbstractTriggerableState<Context, StateEnum, TriggerEnum>.OnStatePause()
+  fullName.vb: com.eyerunnman.patterns.AbstractTriggerableState(Of Context, StateEnum, TriggerEnum).OnStatePause()
+  nameWithType: AbstractTriggerableState<Context, StateEnum, TriggerEnum>.OnStatePause()
+  nameWithType.vb: AbstractTriggerableState(Of Context, StateEnum, TriggerEnum).OnStatePause()
+- uid: com.eyerunnman.patterns.AbstractTriggerableState`3.OnStatePause*
+  name: OnStatePause
+  href: api-runtime/com.eyerunnman.patterns.AbstractTriggerableState-3.html#com_eyerunnman_patterns_AbstractTriggerableState_3_OnStatePause_
+  commentId: Overload:com.eyerunnman.patterns.AbstractTriggerableState`3.OnStatePause
+  isSpec: "True"
+  fullName: com.eyerunnman.patterns.AbstractTriggerableState<Context, StateEnum, TriggerEnum>.OnStatePause
+  fullName.vb: com.eyerunnman.patterns.AbstractTriggerableState(Of Context, StateEnum, TriggerEnum).OnStatePause
+  nameWithType: AbstractTriggerableState<Context, StateEnum, TriggerEnum>.OnStatePause
+  nameWithType.vb: AbstractTriggerableState(Of Context, StateEnum, TriggerEnum).OnStatePause
+- uid: com.eyerunnman.patterns.AbstractTriggerableState`3.OnStateResume
+  name: OnStateResume()
+  href: api-runtime/com.eyerunnman.patterns.AbstractTriggerableState-3.html#com_eyerunnman_patterns_AbstractTriggerableState_3_OnStateResume
+  commentId: M:com.eyerunnman.patterns.AbstractTriggerableState`3.OnStateResume
+  fullName: com.eyerunnman.patterns.AbstractTriggerableState<Context, StateEnum, TriggerEnum>.OnStateResume()
+  fullName.vb: com.eyerunnman.patterns.AbstractTriggerableState(Of Context, StateEnum, TriggerEnum).OnStateResume()
+  nameWithType: AbstractTriggerableState<Context, StateEnum, TriggerEnum>.OnStateResume()
+  nameWithType.vb: AbstractTriggerableState(Of Context, StateEnum, TriggerEnum).OnStateResume()
+- uid: com.eyerunnman.patterns.AbstractTriggerableState`3.OnStateResume*
+  name: OnStateResume
+  href: api-runtime/com.eyerunnman.patterns.AbstractTriggerableState-3.html#com_eyerunnman_patterns_AbstractTriggerableState_3_OnStateResume_
+  commentId: Overload:com.eyerunnman.patterns.AbstractTriggerableState`3.OnStateResume
+  isSpec: "True"
+  fullName: com.eyerunnman.patterns.AbstractTriggerableState<Context, StateEnum, TriggerEnum>.OnStateResume
+  fullName.vb: com.eyerunnman.patterns.AbstractTriggerableState(Of Context, StateEnum, TriggerEnum).OnStateResume
+  nameWithType: AbstractTriggerableState<Context, StateEnum, TriggerEnum>.OnStateResume
+  nameWithType.vb: AbstractTriggerableState(Of Context, StateEnum, TriggerEnum).OnStateResume
 - uid: com.eyerunnman.patterns.AbstractTriggerableState`3.OnStateSetup
   name: OnStateSetup()
   href: api-runtime/com.eyerunnman.patterns.AbstractTriggerableState-3.html#com_eyerunnman_patterns_AbstractTriggerableState_3_OnStateSetup

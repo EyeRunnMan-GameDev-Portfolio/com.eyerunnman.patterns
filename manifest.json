@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "CHANGELOG.html",
-          "hash": "ONlHvgFkwulqkkky1R+Jiw=="
+          "hash": "WwemB78WdceDgcuHywT9Pw=="
         }
       },
       "is_incremental": false,
@@ -70,9 +70,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api-runtime/com.eyerunnman.interfaces.IState-1.yml",
       "output": {
@@ -85,9 +82,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api-runtime/com.eyerunnman.interfaces.ServiceState.yml",
       "output": {
@@ -120,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api-runtime/com.eyerunnman.patterns.AbstractTriggerableState-3.html",
-          "hash": "NYtVFpJGfNsyJte9FN2uYQ=="
+          "hash": "Fee6GrR+Xd4WnLvBVktFFQ=="
         }
       },
       "is_incremental": false,
@@ -250,6 +244,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api-runtime/com.eyerunnman.patterns.IState-1.yml",
       "output": {
@@ -291,7 +288,7 @@
       "output": {
         ".html": {
           "relative_path": "api-runtime/com.eyerunnman.patterns.MonobehaviourAbstractStateMachine-3.html",
-          "hash": "+OczmsTMMdgfPGQ1Gy1ykw=="
+          "hash": "u9vbwR/tzM9/a59geo3V3Q=="
         }
       },
       "is_incremental": false,
@@ -303,7 +300,7 @@
       "output": {
         ".html": {
           "relative_path": "api-runtime/com.eyerunnman.patterns.RootAbstractTriggerableState-3.html",
-          "hash": "OzxwS4nl/AtJWH8pQaO3gA=="
+          "hash": "1VgFwZDD0CbZoLEE8a2MJw=="
         }
       },
       "is_incremental": false,
@@ -322,6 +319,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "api-runtime/com.eyerunnman.patterns.ServiceState.yml",
       "output": {

@@ -330,6 +330,31 @@
   </table>
   
   
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_IsPaused_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.IsPaused*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_IsPaused" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.IsPaused">IsPaused</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool IsPaused { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_IsRootState_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.IsRootState*"></a>
   <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_IsRootState" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.IsRootState">IsRootState</h4>
   <div class="markdown level1 summary"><p>Is root state
@@ -577,6 +602,28 @@ NOTE : If you want this to be true use root state abstract class</p>
   </div>
   
   
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_ExecuteStatePause_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.ExecuteStatePause*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_ExecuteStatePause" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.ExecuteStatePause">ExecuteStatePause()</h4>
+  <div class="markdown level1 summary"><p>To Pause the state and its child states</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteStatePause()</code></pre>
+  </div>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_ExecuteStateResume_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.ExecuteStateResume*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_ExecuteStateResume" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.ExecuteStateResume">ExecuteStateResume()</h4>
+  <div class="markdown level1 summary"><p>To Resume the state and its child states</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteStateResume()</code></pre>
+  </div>
+  
+  
   <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_ExecuteStateUpdate_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.ExecuteStateUpdate*"></a>
   <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_ExecuteStateUpdate" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.ExecuteStateUpdate">ExecuteStateUpdate()</h4>
   <div class="markdown level1 summary"><p>Execute State Update in the update method</p>
@@ -765,6 +812,28 @@ NOTE : If you want this to be true use root state abstract class</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnStateFixedUpdate()</code></pre>
+  </div>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_OnStatePause_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.OnStatePause*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_OnStatePause" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.OnStatePause">OnStatePause()</h4>
+  <div class="markdown level1 summary"><p>When Triggers are fired</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnStatePause()</code></pre>
+  </div>
+  
+  
+  <a id="com_eyerunnman_patterns_AbstractTriggerableState_3_OnStateResume_" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.OnStateResume*"></a>
+  <h4 id="com_eyerunnman_patterns_AbstractTriggerableState_3_OnStateResume" data-uid="com.eyerunnman.patterns.AbstractTriggerableState`3.OnStateResume">OnStateResume()</h4>
+  <div class="markdown level1 summary"><p>When Triggers are fired</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnStateResume()</code></pre>
   </div>
   
   
