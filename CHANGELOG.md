@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.0](https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.patterns/compare/v2.2.0...v2.3.0) (2023-06-05)
+
+
+### Features
+
+* added function which supports swapping of child state ([29ae999](https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.patterns/commit/29ae999dce12eb56ee2ebaf9dec0b6e46409d481))
+
 ## [2.2.0](https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.patterns/compare/v2.1.1...v2.2.0) (2023-06-01)
 
 
