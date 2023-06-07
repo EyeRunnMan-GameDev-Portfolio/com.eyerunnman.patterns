@@ -398,9 +398,13 @@ namespace com.eyerunnman.patterns
 
         protected void SwapChildState(StateEnum newChildStateEnum)
         {
-            AbstractTriggerableState<Context, StateEnum, TriggerEnum> newChildState = StateFactory.Create(DefaultChildEnum);
-            SetCurrentChildState(newChildState);
-            newChildState.ExecuteStateEnter();
+            AbstractTriggerableState<Context, StateEnum, TriggerEnum> newChildState = StateFactory.Create(newChildStateEnum);
+            if (newChildState != null)
+            {
+                ActiveChildStateNode?.ExecuteStateExit();
+                SetCurrentChildState(newChildState);
+                newChildState.ExecuteStateEnter();
+            }
         }
 
         private void SetCurrentChildState(AbstractTriggerableState<Context, StateEnum, TriggerEnum> childState)
