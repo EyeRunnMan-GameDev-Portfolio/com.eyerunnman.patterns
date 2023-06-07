@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.3.1](https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.patterns/compare/v2.3.0...v2.3.1) (2023-06-07)
+
+
+### Bug Fixes
+
+* Update docs-on-release.yml ([3dd5e72](https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.patterns/commit/3dd5e729b2d7a4719b2d7124668434a503b28492))
+* updated swap function for child state ([8e9340b](https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.patterns/commit/8e9340beba52171d09e0319fd27643baf6839d09))
+
 ## [2.3.0](https://github.com/EyeRunnMan-GameDev-Portfolio/com.eyerunnman.patterns/compare/v2.2.0...v2.3.0) (2023-06-05)
 
 
